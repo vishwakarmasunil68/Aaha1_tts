@@ -1,0 +1,7 @@
+#Sat Dec 24 20:02:09 IST 2016
+base.0=C\:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3d7ad5d567e6ab922016c9bceec15b11d6b7b7fe
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_dda1753f9b03c5841aeff74f7939c8d42cbfa676\\classes.dex
+base.1=C\:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_dda1753f9b03c5841aeff74f7939c8d42cbfa676
+file.0=C\:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3d7ad5d567e6ab922016c9bceec15b11d6b7b7fe\\classes.dex

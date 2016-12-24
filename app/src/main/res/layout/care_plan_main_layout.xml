@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEFF1"
+    android:weightSum="13"
+    >
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/image_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#209E4A"
+		android:minHeight="?attr/actionBarSize">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_gravity="center">
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<ImageView
+
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:src="@drawable/care_plan_title"
+					></ImageView>
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/voice_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/voice"
+				android:layout_marginRight="10dp"/>
+
+		</LinearLayout>
+
+
+	</android.support.v7.widget.Toolbar>
+
+    <ScrollView 
+        android:id="@+id/chat_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"        
+        android:layout_weight="7"
+        android:focusable="true"
+		android:focusableInTouchMode="true"
+        >
+    <LinearLayout 
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"        
+        >
+        
+        <LinearLayout 
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/cloud_r_l"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"
+			
+            >
+            
+            <TextView
+				android:id="@+id/cloud1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+				android:textSize="12sp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/yes_layout"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"
+			android:visibility="gone"
+            >
+            
+            <TextView 
+                android:id="@+id/user_activity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/good_chat_layout"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"
+			android:visibility="gone"
+            >
+            
+            <TextView 
+                android:id="@+id/good_chat_layout_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/diet_change_layout"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"
+			android:visibility="gone"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any Changes to diet?"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/user_masala"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"		
+			android:visibility="gone"		
+            >
+            
+            <TextView 
+                android:id="@+id/user_masala_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reduce Sugar\nand Masala"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/care_manage_masala"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"	
+            >
+            
+            <TextView 
+                android:id="@+id/care_manage_masala_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are managing your diet\nvery well sugar and\nmasala are great in small\ndoses."
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/care_anything_diet"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"	
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anything you should\nadd to your diet?"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/user_diet_change"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"	
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:id="@+id/user_diet_change_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole wheat\nand olive oil"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/care_diet_added"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"				
+            >
+            
+            <TextView 
+                android:id="@+id/care_diet_added_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excellent additions!\nThese ingredients help\nlower cholesterol. I'll add\na reminder for you."
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/care_exercise_suggestion"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You know, exercise and\ndiet are closely related.\nAny daily exercise\nrecommendations\nsuggested by the doctor?"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/user_exercise"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"	
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:id="@+id/user_exercise_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walk, 30 min daily,\nCardio, 15 min daily,and Yoga 30 min daily"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/care_exercise_added"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:id="@+id/user_exercise_added_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Very good diet-exercise\ncombo. I have added\nreminders for these\nexercises."
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/care_symptoms"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"	
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What symptoms are\nyou watching?"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/user_symptoms"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:id="@+id/user_symptoms_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joint Pain\nlack of sleep"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:id="@+id/care_symptoms_manage"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/chat_right_drop"
+			android:layout_gravity="left"
+			android:layout_marginTop="10dp"
+			android:gravity="center"	
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I will help\nyou monitor joint\npain through\nreminders."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"                
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/care_thanks"
+            android:layout_width="200dp"
+			android:layout_height="100dp"
+			android:background="@drawable/chat_screen"
+			android:layout_gravity="right"
+			android:layout_marginTop="10dp"
+			android:gravity="right"		
+			android:visibility="gone"			
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you had a great doctor's\nvisit. Thanks for chatting."
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginRight="15dp"
+                />
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    </ScrollView>
+    
+    <LinearLayout 
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        >
+        <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#c0c0c0"/>
+        
+        <LinearLayout 
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"              
+            android:orientation="vertical"
+			android:layout_gravity="center"
+			android:gravity="center"
+            >
+        
+           <!--  -->
+        	<fragment 
+        	    android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        class="com.motivator.careplan.CarePlanDoctorVisitFragment"
+		        android:id="@+id/output"
+        	    />
+            <!--  -->
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>

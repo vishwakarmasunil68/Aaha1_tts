@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    
+    <!-- gray variant color code -->
+    <color name="silver">#f2f2f2</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="gray_light">#d9d9d9</color>
+    <color name="gray_medium">#d3d3d3</color>
+    <color name="gray_dark">#999999</color>
+    
+    <!-- blue color -->
+    <color name="blue">#00aeef</color>
+    <color name="sky_blue">#4da6ff</color>
+    <!-- green color code -->
+    <color name="green">#00cccc</color>
+    <color name="green_lite2">#81D005</color>
+    
+    <!-- red color code -->
+    <color name="red_color">#ed1c24</color>
+    <color name="red_light">#E21C52</color>
+    
+
+    <color name="theme_500">#6BBC8B</color>
+    <color name="theme_100">#CFCCDC</color>
+    <color name="theme_700">#455A64</color>
+
+    <color name="accent_A100">#FF8A80</color>
+    <color name="accent_A200">#FF5252</color>
+    <color name="accent_A400">#FF1744</color>
+    
+    <color name="transparent">#330000ff</color>
+
+    
+    <color name="custom_habit_color">#330000ff</color>
+    
+    <color name="time_selected">#4da6ff</color>
+    <color name="time_unselected">#dae0e6</color>
+    
+    <!-- fab colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

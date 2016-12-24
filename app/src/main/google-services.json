@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "193118667089",
+    "project_id": "we-care-you"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193118667089:android:cd5db0684887bf7c",
+        "android_client_info": {
+          "package_name": "com.motivator.wecareyou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193118667089-b0vocffq7i5qr7lpv1kjgvu8hlm0aodg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.motivator.wecareyou",
+            "certificate_hash": "04F2D0DCDA2399DCFE9B86F0E498FF2AA18A1C00"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9rQTzXRwMCXFYxzgCfYyvdiTr94Dy_xQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

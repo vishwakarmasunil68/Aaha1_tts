@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- Top image in habit list -->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ritual_top"
+        android:orientation="horizontal" />
+    <!-- Search box  -->
+    <EditText
+        android:id="@+id/edt_search_habit"  
+        android:layout_below="@id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for habits or add your own here"
+        android:textColorHint="#d3d3d3"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="10dp"/>
+    
+    <!-- this layout will be displayed when searching would not provide any result -->
+    <LinearLayout
+        android:id="@+id/ll_add_custom_habit"
+        android:layout_below="@id/edt_search_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_custom_habit"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/habbit_icon"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Habit Setting"
+            android:textColor="@color/black"
+             />
+
+        <TextView
+            android:id="@+id/tv_add_new_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Add New Habit"
+            android:textColor="@color/sky_blue" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_habit_list"
+        android:layout_below="@id/edt_search_habit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+    <View 
+        android:layout_above="@id/lv_habit_list"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"/>
+    
+    <RelativeLayout
+        android:id="@+id/rll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imv_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_search_habit"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/circle_click" />
+     <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_click"
+        android:background="@drawable/info_bar"
+        android:drawableLeft="@drawable/question"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="You can choose your own habits later."
+        android:textColor="#000000" 
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

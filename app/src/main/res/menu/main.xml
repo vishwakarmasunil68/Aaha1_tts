@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.motivator.wecareyou.MainActivity" >
+
+    <!-- It should appear as action button if possible -->
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/action_plus_icon"
+        android:showAsAction="ifRoom|withText"
+        android:title=""/>
+    <item
+        android:id="@+id/action"
+        android:showAsAction="always"
+        android:icon="@drawable/edit"
+        android:title="@string/app_name"/>
+    <!-- Overflow Menu -->
+    <item
+        android:icon="@drawable/action_overflow_icon"
+        android:showAsAction="always"
+        android:title="More">
+        <menu>
+            <item
+                android:id="@+id/action_profile"
+                android:showAsAction="never"
+                android:title="Profile"/>
+           <!--  <item
+                android:id="@+id/action_setting"
+                android:showAsAction="never"
+                android:title="Settings"/> -->
+            <item
+                android:id="@+id/action_feedback"
+                android:showAsAction="never"
+                android:title="Send Feedback"/>
+        </menu>
+    </item>
+
+</menu>

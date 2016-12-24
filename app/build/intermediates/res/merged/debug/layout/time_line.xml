@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/rll_timeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Timeline"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_today_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Today"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_today"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_green_lite"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_progress1"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:background="@color/green_lite2" />
+
+                <TextView
+                    android:id="@+id/tv_today_status"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle_green_lite"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_progress2"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"
+                    android:background="@color/green_lite2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rll_success_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_success_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Completion Rate"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_ritual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_success_rate"
+                android:layout_marginTop="5dp"
+                android:text="Today"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/pb_success"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/spn_ritual"
+                android:layout_toRightOf="@id/spn_ritual"
+                android:max="100"
+                android:progressDrawable="@color/green"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/silver"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" >
+            
+             <TextView
+                android:id="@+id/tv_month_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Month View"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout 
+		    android:id="@+id/ll"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"		
+		    android:layout_below="@id/tv_month_view"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"  
+            android:background="@color/white" >  
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+			        android:id="@+id/tv_habit_name1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Drink top 1"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"				        		       
+			        android:drawableLeft="@drawable/habit_default_icon"			       
+         		/>
+                <TextView 
+                    android:id="@+id/tv_habit_name1_status"
+                    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			         android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="right"
+			        android:layout_gravity="right"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"	
+			        android:text="textview"
+                    />
+                </LinearLayout>        
+                
+             <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+			        android:id="@+id/tv_habit_name2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Drink top 1"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"				        		       
+			        android:drawableLeft="@drawable/habit_default_icon"			       
+         		/>
+                <TextView 
+                    android:id="@+id/tv_habit_name2_status"
+                    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			         android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="right"
+			        android:layout_gravity="right"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"	
+			        android:text="textview"
+                    />
+                </LinearLayout>   
+                
+              <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+			        android:id="@+id/tv_habit_name3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Drink top 1"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"				        		       
+			        android:drawableLeft="@drawable/habit_default_icon"			       
+         		/>
+                <TextView 
+                    android:id="@+id/tv_habit_name3_status"
+                    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			         android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="right"
+			        android:layout_gravity="right"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"	
+			        android:text="textview"
+                    />
+                </LinearLayout>   
+                
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+			        android:id="@+id/tv_habit_name4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Drink top 1"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"				        		       
+			        android:drawableLeft="@drawable/habit_default_icon"			       
+         		/>
+                <TextView 
+                    android:id="@+id/tv_habit_name4_status"
+                    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			         android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="right"
+			        android:layout_gravity="right"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"	
+			        android:text="textview"
+                    />
+                </LinearLayout>   
+           <!-- <TextView
+			        android:id="@+id/tv_habit_name2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Drink top 2"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"
+			        android:drawableLeft="@drawable/habit_default_icon"
+         		/>
+                <TextView
+			        android:id="@+id/tv_habit_name3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Drink bottom 3"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"
+			        android:drawableLeft="@drawable/habit_default_icon"
+         		/>
+                <TextView
+			        android:id="@+id/tv_habit_name4"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Drink bottom 4"
+			        android:textStyle="bold"
+			        android:padding="10dp"
+			        android:gravity="center_vertical"
+			        android:textColor="#000000"
+			        android:drawablePadding="10dp"
+			        android:drawableLeft="@drawable/habit_default_icon"
+         		/>-->
+            <com.imanoweb.calendarview.CustomCalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"               
+                android:background="@color/white"
+                app:calendarBackgroundColor="@color/white"
+                app:calendarTitleTextColor="@color/black"
+                app:currentDayOfMonthColor="@color/blue"
+                app:dayOfMonthTextColor="@color/black"
+                app:dayOfWeekTextColor="@color/black"
+                app:disabledDayBackgroundColor="@color/white"
+                app:disabledDayTextColor="@color/gray"
+                app:selectedDayBackgroundColor="@android:color/transparent"
+                app:titleLayoutBackgroundColor="@color/white"
+                app:weekLayoutBackgroundColor="@color/white" />
+            </LinearLayout>
+            <View 
+                android:id="@+id/view_cal_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ll"
+                android:layout_alignTop="@id/ll"
+                android:layout_alignBottom="@id/ll"
+                android:layout_alignRight="@id/ll"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

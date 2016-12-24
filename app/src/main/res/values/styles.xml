@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+
+        <!-- Both of these are needed -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+    	<item name="android:typeface">assets/fonts/Philosopher-Regular.ttf</item>
+	</style>
+	
+	<style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+	    <item name="android:typeface">fonts/Philosopher-Regular.ttf</item>
+	</style>
+
+    -->
+
+
+    <!-- Custom Theme -->
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/back_btn_bg</item>
+        <!-- <item name = "android: colorPrimary"> @color/transparen</item> -->t
+        <!--  darker variant for the status bar and contextual app bars -->
+        <!-- <item name = "android: colorPrimaryDark "> @color/transparen</item>  -->
+
+        <!--  <item name="@android:windowDrawsSystemBarBackgrounds">true</item>
+            <item name="@android:statusBarColor">@color/transparent</item> -->
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <!-- <item name="android:childIndicator">@style/ActionBarTabStyle.Example</item> -->
+    </style>
+
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <!-- <style name="ActionBarTabStyle.Example" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+    </style> -->
+
+    <style name="editTextClassic" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+    <style name="spinnerClassic" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:drawable/spinner_dropdown_background</item>
+    </style>
+
+    <style name="AppTheme1" parent="AppTheme.Base">
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+</resources>

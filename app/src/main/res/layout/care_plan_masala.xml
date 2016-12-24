@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEFF1"
+	android:weightSum="3"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"              
+            android:orientation="vertical"  
+            android:weightSum="4"      
+            >           	
+           
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:weightSum="4"
+               android:orientation="vertical"
+               >
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"                                              
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+        	    
+                   <TextView 
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Salt"    
+                       android:layout_gravity="center"
+                       android:gravity="center"                                         
+                       />
+                   
+                </LinearLayout>
+               
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="4"            
+                android:layout_weight="2.75"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <LinearLayout 
+                    android:id="@+id/salt_decrease_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/salt_decrease"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/decrease_button"
+        	        />
+        	    
+        	    </LinearLayout>
+        	    
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/salt_line_image"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/main_line_2"
+        	        />
+        	    
+        	    <LinearLayout 
+        	        android:weightSum="3"
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+        	        android:orientation="horizontal"
+        	        >
+        	        
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Reduce"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Maintain"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Increase"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        
+        	    </LinearLayout>
+        	    
+        	    </LinearLayout>
+        	    
+                
+                <LinearLayout 
+                    android:id="@+id/salt_increase_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/salt_increase"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/increasebutton"
+        	        />
+        	    
+        	    </LinearLayout>
+                                                         
+            </LinearLayout>
+               
+               
+               
+           </LinearLayout>
+           
+           
+           <!-- Sugar -->
+           
+            
+            <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:weightSum="4"
+               android:orientation="vertical"
+               >
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"                                              
+                android:layout_weight="1.75"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+        	    
+                   <TextView 
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Sugar"    
+                       android:layout_gravity="center"
+                       android:gravity="center"                                         
+                       />
+                   
+                </LinearLayout>
+               
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="4"            
+                android:layout_weight="2.75"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:id="@+id/sugar_decrease_layout" 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/sugar_decrease"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/decrease_button"
+        	        />
+        	    
+        	    </LinearLayout>
+        	    
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/sugar_main"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/main_line_2"
+        	        />
+        	    
+        	    <LinearLayout 
+        	        android:weightSum="3"
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+        	        android:orientation="horizontal"
+        	        >
+        	        
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Reduce"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Maintain"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Increase"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        
+        	    </LinearLayout>
+        	    
+        	    </LinearLayout>
+        	    
+                
+                <LinearLayout
+                    android:id="@+id/sugar_increase_layout" 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/sugar_increase"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/increasebutton"
+        	        />
+        	    
+        	    </LinearLayout>
+                                                         
+            </LinearLayout>
+               
+               
+               
+           </LinearLayout>
+           
+            <!-- Oil -->
+            
+            <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:weightSum="4"
+               android:orientation="vertical"
+               >
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"                                              
+                android:layout_weight="1.75"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+        	    
+                   <TextView 
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Oil"    
+                       android:layout_gravity="center"
+                       android:gravity="center"                                         
+                       />
+                   
+                </LinearLayout>
+               
+               
+               <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="4"            
+                android:layout_weight="2.75"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <LinearLayout 
+                    android:id="@+id/oil_decrease_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/oil_decrease"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/decrease_button"
+        	        />
+        	    
+        	    </LinearLayout>
+        	    
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/oil_main"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/main_line_2"
+        	        />
+        	    
+        	    <LinearLayout 
+        	        android:weightSum="3"
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+        	        android:orientation="horizontal"
+        	        >
+        	        
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Reduce"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Maintain"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        <TextView 
+        	            android:layout_width="0dp"
+        	            android:layout_weight="1"
+        	            android:layout_height="wrap_content"
+        	            android:text="Increase"
+        	            android:textSize="10sp"
+        	            android:layout_gravity="center"
+        	            android:gravity="center"
+        	            />
+        	        
+        	    </LinearLayout>
+        	    
+        	    </LinearLayout>
+        	    
+                
+                <LinearLayout 
+                    android:id="@+id/oil_increase_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                    android:gravity="left|center"
+                    >
+        	    <ImageView 
+        	        android:id="@+id/oil_increase"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:src="@drawable/increasebutton"
+        	        />
+        	    
+        	    </LinearLayout>
+                                                         
+            </LinearLayout>
+               
+               
+               
+           </LinearLayout>
+            
+            
+            <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:weightSum="2"
+               android:orientation="horizontal"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_marginBottom="5dp"
+               >
+               
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:layout_weight="1" 
+                    >
+               <Button
+                   android:id="@+id/skip"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp"
+                   android:background="@drawable/small_orange_button"
+                   android:text="Skip"                                     
+                   />
+               </LinearLayout>
+               
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:layout_weight="1" 
+                    >
+               <Button
+                   android:id="@+id/done"
+                   android:layout_width="wrap_content"
+                   android:layout_height="40dp" 
+                   android:background="@drawable/small_green_button"
+                   android:text="Done"                                    
+                   />
+               </LinearLayout>
+               
+               </LinearLayout>
+            
+            
+        </LinearLayout>
+
+</LinearLayout>

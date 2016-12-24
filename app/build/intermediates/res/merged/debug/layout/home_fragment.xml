@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+<com.motivator.support.InteractiveScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/frame_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:focusable="true" />
+        <LinearLayout
+            android:id="@+id/data_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:focusable="true" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/note_img"
+                    android:padding="10dp"
+                    android:src="@drawable/letter_icon" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/note_title"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp" >
+
+                    <TextView
+                        android:id="@+id/tv_data_note1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Letter No. 1"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_data_note2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="if you forget, you&apos;ll be tried by middy"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/careplan_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:focusable="true" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+            <ImageView
+                android:id="@+id/imv_note_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/note_img"
+                android:padding="10dp"
+                android:src="@drawable/letter_icon" />
+            <LinearLayout
+                android:id="@+id/ll_note"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/note_title"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_care_note1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Letter No. 1"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_care_note2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="if you forget, you&apos;ll be tried by middy"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+        <com.motivator.support.NonScrollableListView
+            android:id="@+id/lv_rituals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Swipe Left to see other Sections"
+            /> -->
+    </LinearLayout>
+
+</com.motivator.support.InteractiveScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:layout_gravity="end"
+        android:gravity="end"
+    >
+  <com.github.clans.fab.FloatingActionMenu
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom|end"
+      fab:menu_colorNormal="#E91E63"
+      fab:menu_colorPressed="#FFFFFF"
+      fab:menu_colorRipple="#757575"
+        >
+     <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_journey1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alarm"
+            fab:fab_label="Interesting Journey"
+            fab:fab_size="mini"
+         fab:fab_colorNormal="#E91E63"
+         fab:fab_colorPressed="#FFFFFF"
+         fab:fab_colorRipple="#757575"
+         android:visibility="gone"/>
+
+      <com.github.clans.fab.FloatingActionButton
+          android:id="@+id/fab_data_entry"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/fab_data_entry"
+          fab:fab_label="My Health"
+          fab:fab_size="mini"
+          fab:fab_colorNormal="#E91E63"
+          fab:fab_colorPressed="#FFFFFF"
+          fab:fab_colorRipple="#757575"/>
+
+      <com.github.clans.fab.FloatingActionButton
+      android:id="@+id/fab_care_plan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/alarm"
+      fab:fab_label="Care Plan"
+      fab:fab_size="mini"
+          fab:fab_colorNormal="#E91E63"
+          fab:fab_colorPressed="#FFFFFF"
+          fab:fab_colorRipple="#757575"/>
+      <com.github.clans.fab.FloatingActionButton
+          android:id="@+id/fab_relaxation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/fab_relaxation"
+          fab:fab_label="Relaxation"
+          fab:fab_size="mini"
+          fab:fab_colorNormal="#E91E63"
+          fab:fab_colorPressed="#FFFFFF"
+          fab:fab_colorRipple="#757575"/>
+      <com.github.clans.fab.FloatingActionButton
+          android:id="@+id/fab_evening_ritual"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/morning_ritual_fab"
+          fab:fab_label="Evening Ritual"
+          fab:fab_size="mini"
+          fab:fab_colorNormal="#E91E63"
+          fab:fab_colorPressed="#FFFFFF"
+          fab:fab_colorRipple="#757575"
+          />
+
+      <com.github.clans.fab.FloatingActionButton
+          android:id="@+id/fab_afternoon_ritual"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/morning_ritual_fab"
+          fab:fab_label="Afternoon Ritual"
+          fab:fab_size="mini"
+          fab:fab_colorNormal="#E91E63"
+          fab:fab_colorPressed="#FFFFFF"
+          fab:fab_colorRipple="#757575"
+          />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_mrng_ritual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/morning_ritual_fab"
+            fab:fab_label="Morning Ritual"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#E91E63"
+            fab:fab_colorPressed="#FFFFFF"
+            fab:fab_colorRipple="#757575"
+            />
+        </com.github.clans.fab.FloatingActionMenu>
+
+  </LinearLayout>
+</FrameLayout>

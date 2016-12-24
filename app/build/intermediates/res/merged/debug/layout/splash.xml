@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    tools:context=".Splash" >
+
+    <com.dev.sacot41.scviewpager.SCViewPager
+        android:id="@+id/viewpager_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.dev.sacot41.scviewpager.SCViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/start_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_started"
+        android:text="login button"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/lets_get_started"
+        />
+    </LinearLayout>
+    <com.dev.sacot41.scviewpager.DotsView
+        android:id="@+id/dotsview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" />
+
+    <!-- 1 screen -->
+    <ImageView
+        android:id="@+id/imv_journey1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/new_journey1" />
+
+    <ImageView
+        android:id="@+id/txt_journey1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/embark_on_new_journey" />
+
+    <!-- 2 screen -->
+    <ImageView
+        android:id="@+id/imv_journey2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading" />
+
+    <ImageView
+        android:id="@+id/img_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/txt_journey2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/to_reset_your_habits" />
+
+    <!-- 3 screen -->
+    <ImageView
+        android:id="@+id/imv_journey3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/man" />
+
+    <ImageView
+        android:id="@+id/img_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/txt_journey3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/feel_energized" />
+
+    <!-- 4 screen -->
+    <ImageView
+        android:id="@+id/imv_journey4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/man_slip" />
+
+    <ImageView
+        android:id="@+id/img_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/txt_journey4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/relax" />
+
+    <!--5 screen -->
+    <ImageView
+        android:id="@+id/imv_journey5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/chat_icon" />
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="80dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/txt_journey5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/easily_overcome_problems" />
+
+    <!-- 6 screen -->
+    <ImageView
+        android:id="@+id/imv_journey6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/firework_image" />
+
+    <ImageView
+        android:id="@+id/txt_journey6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/rejoice_life" />
+
+</RelativeLayout>

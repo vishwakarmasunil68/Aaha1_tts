@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@drawable/add_habit_top" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_clock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="7:30 AM"
+                android:textColor="#ffffff" 
+                android:textSize="24sp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/clock"
+                android:background="@drawable/transparent_round_edge_bg"
+                 />
+
+            <TextView
+                android:id="@+id/tv_clock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_clock1"
+                android:layout_alignBaseline="@id/tv_clock1"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="No Habit"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:textColor="#ffffff" 
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/clock"
+                android:drawablePadding="5dp"
+                android:background="@drawable/transparent_round_edge_bg"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/imv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_top"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/habbit_icon"/>
+    <TextView
+        android:id="@+id/tv_habit_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_top"
+        android:layout_toRightOf="@id/imv_icon"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="0 Habits"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_habit_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_habit_count"
+        android:layout_toRightOf="@id/imv_icon"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Today"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_add_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="ADD HABIT"
+        android:textColor="@color/sky_blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/text_bg_selector" />
+
+    <com.motivator.support.DynamicListViewHabits
+        android:id="@+id/lv_added_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_add_habit"
+        android:layout_below="@id/tv_habit_day"
+        android:listSelector="@drawable/text_bg_selector"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:id="@+id/ll_add_first_habit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_add_habit"
+        android:layout_below="@id/tv_habit_day" 
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        
+        <TextView 
+            android:id="@+id/tv_no_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_habit"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        <TextView 
+            android:id="@+id/tv_recommended_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/recommended_habit"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        
+        <Button
+            android:id="@+id/btn_add_habit1" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Recommended Habit"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/blue_btn_selector"
+            />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lv_added_habit"
+        android:background="#d3d3d3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/lv_added_habit"
+        android:background="#d3d3d3"
+        android:paddingBottom="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_add_habit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/add_habbit"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_habit_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_add_habit"
+            android:background="@drawable/info_bar"
+            android:drawableLeft="@drawable/question"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="Let&apos;s set up the feel energized"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</RelativeLayout>

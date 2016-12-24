@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">aaha</string>
+
+    <!-- Common strings -->
+    <string name="network_failure">Network Failure</string>
+    <string name="no_internet">Please connect to internet...</string>
+    <string name="something_went_wrong">Sorry, something went wrong. try after some time.</string>
+
+    <!-- KICK START -->
+    <string name="lets_start">Let\'s get started!</string>
+    <string name="health_goal">What\'s your most important health goal right now?</string>
+    <string name="kick_start">Kickstart your day</string>
+    <string name="tell_us_abt_u">Tell us a little bit more about yourself to get the full experience</string>
+    <string name="what_we_call_you">What should we call you?</string>
+    <string name="enter_ur_name">Enter your name</string>
+    <string name="can_u_enter_ur_name">Can you please enter your name?</string>
+
+    <!-- Login strings -->
+    <string name="enter_user_name">Please enter your name.</string>
+    <string name="enter_email">Please enter a valid email id.</string>
+    <string name="enter_phone">Please enter your phone number.</string>
+    <string name="enter_password">Please enter the password.</string>
+
+    <!--  Profile string -->
+
+    <!-- Add Habit -->
+    <string name="no_habit">No habit added yet.</string>
+    <string name="recommended_habit">We have carefully crafted a set of habits for this ritual, try our recommendations!</string>
+    <string name="max_habit">Sorry, maximum 10 habits can be added in a single ritual!</string>
+
+    <string name="habit_3_day_in_row">Do your habits 3 days in a row to make them part of your daily behaviour!</string>
+
+    <!-- Alarm -->
+    <string name="announcement">Announcement First Habit </string>
+    <string name="ring_in_silent">Ring in silent mode </string>
+    <string name="announcement_msg">Loud in the ritual alarm.</string>
+    <string name="ring_in_silent_msg">If you\'d like your alarm to make a sound even if your phone is in silent mode, select this optoin.
+         This is very useful for morning ritual and important ritual.</string>
+
+    <string name="enter_ritual_name">Please enter ritual Name</string>
+
+    <string name="feedback">We really want to help you</string>
+
+    <!-- Journey -->
+    <string name="letter_txt">Spread the word about your plan to live a healthier life....\n\n\n\n(Sample Text) !</string>
+    <string name="sample_text">Sample Text.............\n......\n........\n.....\n......\n
+        we will craft relevant information for you to keep you motivated!</string>
+
+    <string name="locked">I don\'t want to overwhelm you..let\'s take it one step at a time</string>
+    <string name="chanllenge_drink_water">"For the next 3 days, Drink Water when you wake up to kickstart your body and start your day with a success!"</string>
+
+    <!--  facebook Ap id -->
+    <string name="facebook_app_id">234992030177331</string>
+    <!-- <string name="facebook_app_id">1039882162794307</string> -->
+
+
+    <string name="_30_yrs_old">&lt;30 yrs</string>
+    <string name="_45_yrs_old">>45 yrs</string>
+
+
+    <string name="glucose_spinner_prompt">Select Options</string>
+
+    <string-array name="Spinner_glucose_items">
+        <item>Before Breakfast</item>
+        <item>After Breakfast</item>
+        <item>Before Lunch</item>
+        <item>After Lunch</item>
+        <item>Before Dinner</item>
+        <item>After Dinner</item>
+    </string-array>
+
+
+    <string-array name="medicine_type">
+        <item>Pills/Tablets</item>
+        <item>Teaspoon (for syrups)</item>
+        <item>Syringe/units</item>
+    </string-array>
+
+    <!-- care plan screens -->
+
+    <string-array name="homescreenttstext">
+        <item>As you get older, three things happen. First your memory starts to go…. and I can’t remember the other two.</item>
+        <item>Don’t worry about what people think. Most of them don’t do it very often.</item>
+        <item>I love our time together. But don’t forget your other friends and family as well. The worst thing we can do is isolate ourselves when we feel troubled.</item>
+        <item>I read in a magazine last week that light exercise like walking and stretching releases ‘feel good’ chemicals into our bloodstream. How about we try it later?</item>
+        <item>I really enjoy our time together.</item>
+        <item>I really need a day in between Saturday and Sunday.</item>
+        <item>I’ve found that writing down my thoughts helps me to organize the thoughts whirling in my mind. Of course I also destroy the evidence afterward. Why don’t you try it too? It might help get those pent up frustrations and emotions off your chest.</item>
+        <item>So how have you been today? Did you try anything new?</item>
+        <item>What a day. I met a friend that I hadn’t seen in ages the other day. We talked for hours about everything under the sun.</item>
+        <item>You are never too old to chase a new goal, or dream a new dream.</item>
+        <item>I really enjoy our meetups. You’re pretty cool.</item>
+    </string-array>
+
+    <string-array name="myhabitavscreenttstext">
+        <item>And next on our agenda is-</item>
+        <item>And next on your program is.</item>
+        <item>And we are finished with this one. Next up.</item>
+        <item>At least these are going good today, right?</item>
+        <item>Boppin’ right along.</item>
+        <item>cool...</item>
+        <item>Don’t forget this next one too.</item>
+        <item>I have something new for you to try.</item>
+        <item>I love your ambition. Next up-</item>
+        <item>Let’s keep going.</item>
+        <item>Nice work! You’re on a roll.</item>
+        <item>No no, you’re not done yet. Next up.</item>
+        <item>Okay, okay, you had your fun. Now let’s try the next one.</item>
+        <item>You are quite the dedicated person.</item>
+        <item>Thank you for doing this. Now let’s go to the next one.</item>
+        <item>This should get your blood pumping a bit.</item>
+        <item>We’re not quite done yet. Moving along.</item>
+        <item>You are doing a wonderful job buddy. Let’s move on to the next challenge, shall we?</item>
+        <item>You’re doing good, all things considering. Next up:</item>
+        <item>You are getting better at this..lets look at next habit.</item>
+        <item>You are on quite a roll. Fantastic. Next is-.</item>
+    </string-array>
+    <string-array name="moodtsi">
+        <item>I\'m sorry to hear that. I\'ll right here for you buddy. I\'ll do what I can. Why don\'t you relax. Maybe grab some hot tea or something, and I\'ll turn on some music.</item>
+        <item>I get that. Take a break. Enjoy some ambiance.</item>
+        <item>I understand the day is overwhelming right now. We will update our records later.</item>
+        <item>Why don\'t we use this as an opportunity to decompress, hmm? You will feel much better about your routine if you get a minute of you-time</item>
+    </string-array>
+    <string-array name="moodtsielse">
+        <item>Got it! Why don\’t you rest in the garden a while? The band is doing something nice out there. No rush or anything. Let me know when you are ready to continue.</item>
+        <item>I know how you feel. Those days can be frustrating.But you\’ll succeed soon. Take a moment for yourself. We\’ll get rolling afterward.</item>
+        <item>Alright buddy. Let\’s take a deep breath, and think over the situation. Here is a new way to help bring life back into balance.</item>
+    </string-array>
+
+    <string-array name="reminder">
+        <item>I know you are busy. What time is good for you on this one?</item>
+        <item>What would you like me to remind you about this week?</item>
+        <item>Let\'s keep our eyes on the prize... When are we doing this one?</item>
+        <item>Let me give you a hand with these.</item>
+        <item>Are these times still good for you?</item>
+    </string-array>
+
+</resources>

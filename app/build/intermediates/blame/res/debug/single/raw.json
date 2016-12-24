@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics-impl\\9.4.0\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\second_first_walk_through.mp3",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\raw\\second_first_walk_through.mp3"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\raw\\registration_1.mp3",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\raw\\registration_1.mp3"
+    }
+]

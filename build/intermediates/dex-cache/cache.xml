@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.5.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="06e747980282ac9a96c036c43d07908d0f3347f6">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-2.5.0_f944351af893f47af56878714f1afaf12cabbfef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0ad33eb600f3d80bdff5ce355c90d5533ade652a">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.4.0_13c29b079b1a6fc8e601a7113f6d6598134e0a9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="670df81539ab71918d49b186598b7eff08ef6563">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.4.0_1973754a009c6402e09007f610daa61e5966501f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.4.0_1c584134ffe14976aaab5d9e96828bc08eee98ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7bc6ea2bcfd6de4b7085e0f3a01616c5c8e0e2ad">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.4.0_198e72a5b406db20606c47c502fb9b471b82741a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.4.0_94d80bc18560eb7a865cb21cdacb8b92ae04b683\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="03829a2618892d438a1f59c6286699ca1f476e93">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.4.0_75e94ecfead8859da436faed2cdca31511c248e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e454c414a069241ee08444d187f2dd3a702596b5">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.4.0_f1912745e2322224728b43a74a9687e2d850d34e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dab6944860c986980dcc6002a5ca2f127b587317">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.4.0_c4439ed065de1d5ea8110c5de219854410bd4b78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sunil\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.19\a8f23f65fc1e522ee4a1a697ee569901a46741fa\library-1.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.0.19_86c3191d15ade7c00bbe0a86ad5fb63076538ebb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ba47b210d36301e237ccfea860eaada04590f12a">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.4.0_ceddf59676326f5271c8bbf71c75507f306f0d47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_cb55fac8a49026da3b39b77a5cb50dba52ae5748\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_926f406d108d05d58711110c3706a7727e1599da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.4.0_dc277248ec197c793bb1b35708373260d805b07b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7ea53c4458b80e8ea71f7fd6831fa184c501377b">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.4.0_2823f51e083d3a28c025647d1b516ee19019cdfc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.mixpanel.android\mixpanel-android\4.9.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="76ddce763ecf8a63007603028e881394390232bf">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mixpanel.android-mixpanel-android-4.9.3_632a5255c0e57f8be12f53b9b21564315ecacf8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dd51b31890731591729f046d7a09c4fe4e483ed1">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.4.0_5cc88427e89d46fa4612cfed27fca9e69e84ac73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.4.0_225349fd44226fc4787cfc6a10fd73e2edf7ffd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8197651ce1af4d89b47f4545cc720bc4f8611e7d">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.4.0_a54d8e397b082f8961b8be6f324160eb684d6412\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="98e97da89d4df8e2f6eba63498d3d46a587372f2">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.4.0_b437e9922cbd3be7c839df49626344c6589f4ebd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.4.0_0b9ea310875e01f99b18f392ab8832777e9a49d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8ce5e7a4a146dddd1d9e66b09c714a6c149916d8">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.4.0_8073ca8ca58cdf8eba8941007da6267518d71b03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sunil\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_44da557d8ac665ac2e9e9e90e61228c6a238c522\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.4.0_40d9778de09324b5ccc6162a0a020dfdc9ac5f80\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="92b42a1b16e5871f959ce24f189941395addc8d7">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3d7ad5d567e6ab922016c9bceec15b11d6b7b7fe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="147edbec6bcea71fd675ecc63cae3319637ec2b4">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.4.0_228a2163ffed5e5c02fe0d922e8521f9662f515a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0b060160e7daee343f5315b3da91b0ff2d7eed89">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.4.0_d42fca78636b1d9c1597f04f878850e9c70b91cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.4.0_f3f1fa44e9e2203638aff7ff38fa801d52b11669\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ece40b09e9d4d488bc270cf6af5a9af73bc1cfa3">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.4.0_d19a58da80aa0bff9eed2f58af5dad78d08e30e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.0_35879ced6f3cef5f7dbf082d27ec2a4beb60b58c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-contextmanager\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="72eacac37fc64e95d53abd2a041bf81a952d8615">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-contextmanager-9.4.0_c5796b8ab2a7e4a684189330e897ee7ba4062ada\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.ogaclejapan.arclayout\library\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e73be64ef3e56ecc035bd298d274136e2ad66d20">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.ogaclejapan.arclayout-library-1.1.0_5f9b5afb7cd7cf7caefc4836dcb71a46a0d05ffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b15f898c9047f9d612a63000126b485dd024eaac">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.4.0_b49f37e2b744ba13f0cb9cf65a7523d44999a329\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.4.0_b731bfd3c1b39351ea2843ede6563f265197e9f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_893a4e20d25d564fc5d3801f8ef93f0d97dc2aa6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.4.0_4844aee7373bfd444ae53806c88d06c45d04d407\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.4.0_c0a77f6ba004711b2a85aec22e8a2ccf0e16c71a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.4.0_5fc514525566a4eb684e8a307b23cce241c4aacc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.4.0_3db81fb6e7e7850f6de57af5de8ce4bd77415822\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.rengwuxian.materialedittext\library\2.1.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.rengwuxian.materialedittext-library-2.1.4_c13b97bc11d19d6fe527ab9eb07a6b25db33712f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.github.clans\fab\1.6.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.clans-fab-1.6.4_634fe66bd20d762cccf45854dcd89920163725ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sunil\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_0db2569662893d2af623e93cd5354915591f43bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_b740d1dca8211b9332262c8ede7d2e785f9f68b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c8f5d56f8f8a287c95e02c542baade138a378048">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.4.0_539c5b9eb9a115e6480d14f4a61fe7ea764b5bfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e5e8e535d15834e824817bdf5370556f62b4b2a5">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.4.0_1643a3bd5935822007f6fad8e6f15b521ad4c6e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\sunil\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_5bfdf321ae2f89b89daa392a8cfaffeb1aa73f97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b1acf13f1b7d8232af78a30833f9a966d1394c84">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.4.0_49539ff63488bc50270dcf0c106092b8c1f532af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.4.0_ae39b5ad723b66a4207b0f402db5fc3e6cd1ae06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="461e4257888c25ec05abcd91e758fe7f4949230a">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.4.0_0389530b9d3fc9dc73f54fdb0c47eab6e6e031f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b9d48baf96c7e187991a9befa833bebd181960a9">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.4.0_3598d231004c8e4890c8fb9106529898b5a92c8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c10df7344e31161852c20bb8143fc37319aa10ec">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.4.0_6002fc8e17982ed34882d8af3864689aeddab30c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="954697ee6ea7bdd596babf4f70e8b7a17ca7649e">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.4.0_9c02b2d7f08799901e59efaeaf1617aa3b31f4e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e35002351f2d415093a9b564652d4b56be6a0593">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.4.0_b6995f29679707c1039f3ee55b6cb233147d3b9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dd763e0269f2854f5828ae62dd968b80bff6a0db">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.4.0_ace49fc2f7491ba6ad2930a2bcde0a6fb6a09135\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5e04c0b3683ca45b343284d93e5594b5f9044551">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.4.0_c7700c0c22078faa5136a9dc9ca96635abc90694\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d463d8eec1e6c1feef2cec6675ccb47e37c12ee1">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.4.0_3dff80d1222b8d8da69772aa4da4ec955f919cb3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e6e2251f3d3abf4eecd6bf6919d41fc7af497852">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.4.0_70965552ce64f388b894deb3a116fa15ca575aaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_21f6f6caf0dd3c05083d041894afa610a1cae5e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4b6d9b70f93bbeb872d0948bc064ae3f3f2bcbac">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.4.0_92163dfbca4c48c31126b0b55b521df969c37829\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a432629397351d3ec7f27a23d258b229b81af08f">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.4.0_ddb92133903f799ecc7757d5edd55f4fe45b7f01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="59a16a4a42d25b2c243dd1e8aea87d06895b4a06">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.4.0_693ac054fd41f804a14c1697d2cb4581e16bef6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\libs\httpmime-4.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c7349b04e5d76895fdfc0f38bdc0699e5f6fef5a">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpmime-4.2.1_e1be32e0a0c111f21f873169b14e331506fd33e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\libs\facebooksdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5dac65cd5054ce2927e7452f98b83a4837ff9d42">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\2\facebooksdk_f49b85bc7b1a86c7707022c413c768cec9b8b155\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.github.tamir7.contacts\contacts\1.1.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dc956529c13510c059e81b1aa1fff452f3e90a88">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.tamir7.contacts-contacts-1.1.3_cc405871a53b7d1cc6f11cfec733a0cb6ef34ded\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4028d852a517babde268ceff10ac0426520e6c9d">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_dda1753f9b03c5841aeff74f7939c8d42cbfa676\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d49118ba67a101c4895f0581f17142cba85b330b">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.4.0_39a53205968f2947932358f7fbfe07fce69fd18b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.4.0_56d3e94e3fe56d9911fa6794e5c9bd46a234d450\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="736d8893fb702f128a153c9d87c9c29724d37872">
+        <dex dex="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.4.0_d9dbeea310663b397856750c48ac7f162a6d35fd\classes.dex" />
+    </item>
+
+</items>

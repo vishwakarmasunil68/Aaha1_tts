@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="top|center"
+ >
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/bored"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="222.08203dp"
+    android:layout_marginTop="270.53426dp"
+	android:src="@drawable/bored"
+	android:background="@android:color/transparent"
+    android:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="222.08203dp"
+        android:text="Bored" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/calm"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="162.08203dp"
+    android:layout_marginTop="314.12678dp"
+	android:src="@drawable/calm"
+	android:background="@android:color/transparent"
+    android:text="2" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162.08203dp"
+        android:text="calm" />
+    
+    </LinearLayout>
+    
+
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/cheerful"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="87.917960dp"
+    android:layout_marginTop="314.12678dp"
+	android:src="@drawable/cheer"
+	android:background="@android:color/transparent"
+    android:text="3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="87.917960dp"
+        android:text="cheer" />
+    </LinearLayout>
+
+
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/excited"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="27.917960dp"
+    android:layout_marginTop="270.53423dp"
+	android:src="@drawable/excited"
+	android:background="@android:color/transparent"
+    android:text="4" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27.917960dp"
+        android:text="excited" />
+    </LinearLayout>
+    
+
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/irritated"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="5.0dp"
+    android:layout_marginTop="200.00000dp"
+	android:src="@drawable/irritated"
+	android:background="@android:color/transparent"
+    android:text="5" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dp"
+        android:text="irritated" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/neutral"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="27.917960dp"
+    android:layout_marginTop="129.46576dp"
+	android:src="@drawable/netural"
+	android:background="@android:color/transparent"
+    android:text="6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27.917960dp"
+        android:text="neutral" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/relaxed"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="87.917960dp"
+    android:layout_marginTop="85.873218dp"
+	android:src="@drawable/relaxed"
+	android:background="@android:color/transparent"
+    android:text="7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="87.917960dp"
+        android:text="relaxed" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/sad"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="162.08203dp"
+    android:layout_marginTop="85.873218dp"
+	android:src="@drawable/sad"
+	android:background="@android:color/transparent"
+    android:text="8" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162.08203dp"
+        android:text="sad" />
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageButton
+    android:id="@+id/tense"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="222.08203dp"
+    android:layout_marginTop="129.46576dp"
+	android:src="@drawable/tensed"
+	android:background="@android:color/transparent"
+    android:text="9" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="222.08203dp"
+        android:text="tensed" />
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <ImageButton
+    android:id="@+id/stressed"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="245.0dp"
+    android:layout_marginTop="199.99999dp"
+	android:src="@drawable/stressed"
+	android:background="@android:color/transparent"
+    android:text="0" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245.0dp"
+        android:text="stressed" />
+    </LinearLayout>
+
+	<Button
+	    android:id="@+id/skip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:background="@android:color/transparent"
+	    android:text="skip >" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <com.motivator.support.InteractiveScrollViewLetter
+        android:id="@+id/scroll" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_letter_top"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/letter_top"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Letter no.1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Get your morning ritual in place"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <WebView
+                android:id="@+id/webview_letter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/sample_text"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:src="@drawable/letter_popup_icon" />
+            
+          <!--  <Button
+	            android:id="@+id/ok_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center"	            
+	            android:visibility="gone"
+	            android:background="@drawable/ok_transparent_small"
+	            />-->
+	          
+        </LinearLayout>
+    </LinearLayout>
+</com.motivator.support.InteractiveScrollViewLetter>
+  <com.github.clans.fab.FloatingActionButton
+			        android:id="@+id/fab"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="bottom|center"
+			        android:layout_marginBottom="8dp"
+			        android:src="@drawable/check"
+			        fab:fab_colorNormal="@color/gray_dark"
+			        fab:fab_colorPressed="@color/green"
+			        fab:fab_colorRipple="@color/green"/>
+</FrameLayout>

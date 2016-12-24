@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_ritual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Morning Ritual"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+	        android:id="@+id/tv_day1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center_horizontal"
+	        android:text="Today"
+	        android:textColor="@color/white"
+	        android:textSize="17sp"
+	        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_day_value1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+
+        <TextView
+            android:id="@+id/tv_status1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="2.%"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+	        android:id="@+id/tv_day2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center_horizontal"
+	        android:text="Yesterday"
+	        android:textColor="@color/white"
+	        android:textSize="17sp"
+	        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_day_value2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+
+        <TextView
+            android:id="@+id/tv_status2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+	        android:id="@+id/tv_day3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:gravity="center_horizontal"
+	        android:text="Today"
+	        android:textColor="@color/white"
+	        android:textSize="17sp"
+	        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_day_value3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+
+        <TextView
+            android:id="@+id/tv_status3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_green_lite"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/green_lite2" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

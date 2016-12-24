@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/imv_note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/note_img"
+        android:padding="10dp"
+        android:src="@drawable/letter_icon" />
+
+    <LinearLayout
+        android:id="@+id/ll_note"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/imv_note_icon"
+        android:background="@drawable/note_title"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tv_note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Letter No. 1"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_note2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="if you forget, you&apos;ll be tried by middy"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <include
+            android:id="@+id/ll_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/goal_status"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

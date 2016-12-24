@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_habit_top"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- Add Alarm Layout -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <ImageView
+                    android:id="@+id/imv_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/alarm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/imv_alarm"
+                    android:text="Alarm"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/frame_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imv_alarm"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/tv_add_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/frame_alarm"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="ADD NEW ALARM"
+                    android:textColor="#4da6ff" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#d3d3d3" />
+
+            <!-- Notification layout -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <ImageView
+                    android:id="@+id/imv_noficication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/noticication" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/imv_noficication"
+                    android:text="Notification Style"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imv_full_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/imv_noficication"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/full_screen" />
+
+                <TextView
+                    android:id="@+id/tv_full_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/imv_full_screen"
+                    android:layout_below="@id/imv_full_screen"
+                    android:text="Full Screen"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imv_full_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/imv_full_screen"
+                    android:layout_below="@id/tv_full_screen"
+                    android:src="@drawable/not_selected" />
+
+                <ImageView
+                    android:id="@+id/imv_simple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/imv_noficication"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/simple" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/imv_simple"
+                    android:layout_below="@id/imv_full_screen"
+                    android:text="Simple Screen"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imv_simple_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/imv_simple"
+                    android:layout_below="@id/tv_full_screen"
+                    android:src="@drawable/selected" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#d3d3d3" />
+
+            <!-- Setting layout -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+               <!--  <TextView
+                    android:id="@+id/tv_urgency_swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:text="Urgency Swipe"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chk_urgency_swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_urgency_swipe" />
+
+                <ImageView
+                    android:id="@+id/imv_urgency_swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_urgency_swipe"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/chk_urgency_swipe"
+                    android:src="@drawable/info_alarm" /> -->
+
+                <TextView
+                    android:id="@+id/tv_announce_first_habit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:text="Announce First Habit"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chk_announce_first_habit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_announce_first_habit" />
+
+                <ImageView
+                    android:id="@+id/imv_announce_first_habit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_announce_first_habit"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/chk_announce_first_habit"
+                    android:src="@drawable/info_alarm" />
+
+                <TextView
+                    android:id="@+id/tv_ring_in_silent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/chk_announce_first_habit"
+                    android:padding="5dp"
+                    android:text="Ring In Silent Mode"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chk_ring_in_silent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/chk_announce_first_habit" />
+
+                <ImageView
+                    android:id="@+id/imv_ring_in_silent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_ring_in_silent"
+                    android:layout_below="@id/chk_announce_first_habit"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/chk_ring_in_silent"
+                    android:src="@drawable/info_alarm" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#d3d3d3" />
+
+            <!-- Habit List layout -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imv_habit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/habbit_icon" />
+
+                <TextView
+                    android:id="@+id/tv_Habit_ritual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imv_habit_icon"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/imv_habit_icon"
+                    android:text="Habit"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/frame_habit_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Habit_ritual"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#d3d3d3" />
+
+            <!-- Ritual Edit -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imv_ritual_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/journey_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imv_ritual_setting"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/imv_ritual_setting"
+                    android:text="Ritual Setting"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imv_ritual_setting"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_ritual_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Ritual Name"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/edt_ritual_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                		android:singleLine="true"
+                        android:hint="change ritual name"
+                        android:textColor="#000000" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Ritual Image"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imv_ritual_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ritual_top" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

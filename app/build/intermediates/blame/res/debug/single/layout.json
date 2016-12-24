@@ -1,0 +1,614 @@
+[
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\time_line.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\time_line.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit_list_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit_list_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\set_habit_time.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\set_habit_time.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_mini_controller.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_habits.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\my_habits.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\calendar_on_click.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\calendar_on_click.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_relax_movie.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\frag_relax_movie.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_time_picker_dialog.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_row_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_tracks_chooser_dialog_row_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\motivator.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\motivator.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_coverflow.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\item_coverflow.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\acitivity_audio_player.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\acitivity_audio_player.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rituals_home_img.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\rituals_home_img.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_activity_notification_full.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_activity_notification_full.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\journey_step1_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\journey_step1_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ttstesting_file.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_ttstesting_file.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_activity_fragment.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_activity_fragment.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_habit.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\add_habit.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\click_on_calendar_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\click_on_calendar_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reminder_full_screen.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\reminder_full_screen.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\new_ritual.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\new_ritual.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_middle_choice_answer.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_middle_choice_answer.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_last_choice_answer.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_last_choice_answer.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_time_header_label.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_time_header_label.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_doctor_visit.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_doctor_visit.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\home_fragment.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_list_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_first_choice_answer.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_first_choice_answer.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\kick_start.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\kick_start.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\registration.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\registration.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_activity_notification_mini.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_activity_notification_mini.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_2.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_2.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\journey_events.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\journey_events.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\today_timeline.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\today_timeline.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\letter.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\letter.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_3.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_3.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit_frag.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit_frag.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_relaxation_home.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_relaxation_home.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_google_sign.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_google_sign.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_activity.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\chat.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_main_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_main_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\layout\\place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\layout\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contacts.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_contacts.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_time_title_view.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_time_title_view.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_activity_survey.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_activity_survey.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\success_rate.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\success_rate.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\first_walkthrough.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\first_walkthrough.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_data_entry.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_data_entry.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_calendar_weeks_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\custom_calendar_weeks_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_date_picker_dialog.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_date_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_master.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_master.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chapter.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\chapter.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_google_signin.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_google_signin.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewpager_adapter.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\viewpager_adapter.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\journey_all_step.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\journey_all_step.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_5.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_5.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\feedback.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\feedback.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\one_time_action.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\one_time_action.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\update_email_dialog.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\update_email_dialog.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_calendar_title_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\custom_calendar_title_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_symptoms_fragment.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_symptoms_fragment.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_year_label_text_view.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_year_label_text_view.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_6.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_6.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_intro_overlay.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_intro_overlay.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reg_frag.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\reg_frag.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\frag_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_item_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\grid_item_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\user_habit_list_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\user_habit_list_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash_screen.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\splash_screen.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_click_on_calendar_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_click_on_calendar_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_chooser_dialog.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\layout\\mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag_habit_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\frag_habit_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_date_picker_selected_date.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_date_picker_selected_date.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\goal.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\goal.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chat_next.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\chat_next.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alarm_frag.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\alarm_frag.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_diet_screen.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_diet_screen.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_date_picker_view_animator.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_date_picker_view_animator.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_help_text.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast-framework\\9.4.0\\res\\layout\\cast_help_text.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_mixpanel_android_question_card.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.mixpanel.android\\mixpanel-android\\4.9.3\\res\\layout\\com_mixpanel_android_question_card.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_date_picker_header_view.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_date_picker_header_view.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_relaxation_zone_video_player.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_relaxation_zone_video_player.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ritual_grid_cell.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\ritual_grid_cell.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\myhabit_avs.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\myhabit_avs.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_1.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_1.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.4.0\\res\\layout\\place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ritual_setting.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\ritual_setting.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_kick_testing.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_kick_testing.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_calendar_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\custom_calendar_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_profile.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reminder.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\reminder.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_habit_status.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\my_habit_status.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ritual_grid.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\ritual_grid.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_frag.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\notification_frag.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\goal_status.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\goal_status.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\splash.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit_time_line_cell.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit_time_line_cell.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_drag_drop.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_drag_drop.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_exercise_fragment.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_exercise_fragment.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\care_plan_masala.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\care_plan_masala.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\time_line_list.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\time_line_list.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tts_testinh.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\tts_testinh.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mdtp_done_button.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\com.wdullaer\\materialdatetimepicker\\2.5.0\\res\\layout\\mdtp_done_button.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\share_on_fb.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\share_on_fb.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mood.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\activity_mood.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habit_completion.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\layout\\habit_completion.xml"
+    },
+    {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\roboto_calendar_week_4.xml",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\exploded-aar\\Aaha1\\CustomCalendarLibrary\\unspecified\\res\\layout\\roboto_calendar_week_4.xml"
+    }
+]

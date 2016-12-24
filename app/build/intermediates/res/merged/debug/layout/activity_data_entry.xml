@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:background="@drawable/data_entry_activity"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="9"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="3">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/activity_data_entry"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Activity"
+                            android:textColor="#FFFFFF"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/activity_et"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            style="@style/editTextClassic"
+                            android:hint="No. Of Minutes"
+                            android:inputType="number"
+                            android:textSize="13sp"
+                            android:textColor="#FA9925"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--for glucose card-->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/data_entry_blood_glucose"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="9"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="3">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/blood_glucose_data_entry"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Glucose"
+                            android:textColor="#FFFFFF"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/glucose_et"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            style="@style/editTextClassic"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:hint="Blood Glucose number"
+                            android:textSize="13sp"
+                            android:textColor="#FA9925"
+                            />
+                        <Spinner
+                            android:id="@+id/glucose_spinner"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:entries="@array/Spinner_glucose_items"
+                            android:prompt="@string/glucose_spinner_prompt"
+                            style="@style/spinnerClassic"
+                            ></Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--for food card-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/data_entry_food"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="9"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="3">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/food_data_entry"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food"
+                            android:textColor="#FFFFFF"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/food_et"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            style="@style/editTextClassic"
+                            android:hint="What do you eat?"
+                            android:textSize="13sp"
+                            android:textColor="#FA9925"
+                            />
+                        <EditText
+                            android:id="@+id/food_quantity_et"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            style="@style/editTextClassic"
+                            android:textSize="13sp"
+                            android:textColor="#FA9925"
+                            android:hint="How much?"
+                            android:inputType="number"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Medication-->
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/data_entry_medication"
+                android:layout_weight="1"
+                android:layout_marginBottom="50dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="9"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="3">
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/medication_data_entry"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medication"
+                            android:textColor="#FFFFFF"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+                        <EditText
+                            android:id="@+id/medicine_et"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            style="@style/editTextClassic"
+                            android:hint="Medicine"
+                            android:textSize="13sp"
+                            android:textColor="#FA9925"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/medicine_quantity_et"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:hint="quantity"
+                                style="@style/editTextClassic"
+                                android:textColor="#FA9925"
+                                android:textSize="13sp"
+                                ></EditText>
+
+                            <Spinner
+                                android:id="@+id/spinner_medicine_type"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:entries="@array/medicine_type"
+                                style="@style/spinnerClassic"
+                                android:layout_marginTop="5dp"
+                                ></Spinner>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/check"
+        fab:fab_colorNormal="@color/gray_dark"
+        fab:fab_colorPressed="@color/green"
+        fab:fab_colorRipple="@color/green"/>
+</FrameLayout>

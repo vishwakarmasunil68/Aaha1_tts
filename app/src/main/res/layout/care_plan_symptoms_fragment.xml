@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF1"
+    android:orientation="vertical" >
+     <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"              
+            android:orientation="vertical"  
+            android:weightSum="4"      
+            >
+        	<LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="3"            
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/joint_pain_icon"   
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"                 
+                    />
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Joint Pain"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+                             
+                 <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                    
+                    <Button 
+                        android:id="@+id/joint_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/checked_chk"
+                        
+                        />
+                    
+                </LinearLayout>  
+                                                         
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="3"            
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fatigue_icon"   
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"                 
+                    />
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Fatigue"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />             
+                <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                                       
+                    
+                     <Button 
+                        android:id="@+id/fatigue_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/checked_chk"
+                        
+                        />
+                    
+                </LinearLayout>               
+                                                         
+            </LinearLayout>
+           	
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="3"          
+                android:layout_weight="1"  
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <ImageView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/lackofsleep_icon"   
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"                 
+                    />
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Lack of Sleep"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+           
+                 <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                    
+                    <Button 
+                        android:id="@+id/sleep_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/checked_chk"
+                        
+                        />
+                    
+                </LinearLayout>  
+                                                         
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"    
+                android:layout_marginBottom="5dp"
+                android:weightSum="2"      
+                android:layout_weight="1"      
+                
+                >
+                 <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center"
+                	android:gravity="left|center"
+                    >
+                <Button
+                    android:id="@+id/skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/small_orange_button"
+                    android:text="Skip"
+                    android:layout_marginLeft="20dp"
+                    />
+                </LinearLayout>
+                
+                 <LinearLayout 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                	android:gravity="right|center"
+                    >
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/small_green_button"
+                    android:text="Done"
+                    android:layout_marginRight="20dp"
+                    />
+                </LinearLayout>
+                                                         
+            </LinearLayout>
+            
+          </LinearLayout>
+    
+
+</LinearLayout>

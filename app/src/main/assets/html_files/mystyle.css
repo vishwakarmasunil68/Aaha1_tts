@@ -1,0 +1,14 @@
+@font-face {
+    font-family: MyFont;
+    src: url("file:///android_asset/fonts/Philosopher-Regular.ttf")
+}
+body {
+    font-family: MyFont;
+    text-align: left;
+    //font-size: medium;
+    //text-align: justify;
+}
+h1, h2, h3{
+text-align: left;
+font-family: MyFont;
+}
