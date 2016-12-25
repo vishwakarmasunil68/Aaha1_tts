@@ -5,22 +5,22 @@
     density="400dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="151188611860124"
+    timestamp="152310061811235"
     token="-6483420415354124193"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2022" />
+        duration="2584" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="61" />
+        duration="36" />
     <task
         name="verifier"
-        duration="39" />
+        duration="19" />
 
     <artifact
         location="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
@@ -41,7 +41,7 @@
             type="DEX" />
     </build>
     <build
-        timestamp="151188611860124"
+        timestamp="152310061811235"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"

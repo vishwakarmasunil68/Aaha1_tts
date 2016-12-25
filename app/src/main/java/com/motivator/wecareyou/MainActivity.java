@@ -342,7 +342,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected void onStart() {
         super.onStart();
         GetData gt=new GetData(this);
-        gt.GetTableJourney_Rows(TableAttributes.TABLE_REMINDER_DESC);
+        gt.GetTableJourney_Rows(TableAttributes.TABLE_JOURNEY);
 
         Log.d("database","Reminder Description");
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_HBIT_TIMELINE);
