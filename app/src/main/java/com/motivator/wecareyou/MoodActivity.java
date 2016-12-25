@@ -169,54 +169,8 @@ public class MoodActivity extends Activity {
 
     public void playMoodBasedVoice() {
         if (mood.toLowerCase().contains("tense") || mood.toLowerCase().contains("irritated") || mood.toLowerCase().contains("sad")) {
-//            File[] tensed_file_path=new File(FileUtils.TENSED_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] sad_file_path=new File(FileUtils.SAD_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] irritated_file_path=new File(FileUtils.IRRITATED_MOOD_VOICE_FILE_PATH).listFiles();
-
-//            List<File> files=new ArrayList<>();
-//            for(File f:tensed_file_path){
-//                files.add(f);
-//            }
-//            for(File f:sad_file_path){
-//                files.add(f);
-//            }
-//            for(File f:irritated_file_path){
-//                files.add(f);
-//            }
-//            String[] list_strings = getResources().getStringArray(R.array.moodtsi);
             PlayMoodVoiceFilesforTIS(list_mood_tsi);
         } else {
-//            File[] relaxed_file_path=new File(FileUtils.RELAXED_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] stressed_file_path=new File(FileUtils.STRESSED_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] bored_file_path=new File(FileUtils.BORED_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] calm_file_path=new File(FileUtils.CALM_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] cheer_file_path=new File(FileUtils.CHEER_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] excited_file_path=new File(FileUtils.EXCITED_MOOD_VOICE_FILE_PATH).listFiles();
-//            File[] neutral_file_path=new File(FileUtils.NEUTRAL_MOOD_VOICE_FILE_PATH).listFiles();
-//
-//            List<File> files=new ArrayList<>();
-//            for(File f:relaxed_file_path){
-//                files.add(f);
-//            }
-//            for(File f:stressed_file_path){
-//                files.add(f);
-//            }
-//            for(File f:calm_file_path){
-//                files.add(f);
-//            }
-//            for(File f:cheer_file_path){
-//                files.add(f);
-//            }
-//            for(File f:excited_file_path){
-//                files.add(f);
-//            }
-//            for(File f:neutral_file_path){
-//                files.add(f);
-//            }
-//            for(File f:bored_file_path){
-//                files.add(f);
-//            }
-//            String[] list_strings = getResources().getStringArray(R.array.moodtsielse);
             playMoodVoiceForOthers(list_mood_tsi_else);
 
         }
