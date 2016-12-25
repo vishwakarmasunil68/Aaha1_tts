@@ -648,7 +648,7 @@ public class NewDataBaseHelper{
 				DataBaseHelper1.REMINDER_DESC_STAMP,
 				DataBaseHelper1.REMINDER_DESC_REMINDER_ID
 		};
-		Cursor cursor=db.query(DataBaseHelper1.TABLE_REMINDER_DESC, columns, DataBaseHelper1.REMINDER_DESC_ID+" = '"+reminder_id1+"'", null, null, null, null);
+		Cursor cursor=db.query(DataBaseHelper1.TABLE_REMINDER_DESC, columns, DataBaseHelper1.REMINDER_DESC_REMINDER_ID+" = '"+reminder_id1+"'", null, null, null, null);
 		ReminderDescPOJO obj=new ReminderDescPOJO();
 		while(cursor.moveToNext()){
 			String REMINDER_DESC_ID=cursor.getString(1);

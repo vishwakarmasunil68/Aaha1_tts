@@ -819,7 +819,7 @@ public class KickStart extends FragmentActivity implements View.OnClickListener,
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
 
 
-                    PrefData.setStringPref(getApplicationContext(), PrefData.USER_ID,"pro_id");
+                    PrefData.setStringPref(getApplicationContext(), PrefData.USER_ID,jsonObject1.optString("pro_id"));
                     PrefData.setStringPref(getApplicationContext(), PrefData.NAME_KEY, user_name);
                     PrefData.setStringPref(getApplicationContext(), PrefData.AGE_KEY, AppsConstant.user_age);
                     PrefData.setStringPref(getApplicationContext(), PrefData.HEALTH_KEY, AppsConstant.user_health);

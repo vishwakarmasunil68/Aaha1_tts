@@ -208,17 +208,17 @@ public class PutData {
                         String reminder_desc5 = c.getString(9);
                         String reminder_desc6 = c.getString(10);
 
-                        Log.d(TAG, "h_id:-" + h_id);
-                        Log.d(TAG, "habit:-" + habit);
-                        Log.d(TAG, "description:-" + description);
-                        Log.d(TAG, "benefits:-" + benefits);
-                        Log.d(TAG, "habit_time:-" + habit_time);
-                        Log.d(TAG, "reminder_desc1:-" + reminder_desc1);
-                        Log.d(TAG, "reminder_desc2:-" + reminder_desc2);
-                        Log.d(TAG, "reminder_desc3:-" + reminder_desc3);
-                        Log.d(TAG, "reminder_desc4:-" + reminder_desc4);
-                        Log.d(TAG, "reminder_desc5:-" + reminder_desc5);
-                        Log.d(TAG, "reminder_desc6:-" + reminder_desc6);
+//                        Log.d(TAG, "h_id:-" + h_id);
+//                        Log.d(TAG, "habit:-" + habit);
+//                        Log.d(TAG, "description:-" + description);
+//                        Log.d(TAG, "benefits:-" + benefits);
+//                        Log.d(TAG, "habit_time:-" + habit_time);
+//                        Log.d(TAG, "reminder_desc1:-" + reminder_desc1);
+//                        Log.d(TAG, "reminder_desc2:-" + reminder_desc2);
+//                        Log.d(TAG, "reminder_desc3:-" + reminder_desc3);
+//                        Log.d(TAG, "reminder_desc4:-" + reminder_desc4);
+//                        Log.d(TAG, "reminder_desc5:-" + reminder_desc5);
+//                        Log.d(TAG, "reminder_desc6:-" + reminder_desc6);
 
                         new WebServices().new AddCustomHabitService(h_id, habitName, description, benefits, habit_time,
                                 reminder_desc1, reminder_desc2, reminder_desc3, reminder_desc4, reminder_desc5, reminder_desc6).execute();

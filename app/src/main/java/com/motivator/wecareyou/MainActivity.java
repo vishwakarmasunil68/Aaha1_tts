@@ -50,7 +50,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.Random;
 
 
@@ -343,7 +342,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected void onStart() {
         super.onStart();
         GetData gt=new GetData(this);
-        gt.GetTableJourney_Rows(TableAttributes.TABLE_TIMELINE);
+        gt.GetTableJourney_Rows(TableAttributes.TABLE_REMINDER_DESC);
+
         Log.d("database","Reminder Description");
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_HBIT_TIMELINE);
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_HBIT_TIMELINE);

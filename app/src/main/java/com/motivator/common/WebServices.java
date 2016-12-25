@@ -59,8 +59,13 @@ public class WebServices {
     //"http://oldmaker.com/healthapp/hooks/getImages.php";
     public static final String Custom_habit_img_full = "https://api.gettyimages.com/v3/search/images?fields=id,title,comp,referral_destinations&page_size=6&sort_order=most_popular&orientations=Vertical&phrase=";
     public static final String MUSIC_FILES_URL = "http://www.funhabits.co/aaha/getvideocategory.php";
+
+
     public static final String HABIT_SAVE_URL = "http://www.funhabits.co/aaha/tableuserhabits.php";
-    public static final String UPDATE_HABIT_URL = "http://www.funhabits.co/aaha/tableuserhabits.php";
+    public static final String UPDATE_HABIT_URL = "http://www.funhabits.co/aaha/updateusertablehabits.php";
+    public static final String DELETE_HABIT_URL = "http://www.funhabits.co/aaha/deletetableuserhabits.php";
+
+
     public static final String ADD_HABIT_TIMELINE_URL = "http://www.funhabits.co/aaha/addtimeline.php";
     public static final String UPDATE_HABIT_TIMELINE_URL = "http://www.funhabits.co/aaha/updatetimeline.php";
     public static final String ADD_CUSTOM_HABIT_URL = "http://www.funhabits.co/aaha/customhabits.php";
@@ -69,6 +74,7 @@ public class WebServices {
     public static final String UPDATE_REMINDER_DESC_URL = "http://www.funhabits.co/aaha/updatedescreminder.php";
     public static final String ADD_REMINDER_URL = "http://www.funhabits.co/aaha/add_reminder.php";
     public static final String UPDATE_REMINDER_URL = "http://www.funhabits.co/aaha/updatereminder.php";
+    public static final String DELETE_REMINDER_URL = "http://www.funhabits.co/aaha/deletereminder.php";
     public static final String ADD_JOURNEY_URL = "http://www.funhabits.co/aaha/add_journey.php";
     public static final String UPDATE_JOURNEY_URL = "http://www.funhabits.co/aaha/update_journey.php";
     public static final String ADD_JOURNEY_HABIT_URL= "http://www.funhabits.co/aaha/add_journey_habits.php";
@@ -586,6 +592,66 @@ public class WebServices {
                     ", table_user_habits_reminder_next_desc='" + table_user_habits_reminder_next_desc + '\'' +
                     ", table_user_habits_habit_added_on='" + table_user_habits_habit_added_on + '\'' +
                     '}';
+        }
+    }
+
+
+    //delete habit service
+
+
+    public class DeleteHabitService extends AsyncTask<String, Void, String> {
+        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+        String jResult;
+        //        ProgressDialog progressDialog;
+        String table_user_habits_id;
+
+        public DeleteHabitService(
+                String table_user_habits_id
+        ) {
+            this.table_user_habits_id=table_user_habits_id;
+            Log.d(TAG, this.toString());
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+//            progressDialog = ProgressDialog.show(mContext, "Please wait...", "Adding Habit");
+//            progressDialog.setCancelable(true);
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            nameValuePairs.add(new BasicNameValuePair("table_user_habits_id", table_user_habits_id));
+
+            try {
+                jResult = WebServices.httpCall(WebServices.DELETE_HABIT_URL, nameValuePairs);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return jResult;
+        }
+
+        @Override
+        protected void onPostExecute(String aVoid) {
+            super.onPostExecute(aVoid);
+//            if (progressDialog != null)
+//                progressDialog.dismiss();
+            try {
+                Log.d(TAG, aVoid);
+                JSONObject jsonObject = new JSONObject(aVoid);
+                String success = jsonObject.optString("success");
+                if (success.equals("true")) {
+
+                    JSONObject result=jsonObject.optJSONObject("result");
+
+
+                } else {
+                    Toast.makeText(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Log.d(TAG, e.toString());
+            }
         }
     }
 
@@ -1152,7 +1218,7 @@ public class WebServices {
         @Override
         protected String doInBackground(String... params) {
 
-            nameValuePairs.add(new BasicNameValuePair("rem_user_id", PrefData.getStringPref(mContext, PrefData.USER_ID)));
+            nameValuePairs.add(new BasicNameValuePair("rem_user_id", rem_user_id));
             nameValuePairs.add(new BasicNameValuePair("rem_rem_id", rem_rem_id));
             nameValuePairs.add(new BasicNameValuePair("rem_user_name", rem_user_name));
             nameValuePairs.add(new BasicNameValuePair("rem_time", rem_time));
@@ -1182,7 +1248,7 @@ public class WebServices {
                 } else {
                     Log.d(TAG, "update reminder service:-failed");
 
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "Reminder updation failed.", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1204,6 +1270,66 @@ public class WebServices {
                     '}';
         }
     }
+    //delete reminder
+
+    public class DeleteReminderService extends AsyncTask<String, Void, String> {
+        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+        String jResult;
+
+        String rem_id;
+
+        public DeleteReminderService(String rem_id) {
+            this.rem_id = rem_id;
+
+
+            Log.d(TAG, "update reminder:-" + this.toString());
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+//            progressDialog = ProgressDialog.show(mContext, "Please wait...", "Adding Habit");
+//            progressDialog.setCancelable(true);
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            nameValuePairs.add(new BasicNameValuePair("rem_id", rem_id));
+
+
+            try {
+                jResult = WebServices.httpCall(WebServices.DELETE_REMINDER_URL, nameValuePairs);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return jResult;
+        }
+
+        @Override
+        protected void onPostExecute(String aVoid) {
+            super.onPostExecute(aVoid);
+//            if (progressDialog != null)
+//                progressDialog.dismiss();
+            try {
+                Log.d(TAG, aVoid);
+                JSONObject jsonObject = new JSONObject(aVoid);
+                String success = jsonObject.optString("success");
+                if (success.equals("true")) {
+                    Log.d(TAG, "update reminder service:-success:-" + jsonObject.toString());
+                } else {
+                    Log.d(TAG, "update reminder service:-failed");
+
+                    Toast.makeText(mContext, "Reminder Deletion failed.", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Log.d(TAG, e.toString());
+            }
+        }
+    }
+
+
+
 
 
     public class AddReminderDescService extends AsyncTask<String, Void, String> {
@@ -1347,14 +1473,14 @@ public class WebServices {
         @Override
         protected String doInBackground(String... params) {
 
-            nameValuePairs.add(new BasicNameValuePair("rem_desc_user_id", PrefData.getStringPref(mContext, PrefData.USER_ID)));
+            nameValuePairs.add(new BasicNameValuePair("rem_desc_user_id", rem_desc_user_id));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_user_name", rem_desc_user_name));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_time", rem_desc_time));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_day", rem_desc_day));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_on_off", rem_desc_on_off));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_stamp", rem_desc_stamp));
             nameValuePairs.add(new BasicNameValuePair("rem_desc_rem_id", rem_desc_rem_id));
-            nameValuePairs.add(new BasicNameValuePair("rem_desc_id", rem_desc_rem_id));
+            nameValuePairs.add(new BasicNameValuePair("rem_desc_id", rem_desc_id));
             try {
                 jResult = WebServices.httpCall(WebServices.UPDATE_REMINDER_DESC_URL, nameValuePairs);
             } catch (Exception e) {
@@ -1374,32 +1500,8 @@ public class WebServices {
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
-
-
-//                    String rem_desc_id=jsonObject1.optString("rem_desc_id");
-//                    String rem_desc_user_id=jsonObject1.optString("rem_desc_user_id");
-//                    String rem_desc_user_name=jsonObject1.optString("rem_desc_user_name");
-//                    String rem_desc_time=jsonObject1.optString("rem_desc_time");
-//                    String rem_desc_day=jsonObject1.optString("rem_desc_day");
-//                    String rem_desc_on_off=jsonObject1.optString("rem_desc_on_off");
-//                    String rem_desc_stamp=jsonObject1.optString("rem_desc_stamp");
-//                    String rem_desc_rem_id=jsonObject1.optString("rem_desc_rem_id");
-//
-//                    ReminderDescPOJO pojo=new ReminderDescPOJO();
-//                    pojo.setRem_desc_id(rem_desc_id);
-//                    pojo.setRem_desc_user_id(rem_desc_user_id);
-//                    pojo.setRem_desc_user_name(rem_desc_user_name);
-//                    pojo.setRem_desc_time(rem_desc_time);
-//                    pojo.setRem_desc_day(rem_desc_day);
-//                    pojo.setRem_desc_on_off(rem_desc_on_off);
-//                    pojo.setRem_desc_stamp(rem_desc_stamp);
-//                    pojo.setRem_desc_rem_id(rem_desc_rem_id);
-//
-//                    NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
-//                    helper.insertreminderDescData(pojo);
-
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "Reminder Desc Updation Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

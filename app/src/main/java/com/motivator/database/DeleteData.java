@@ -1,14 +1,17 @@
 package com.motivator.database;
 
-import java.util.Date;
-
-import com.motivator.common.DateUtility;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
+import com.motivator.common.DateUtility;
+import com.motivator.common.WebServices;
+import com.motivator.model.ReminderPOJO;
+import com.motivator.model.UserHabitTable;
+
+import java.util.Date;
 
 public class DeleteData {
 
@@ -29,9 +32,20 @@ public class DeleteData {
 		try {
 			res = _database.delete(TableAttributes.TABLE_USER_HABIT, TableAttributes.H_ID+"=? AND "+TableAttributes.USER_NAME+" =? ",
 					new String[] {String.valueOf(h_id), uName});
+
+
+			NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
+			UserHabitTable table=helper.getUserHabitData(h_id+"");
+			if(table!=null){
+				new WebServices().new DeleteHabitService(table.getTable_user_habits_id()).execute();
+			}
+
+
 			// Log.i("Number of rows deleted : ", "" + res);
-			if(res>0)
+			if(res>0) {
 				removeHabitFromTimeLine(h_id, uName, type);
+
+			}
 		} catch (Exception e) {
 			res = 0;
 			Log.e("Error in while deleting", e.toString());
@@ -101,6 +115,12 @@ public class DeleteData {
 		try {
 			res = _database.delete(TableAttributes.TABLE_REMINDER, TableAttributes.REMINDER_ID+"=?",new String[] {String.valueOf(r_id)});
 			// Log.i("Number of rows deleted : ", "" + res);
+			NewDataBaseHelper helper = new NewDataBaseHelper(mContext);
+			ReminderPOJO pojo = helper.getReminderData(String.valueOf(r_id),PrefData.getStringPref(mContext, PrefData.NAME_KEY));
+			if(pojo!=null) {
+				new WebServices().new DeleteReminderService(pojo.getRem_id()).execute();
+			}
+
 		} catch (Exception e) {
 			res = 0;
 			Log.e("Error in while deleting", e.toString());

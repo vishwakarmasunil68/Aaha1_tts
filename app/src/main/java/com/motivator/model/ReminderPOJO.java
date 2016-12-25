@@ -16,17 +16,7 @@ public class ReminderPOJO {
     String reminder_ritual_type;
     String reminder_snooze_time;
 
-    @Override
-    public String toString() {
-        return "ReminderPOJO{" +
-                "reminder_id='" + reminder_id + '\'' +
-                ", reminder_user_id='" + reminder_user_id + '\'' +
-                ", reminder_user_name='" + reminder_user_name + '\'' +
-                ", reminder_time='" + reminder_time + '\'' +
-                ", reminder_ritual_type='" + reminder_ritual_type + '\'' +
-                ", reminder_snooze_time='" + reminder_snooze_time + '\'' +
-                '}';
-    }
+
     public String getRem_id() {
         return rem_id;
     }
@@ -81,5 +71,18 @@ public class ReminderPOJO {
 
     public void setReminder_snooze_time(String reminder_snooze_time) {
         this.reminder_snooze_time = reminder_snooze_time;
+    }
+
+    @Override
+    public String toString() {
+        return "ReminderPOJO{" +
+                "rem_id='" + rem_id + '\'' +
+                ", reminder_id='" + reminder_id + '\'' +
+                ", reminder_user_id='" + reminder_user_id + '\'' +
+                ", reminder_user_name='" + reminder_user_name + '\'' +
+                ", reminder_time='" + reminder_time + '\'' +
+                ", reminder_ritual_type='" + reminder_ritual_type + '\'' +
+                ", reminder_snooze_time='" + reminder_snooze_time + '\'' +
+                '}';
     }
 }
