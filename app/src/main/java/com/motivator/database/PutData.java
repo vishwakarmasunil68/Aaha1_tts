@@ -305,6 +305,29 @@ public class PutData {
         return res;
     }
 
+    public long addHabitFromGet(String user_name, String h_id, String ritual_type, String user_habit_time,
+                                String is_habit_completed, String habit_priority,
+                                String habit_completed_on,
+                                String reminder_next_desc, String habit_added_on){
+        long res=-1;
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.USER_NAME, user_name);
+        values.put(TableAttributes.H_ID, h_id);
+        values.put(TableAttributes.RITUAL_TYPE, ritual_type);
+        values.put(TableAttributes.USER_HABIT_TIME, user_habit_time);
+        values.put(TableAttributes.IS_HABIT_COMPLETED, is_habit_completed);
+        values.put(TableAttributes.HABIT_PRORIOTY, habit_priority);
+        values.put(TableAttributes.HABIT_COMPLETED_ON, habit_completed_on);
+        values.put(TableAttributes.REMINDER_NEXT_DESC, reminder_next_desc);
+        values.put(TableAttributes.HABIT_ADDED_ON, habit_added_on);
+
+        try {
+            res = _database.insert(TableAttributes.TABLE_USER_HABIT, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
 
     private long addHabitinData(String username, int h_id, String type, String time, int habit_total) {
         Date today = new Date();
@@ -557,6 +580,70 @@ public class PutData {
         _database.close(); // Closing database connection
         return res;
 
+    }
+
+    public long addTimeLineFromGet(String timeline_user_name,String timeline_ritual_type,
+            String timeline_dateof_status,String timeline_total_habits,String timeline_habitcompleted){
+
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.USER_NAME, timeline_user_name);
+        values.put(TableAttributes.RITUAL_TYPE, timeline_ritual_type);
+        values.put(TableAttributes.DATE_OF_STATUS, timeline_dateof_status);
+        values.put(TableAttributes.TOTAL_HABIT, timeline_total_habits);
+        values.put(TableAttributes.HABIT_COMPLETED, timeline_habitcompleted);
+
+        try {
+            res = _database.insert(TableAttributes.TABLE_TIMELINE, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+    public long addReminderFromGet(String rem_rem_id,String rem_user_name,String rem_time,
+                                   String rem_ritual_type,String rem_snooze_time){
+
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.REMINDER_ID, rem_rem_id);
+        values.put(TableAttributes.USER_NAME, rem_user_name);
+        values.put(TableAttributes.REMINDER_TIME, rem_time);
+        values.put(TableAttributes.RITUAL_TYPE, rem_ritual_type);
+        values.put(TableAttributes.SNOOZE_TIME, rem_snooze_time);
+
+        try {
+            res = _database.insert(TableAttributes.TABLE_REMINDER, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+
+    public long addReminderDescFromGet(String rem_desc_user_name,String rem_desc_time,String rem_desc_day,
+                                   String rem_desc_on_off,
+                                   String rem_desc_stamp,String rem_desc_rem_id){
+
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.REMINDER_ID, rem_desc_rem_id);
+        values.put(TableAttributes.USER_NAME, rem_desc_user_name);
+        values.put(TableAttributes.REMINDER_TIME, rem_desc_time);
+        values.put(TableAttributes.REMINDER_DAY, rem_desc_day);
+        values.put(TableAttributes.REMINDER_ON_OFF, rem_desc_on_off);
+        values.put(TableAttributes.REMINDER_STAMP, rem_desc_stamp);
+
+
+        try {
+            res = _database.insert(TableAttributes.TABLE_REMINDER_DESC, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
     }
 
 }

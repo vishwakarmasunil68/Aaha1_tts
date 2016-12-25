@@ -1741,36 +1741,9 @@ public class WebServices {
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
-//                    String j_id=jsonObject1.optString("j_id");
-//                    String j_user_id=jsonObject1.optString("j_user_id");
-//                    String j_user_name=jsonObject1.optString("j_user_name");
-//                    String j_journey_name=jsonObject1.optString("j_journey_name");
-//                    String j_total_events=jsonObject1.optString("j_total_events");
-//                    String j_total_events_achived=jsonObject1.optString("j_total_events_achived");
-//                    String j_status_step1=jsonObject1.optString("j_status_step1");
-//                    String j_status_step2=jsonObject1.optString("j_status_step2");
-//                    String j_status_step3=jsonObject1.optString("j_status_step3");
-//                    String j_status_step4=jsonObject1.optString("j_status_step4");
-//                    String j_status_step5=jsonObject1.optString("j_status_step5");
-//
-//                    JourneyPOJO obj=new JourneyPOJO();
-//                    obj.setJ_id(j_id);
-//                    obj.setJ_user_id(j_user_id);
-//                    obj.setJ_user_name(j_user_name);
-//                    obj.setJ_journey_name(j_journey_name);
-//                    obj.setJ_total_events(j_total_events);
-//                    obj.setJ_total_events_achived(j_total_events_achived);
-//                    obj.setJ_status_step1(j_status_step1);
-//                    obj.setJ_status_step2(j_status_step2);
-//                    obj.setJ_status_step3(j_status_step3);
-//                    obj.setJ_status_step4(j_status_step4);
-//                    obj.setJ_status_step5(j_status_step5);
-
-//                    NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
-//                    helper.insertJourneyData(obj);
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, "Journey updation failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -2026,38 +1999,6 @@ public class WebServices {
                 JSONObject jsonObject = new JSONObject(aVoid);
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
-//
-//                    JSONObject jsonObject1 = jsonObject.optJSONObject("result");
-//                    String j_h_id=jsonObject1.optString("j_h_id");
-//                    String j_h_user_id=jsonObject1.optString("j_h_user_id");
-//                    String j_h_user_name=jsonObject1.optString("j_h_user_name");
-//                    String j_h_journey_name=jsonObject1.optString("j_h_journey_name");
-//                    String j_h_hid=jsonObject1.optString("j_h_hid");
-//                    String j_h_letter_reap=jsonObject1.optString("j_h_letter_reap");
-//                    String j_h_challenge_acc=jsonObject1.optString("j_h_challenge_acc");
-//                    String j_h_goal_completed=jsonObject1.optString("j_h_goal_completed");
-//                    String j_h_action_done=jsonObject1.optString("j_h_action_done");
-//                    String j_h_motivation=jsonObject1.optString("j_h_motivation");
-//                    String j_h_golden_chllenge=jsonObject1.optString("j_h_golden_chllenge");
-//                    String j_golden_status=jsonObject1.optString("j_golden_status");
-//
-//                    JourneyHabitPojo pojo=new JourneyHabitPojo();
-//                    pojo.setJ_h_id(j_h_id);
-//                    pojo.setJ_h_user_id(j_h_user_id);
-//                    pojo.setJ_h_user_name(j_h_user_name);
-//                    pojo.setJ_h_journey_name(j_h_journey_name);
-//                    pojo.setJ_h_hid(j_h_hid);
-//                    pojo.setJ_h_letter_reap(j_h_letter_reap);
-//                    pojo.setJ_h_challenge_acc(j_h_challenge_acc);
-//                    pojo.setJ_h_goal_completed(j_h_goal_completed);
-//                    pojo.setJ_h_action_done(j_h_action_done);
-//                    pojo.setJ_h_motivation(j_h_motivation);
-//                    pojo.setJ_h_golden_chllenge(j_h_golden_chllenge);
-//                    pojo.setJ_golden_status(j_golden_status);
-//
-//                    NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
-//                    helper.insertJourneyHabitData(pojo);
-
 
                 } else {
                     Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
