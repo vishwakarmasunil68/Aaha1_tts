@@ -96,6 +96,8 @@ public class GetAllHabits {
                             Log.d(TAG,"ritual add error:-"+e.toString());
                         }
                     }
+
+                    new GetAllTimeLine(activity,user_id).new GettingTimeLineDetails().execute();
                 } else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }

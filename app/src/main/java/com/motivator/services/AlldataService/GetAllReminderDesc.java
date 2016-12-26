@@ -1,6 +1,7 @@
 package com.motivator.services.AlldataService;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
@@ -9,6 +10,7 @@ import com.motivator.common.WebServices;
 import com.motivator.database.NewDataBaseHelper;
 import com.motivator.database.PrefData;
 import com.motivator.database.PutData;
+import com.motivator.wecareyou.Splash;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -90,6 +92,9 @@ public class GetAllReminderDesc {
                                 rem_desc_on_off,rem_desc_stamp,rem_desc_rem_id);
 
                     }
+                    activity.startActivity(new Intent(activity, Splash.class));
+                    activity.finish();
+
                 } else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }

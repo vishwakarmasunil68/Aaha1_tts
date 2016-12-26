@@ -88,6 +88,8 @@ public class GetAllTimeLine {
                                 timeline_dateof_status,timeline_total_habits,timeline_habitcompleted);
 
                     }
+
+                    new GetAllJourney(activity,user_id).new GettingUserJourney().execute();
                 } else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }

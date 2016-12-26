@@ -38,6 +38,7 @@ import com.motivator.database.PrefData;
 import com.motivator.database.PutData;
 import com.motivator.database.UpdateData;
 import com.motivator.model.HabitModel;
+import com.motivator.services.AlldataService.GetAllRituals;
 import com.motivator.support.FileUtils;
 import com.motivator.support.StringUtils;
 
@@ -309,9 +310,10 @@ public class LoginActivity extends FragmentActivity implements View.OnClickListe
                     PrefData.setStringPref(getApplicationContext(), PrefData.HEALTH_KEY, pro_helth_con);
                     PrefData.setStringPref(getApplicationContext(), PrefData.GENDER_KEY, pro_gen);
                     PrefData.setStringPref(getApplicationContext(), PrefData.EMAIL_KEY, pro_email);
-
+                    GeneralUtility.setPreferences(LoginActivity.this, AppsConstant.user_name,pro_name);
                     if(pro_id.length()>0){
-                        new GetALlDetails(pro_id).execute();
+//                        new GetALlDetails(pro_id).execute();
+                        new GetAllRituals(LoginActivity.this,pro_id).new GettingUserRitualDetails().execute();
                     }
                 }
 

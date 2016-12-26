@@ -298,6 +298,8 @@ public class PutData {
         values.put(TableAttributes.HABIT_ADDED_ON, habitTable.getTable_user_habits_habit_added_on());
 
         try {
+            _database = databaseHelper.openDataBase();
+
             res = _database.insert(TableAttributes.TABLE_USER_HABIT, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -322,6 +324,8 @@ public class PutData {
         values.put(TableAttributes.HABIT_ADDED_ON, habit_added_on);
 
         try {
+            _database = databaseHelper.openDataBase();
+
             res = _database.insert(TableAttributes.TABLE_USER_HABIT, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -343,6 +347,7 @@ public class PutData {
         values.put(TableAttributes.HABIT_ADDED_ON, addedOn);
         // Inserting Row
         try {
+
             res = _database.insert(TableAttributes.TABLE_USER_HABIT, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -595,6 +600,7 @@ public class PutData {
         values.put(TableAttributes.HABIT_COMPLETED, timeline_habitcompleted);
 
         try {
+            _database = databaseHelper.openDataBase();
             res = _database.insert(TableAttributes.TABLE_TIMELINE, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -615,6 +621,8 @@ public class PutData {
         values.put(TableAttributes.SNOOZE_TIME, rem_snooze_time);
 
         try {
+            _database = databaseHelper.openDataBase();
+
             res = _database.insert(TableAttributes.TABLE_REMINDER, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -639,11 +647,106 @@ public class PutData {
 
 
         try {
+            _database = databaseHelper.openDataBase();
+
             res = _database.insert(TableAttributes.TABLE_REMINDER_DESC, null, values);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return res;
     }
+    public long addJourneyFromGet(String user_name,String journey_name,String total_events,
+                                       String total_events_achieved,
+                                       String status_step1,String status_step2
+                                        ,String status_step3,String status_step4,
+                                  String status_step5){
 
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.USER_NAME, user_name);
+        values.put(TableAttributes.JOURNEY_NAME, journey_name);
+        values.put(TableAttributes.TOTAL_EVENTS, total_events);
+        values.put(TableAttributes.TOTAL_EVENTS_ACHIEVED, total_events_achieved);
+        values.put(TableAttributes.STATUS_STEP1, status_step1);
+        values.put(TableAttributes.STATUS_STEP2, status_step2);
+        values.put(TableAttributes.STATUS_STEP3, status_step3);
+        values.put(TableAttributes.STATUS_STEP4, status_step4);
+        values.put(TableAttributes.STATUS_STEP5, status_step5);
+
+
+        try {
+            _database = databaseHelper.openDataBase();
+
+            res = _database.insert(TableAttributes.TABLE_JOURNEY, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+
+    public long addJourneyHabitFromGet(String user_name,String journey_name,String h_id,
+                                  String letter_read,
+                                  String challenge_accepted,String goal_completed
+            ,String action_done,String motivation,
+                                  String golden_challenge,String golden_status){
+
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.USER_NAME, user_name);
+        values.put(TableAttributes.JOURNEY_NAME, journey_name);
+        values.put(TableAttributes.H_ID, h_id);
+        values.put(TableAttributes.LETTER_READ, letter_read);
+        values.put(TableAttributes.CHALLENGE_ACCEPTED, challenge_accepted);
+        values.put(TableAttributes.GOAL_COMPLETED, goal_completed);
+        values.put(TableAttributes.ACTION_DONE, action_done);
+        values.put(TableAttributes.MOTIVATION, motivation);
+        values.put(TableAttributes.GOLDEN_CHALLENGE, golden_challenge);
+        values.put(TableAttributes.GOLDEN_GOAL_STATUS, golden_status);
+
+
+        try {
+            _database = databaseHelper.openDataBase();
+
+            res = _database.insert(TableAttributes.TABLE_JOURNEY_HABIT, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+    public long addCustomHabitFromGet(String h_id,String habit,String description,
+                                       String benefits,
+                                       String habit_time,
+                                       String reminder_desc1
+            ,String reminder_desc2,String reminder_desc3,
+                                       String reminder_desc4,String reminder_desc5,
+                                      String reminder_desc6){
+
+        long res = -1;
+
+        ContentValues values = new ContentValues();
+        values.put(TableAttributes.H_ID, h_id);
+        values.put(TableAttributes.HABIT, habit);
+        values.put(TableAttributes.DESCRIPTION, description);
+        values.put(TableAttributes.BENEFITS, benefits);
+        values.put(TableAttributes.HABIT_TIME, habit_time);
+        values.put(TableAttributes.REMINDER_DESC1, reminder_desc1);
+        values.put(TableAttributes.REMINDER_DESC2, reminder_desc2);
+        values.put(TableAttributes.REMINDER_DESC3, reminder_desc3);
+        values.put(TableAttributes.REMINDER_DESC4, reminder_desc4);
+        values.put(TableAttributes.REMINDER_DESC5, reminder_desc5);
+        values.put(TableAttributes.REMINDER_DESC6, reminder_desc6);
+
+
+        try {
+            _database = databaseHelper.openDataBase();
+            res = _database.insert(TableAttributes.TABLE_HABIT, null, values);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
 }

@@ -128,5 +128,19 @@ public class DeleteData {
 		_database.close();
 		return res;
 	}
+
+
+	public void DeleteAllDataFromDataBase(){
+		SQLiteDatabase db=databaseHelper.getWritableDatabase();
+		db.delete(TableAttributes.TABLE_HABIT, null, null);
+//		db.delete(TableAttributes.TABLE_HBIT_TIMELINE, null, null);
+		db.delete(TableAttributes.TABLE_JOURNEY, null, null);
+		db.delete(TableAttributes.TABLE_JOURNEY_HABIT, null, null);
+		db.delete(TableAttributes.TABLE_REMINDER, null, null);
+		db.delete(TableAttributes.TABLE_REMINDER_DESC, null, null);
+		db.delete(TableAttributes.TABLE_TIMELINE, null, null);
+		db.delete(TableAttributes.TABLE_USER_HABIT, null, null);
+		db.delete(TableAttributes.TABLE_USER_RITUALS, null, null);
+	}
 	
 }

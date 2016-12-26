@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.motivator.common.AppsConstant;
+import com.motivator.common.GeneralUtility;
 import com.motivator.common.WebServices;
 import com.motivator.database.NewDataBaseHelper;
 import com.motivator.database.PrefData;
@@ -87,11 +89,16 @@ public class GetAllRituals {
                             long row=putData.addUserRitualfromGet(ritual_user_name, Integer.parseInt(ritual_img), ritual_display_name, ritual_display_name,
                                     ritual_time, Integer.parseInt(ritual_notification_style), Integer.parseInt(ritual_announce_first), Integer.parseInt(ritual_ringin_slient), Integer.parseInt(ritual_reminder));
 
+                            if(row>0){
+                                GeneralUtility.setPreferencesBoolean(activity, AppsConstant.IS_RITUAL_ADDED, true);
+                            }
                         }
                         catch (Exception e){
                             Log.d(TAG,"ritual add error:-"+e.toString());
                         }
                     }
+
+                    new GetAllCustomHabit(activity,user_id).new GettingCustomHABITS().execute();
                 } else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }

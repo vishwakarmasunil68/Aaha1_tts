@@ -88,7 +88,7 @@ public class GetAllReminder {
                                 rem_snooze_time,rem_snooze_time);
                         }
 
-
+                        new GetAllReminderDesc(activity,user_id).new GettingReminderDescriptionDetails().execute();
                     }
                  else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();

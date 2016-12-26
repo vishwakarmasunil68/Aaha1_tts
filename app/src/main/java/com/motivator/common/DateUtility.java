@@ -166,9 +166,13 @@ public class DateUtility {
 		 catch (ParseException e) {
 			 e.printStackTrace();
 		 }
-	     	
-		 int result = today.compareTo(selectedDateObj);
-		 return result;
+		if(selectedDateObj!=null) {
+			int result = today.compareTo(selectedDateObj);
+			return result;
+		}
+		else{
+			return -1;
+		}
 	}
 	
 	/**

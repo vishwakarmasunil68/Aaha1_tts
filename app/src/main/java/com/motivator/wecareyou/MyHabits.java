@@ -723,8 +723,10 @@ public class MyHabits extends Activity implements OnClickListener, TimePickerDia
                 imvHabitIcon.setBackgroundResource(AppsConstant.getHabitIcon(userHabit.get(position).getHabitId()));
 
             String lastCompletionTime = userHabit.get(position).getHabitCompletedON();
-            if (lastCompletionTime != null && lastCompletionTime.length() > 0) {
-
+            if (lastCompletionTime != null && lastCompletionTime.length() > 0
+                    && !lastCompletionTime.equals("null")
+                    && !lastCompletionTime.equals(null)) {
+                Log.d(TAG,"lastcompletiondate:-"+lastCompletionTime);
                 int result = DateUtility.compareDateWithToday(lastCompletionTime, "E MMM dd yyyy");
                 if (result == 0) {
                     checkbox.setImageResource(R.drawable.checked_chk);

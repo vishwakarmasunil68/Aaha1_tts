@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/tv_started"
         android:text="login button"
-        android:visibility="gone"
+        android:visibility="visible"
         />
     <TextView
         android:id="@+id/tv_started"
