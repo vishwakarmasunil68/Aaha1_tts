@@ -1,6 +1,8 @@
 package com.motivator.careplan;
 
 import android.app.ProgressDialog;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -20,28 +22,20 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
 import com.motivator.common.Pref;
+import com.motivator.database.DatabaseHelper;
 import com.motivator.database.PrefData;
+import com.motivator.database.PutData;
+import com.motivator.database.TableAttributes;
 import com.motivator.model.CarePlanPOJO;
 import com.motivator.support.FileUtils;
 import com.motivator.support.StringUtils;
 import com.motivator.wecareyou.R;
 
-import org.json.JSONObject;
-
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Random;
 
 public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanFragmentToActivtiy,View.OnClickListener{
 	CarePlanPOJO pojo=new CarePlanPOJO();
@@ -60,6 +54,17 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 	MenuItem switchButton;
 	boolean isSoundOn = false;
 	private final String TAG="careplan";
+	PutData putData;
+
+	private String[] cell_num = {"#F0F8FF","#FAEBD7","#FA8072","#FFA500","#FFE4C4","#BDB76B",
+			"#FF1744","#FF8A80","#FF5252","#FF69B4","#E21C52", "#4B0082",
+			"#4da6ff","#4682B4","#00cccc","#1c7269","#65c6bb", "#8A2BE2",
+			"#6BBC8B","#f2f2f2","#CCCCCC","#455A64","#999999","#CFCCDC",
+			"#000000","#FFFFFF"};
+
+
+	SQLiteDatabase _database;
+	DatabaseHelper databaseHelper;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -67,6 +72,9 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 		setContentView(R.layout.care_plan_main_layout);
 		initViews();
 
+		putData=new PutData(this);
+
+		databaseHelper = DatabaseHelper.getInstance(this);
 
 		setSupportActionBar(image_toolbar);
 		getSupportActionBar().setTitle("");
@@ -249,7 +257,18 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 			}
 			else{
 				user_diet_change.setVisibility(View.VISIBLE);
-				user_diet_change_tv.setText(msg);
+				if(msg.contains(":")) {
+					String[] str = msg.split(":");
+					String msg1 = "Added ";
+					for (String s : str) {
+						msg1 += s + "\n";
+					}
+					user_diet_change_tv.setText(msg1);
+				}
+				else{
+					user_diet_change_tv.setText("Added "+msg);
+				}
+
 			}
 			
 			ScrollDown();
@@ -262,12 +281,28 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 			
 			care_exercise_added.setVisibility(View.VISIBLE);
 			care_symptoms.setVisibility(View.VISIBLE);
+			addHabitfromOutput(msg);
 			if(msg.equals("skip")){
 				user_exercise_added_tv.setText("It feels nice to stay active isn't it? I was also thinking...");
 			}
 			else{
 				user_exercise.setVisibility(View.VISIBLE);
-				user_exercise_tv.setText(msg);
+				if(msg.contains(":")){
+					String[] str=msg.split(":");
+					String msg1="";
+					for(int i=0;i<str.length;i++){
+						if(str.length==(i+1)){
+							msg1+=str[i];
+						}
+						else{
+							msg1+=str[i]+",\n";
+						}
+					}
+					user_exercise_tv.setText(msg1);
+				}
+				else{
+					user_exercise_tv.setText(msg);
+				}
 			}
 			
 			ScrollDown();
@@ -280,7 +315,23 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 			care_symptoms_manage.setVisibility(View.VISIBLE);
 			care_thanks.setVisibility(View.VISIBLE);
 			fragment_layout.setVisibility(View.GONE);
-			user_symptoms_tv.setText(msg);
+
+			try {
+				String str[] =msg.split(":");
+				String msg1="";
+				for(int i=0;i<str.length;i++){
+					if((i+1)==str.length){
+						msg1+=str[i]+".";
+					}
+					else{
+						msg1+=str[i]+",";
+					}
+				}
+				user_symptoms_tv.setText(msg1);
+			}
+			catch (Exception e){
+				user_symptoms_tv.setText(msg);
+			}
 			ScrollDown();
 			LayoutParams params = new LayoutParams(
 				    LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
@@ -303,6 +354,71 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 			break;
 		}
 	}
+
+	public void addHabitfromOutput(String output){
+		try {
+			String str[] =output.split(":");
+			for(String s:str){
+				CheckOutput(s);
+				Log.d(TAG,s);
+			}
+		}
+		catch (Exception e){
+
+		}
+	}
+	public void CheckOutput(String s){
+		Log.d(TAG,"string:-"+s);
+		if(s.contains("Walk")){
+//			String s1="walk:-"+Integer.parseInt(s.replaceAll("[\\D]", ""));
+			final int time=Integer.parseInt(s.replaceAll("[\\D]", ""));
+			Random r = new Random();
+			final int i1 = r.nextInt(25 - 0) + 0;
+			Runnable run=new Runnable() {
+				@Override
+				public void run() {
+					addWALKHabit("Walk",time+"","",i1+"");
+				}
+			};
+			Thread thd=new Thread(run);
+			thd.start();
+		}
+		else{
+			if(s.contains("Cardio")){
+//				System.out.println("cardio:-"+Integer.parseInt(s.replaceAll("[\\D]", "")));
+				final int time=Integer.parseInt(s.replaceAll("[\\D]", ""));
+				Random r = new Random();
+				final int i1 = r.nextInt(25 - 0) + 0;
+				Runnable run=new Runnable() {
+					@Override
+					public void run() {
+						addCardioHabit("Cardio",time+"","",i1+"");
+					}
+				};
+				Thread thd=new Thread(run);
+				thd.start();
+
+			}
+			else{
+				if(s.contains("Yoga")){
+//					System.out.println("yoga:-"+Integer.parseInt(s.replaceAll("[\\D]", "")));
+					final int time=Integer.parseInt(s.replaceAll("[\\D]", ""));
+					Random r = new Random();
+					final int i1 = r.nextInt(25 - 0) + 0;
+					Runnable run=new Runnable() {
+						@Override
+						public void run() {
+							addYogaHabit("Yoga",time+"","",i1+"");
+						}
+					};
+					Thread thd=new Thread(run);
+					thd.start();
+
+				}
+			}
+		}
+	}
+
 	
 	public void ScrollDown(){
 		chat_scroll.post(new Runnable() {
@@ -314,70 +430,8 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 	}
 
 	public void callService() {
+		Log.d(TAG,pojo.toString());
 
-		StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://www.funhabits.co/aaha/careplan.php",
-				new Response.Listener<String>() {
-					@Override
-					public void onResponse(String response) {
-						try {
-							Log.d("sunil", response);
-							JSONObject jsonObject = new JSONObject(response);
-							String success = jsonObject.optString("success");
-							if (success.equals("true")) {
-								JSONObject jsonObject1 = jsonObject.optJSONObject("result");
-
-								Toast.makeText(getApplicationContext(), "Registered Successful", Toast.LENGTH_SHORT);
-							} else {
-								Toast.makeText(getApplicationContext(), "Registration Failed", Toast.LENGTH_SHORT);
-							}
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-						if (progressDialog != null) {
-							progressDialog.dismiss();
-						}
-						CarePlanHomeActivity.this.finish();
-					}
-				},
-				new Response.ErrorListener() {
-					@Override
-					public void onErrorResponse(VolleyError error) {
-						Log.d("sunil", "" + error);
-						if (progressDialog != null) {
-							progressDialog.dismiss();
-						}
-					}
-				}) {
-			@Override
-			protected Map<String, String> getParams() {
-				Map<String, String> params = new HashMap<String, String>();
-				params.put("user_id", "");
-				params.put("doctor_visit", pojo.getDoctor_visit());
-				params.put("diet_changes", pojo.getMasala());
-				params.put("custom_entry", pojo.getDiet());
-				params.put("exercise", pojo.getExercise());
-				params.put("symptoms", pojo.getSymptoms());
-
-				Calendar c = Calendar.getInstance();
-
-				SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-				String formattedDate = df.format(c.getTime());
-				params.put("date", formattedDate);
-
-				return params;
-			}
-
-		};
-		RequestQueue requestQueue = Volley.newRequestQueue(this);
-		requestQueue.add(stringRequest);
-		try {
-			progressDialog = new ProgressDialog(getApplicationContext());
-			progressDialog.setMessage("Please wait...");
-			progressDialog.show();
-			progressDialog.setCancelable(false);
-		}
-		catch (Exception e){
-		}
 	}
 
 	@Override
@@ -442,5 +496,165 @@ public class CarePlanHomeActivity extends AppCompatActivity implements CarePlanF
 				}
 				break;
 		}
+	}
+
+
+	public void addWALKHabit(String habit_name,String habit_time,String file_path,String iconColor){
+
+		Log.d(TAG,"habit_name:-"+habit_name+"  habit_time:-"+habit_time+" file_path:-"+file_path
+		+" iconcolor:-"+iconColor);
+		_database = databaseHelper.openDataBase();
+
+		String table_query="Select * from " + TableAttributes.TABLE_HABIT + " where "
+				+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+		Cursor cur_table_query = _database.rawQuery(table_query, null);
+
+		if(cur_table_query.getCount()>0){
+			Log.d(TAG,"count>0:-"+cur_table_query.getCount());
+			if(cur_table_query.moveToFirst()){
+				String h_id = cur_table_query.getString(0);
+				Log.d(TAG,"exist h_id:-"+h_id);
+
+
+				String update_habit_sql = "update " + TableAttributes.TABLE_HABIT + " set " + TableAttributes.HABIT_TIME + " = " + habit_time +
+					" where " + TableAttributes.HABIT + " = '" + habit_name + "'";
+				_database.execSQL(update_habit_sql);
+
+				cur_table_query.close();
+			}
+			else{
+				cur_table_query.close();
+			}
+		}
+		else{
+			cur_table_query.close();
+			long row = putData.addCustomHabit(habit_name, habit_time, file_path, iconColor);
+			Log.d(TAG,"row:-"+row);
+			if(row>0){
+				String str1 = "Select * from " + TableAttributes.TABLE_HABIT + " where "
+						+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+				Cursor cur_str1 = _database.rawQuery(str1, null);
+				Log.d(TAG,"count:-"+cur_str1.getCount());
+				if (cur_str1.moveToFirst()) {
+					String h_id = cur_str1.getString(0);
+					Log.d(TAG,"h_id1111:-"+h_id);
+					long val=putData.addUserHabit(PrefData.getStringPref(getApplicationContext(),PrefData.NAME_KEY),
+							Integer.parseInt(h_id),"Morning Routine", habit_time);
+					if(val>0){
+						Toast.makeText(getApplicationContext(),"habit added sccessfully",Toast.LENGTH_SHORT).show();
+					}
+				}
+				else{
+					cur_str1.close();
+				}
+			}
+		}
+		_database.close();
+	}
+
+	public void addCardioHabit(String habit_name,String habit_time,String file_path,String iconColor){
+
+		Log.d(TAG,"habit_name:-"+habit_name+"  habit_time:-"+habit_time+" file_path:-"+file_path
+				+" iconcolor:-"+iconColor);
+		_database = databaseHelper.openDataBase();
+
+		String table_query="Select * from " + TableAttributes.TABLE_HABIT + " where "
+				+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+		Cursor cur_table_query = _database.rawQuery(table_query, null);
+
+		if(cur_table_query.getCount()>0){
+			Log.d(TAG,"count>0:-"+cur_table_query.getCount());
+			if(cur_table_query.moveToFirst()){
+				String h_id = cur_table_query.getString(0);
+				Log.d(TAG,"exist h_id:-"+h_id);
+
+
+				String update_habit_sql = "update " + TableAttributes.TABLE_HABIT + " set " + TableAttributes.HABIT_TIME + " = " + habit_time +
+						" where " + TableAttributes.HABIT + " = '" + habit_name + "'";
+				_database.execSQL(update_habit_sql);
+
+				cur_table_query.close();
+			}
+			else{
+				cur_table_query.close();
+			}
+		}
+		else{
+			cur_table_query.close();
+			long row = putData.addCustomHabit(habit_name, habit_time, file_path, iconColor);
+			Log.d(TAG,"row:-"+row);
+			if(row>0){
+				String str1 = "Select * from " + TableAttributes.TABLE_HABIT + " where "
+						+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+				Cursor cur_str1 = _database.rawQuery(str1, null);
+				Log.d(TAG,"count:-"+cur_str1.getCount());
+				if (cur_str1.moveToFirst()) {
+					String h_id = cur_str1.getString(0);
+					Log.d(TAG,"h_id1111:-"+h_id);
+					long val=putData.addUserHabit(PrefData.getStringPref(getApplicationContext(),PrefData.NAME_KEY),
+							Integer.parseInt(h_id),"Morning Routine", habit_time);
+					if(val>0){
+						Toast.makeText(getApplicationContext(),"habit added sccessfully",Toast.LENGTH_SHORT).show();
+					}
+				}
+				else{
+					cur_str1.close();
+				}
+			}
+		}
+		_database.close();
+	}
+
+	public void addYogaHabit(String habit_name,String habit_time,String file_path,String iconColor){
+
+		Log.d(TAG,"habit_name:-"+habit_name+"  habit_time:-"+habit_time+" file_path:-"+file_path
+				+" iconcolor:-"+iconColor);
+		_database = databaseHelper.openDataBase();
+
+		String table_query="Select * from " + TableAttributes.TABLE_HABIT + " where "
+				+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+		Cursor cur_table_query = _database.rawQuery(table_query, null);
+
+		if(cur_table_query.getCount()>0){
+			Log.d(TAG,"count>0:-"+cur_table_query.getCount());
+			if(cur_table_query.moveToFirst()){
+				String h_id = cur_table_query.getString(0);
+				Log.d(TAG,"exist h_id:-"+h_id);
+
+
+				String update_habit_sql = "update " + TableAttributes.TABLE_HABIT + " set " + TableAttributes.HABIT_TIME + " = " + habit_time +
+						" where " + TableAttributes.HABIT + " = '" + habit_name + "'";
+				_database.execSQL(update_habit_sql);
+
+				cur_table_query.close();
+			}
+			else{
+				cur_table_query.close();
+			}
+		}
+		else{
+			cur_table_query.close();
+			long row = putData.addCustomHabit(habit_name, habit_time, file_path, iconColor);
+			Log.d(TAG,"row:-"+row);
+			if(row>0){
+				String str1 = "Select * from " + TableAttributes.TABLE_HABIT + " where "
+						+ TableAttributes.HABIT + " = '" + habit_name + "' ";
+				Cursor cur_str1 = _database.rawQuery(str1, null);
+				Log.d(TAG,"count:-"+cur_str1.getCount());
+				if (cur_str1.moveToFirst()) {
+					String h_id = cur_str1.getString(0);
+					Log.d(TAG,"h_id1111:-"+h_id);
+					long val=putData.addUserHabit(PrefData.getStringPref(getApplicationContext(),PrefData.NAME_KEY),
+							Integer.parseInt(h_id),"Morning Routine", habit_time);
+					if(val>0){
+						Toast.makeText(getApplicationContext(),"habit added sccessfully",Toast.LENGTH_SHORT).show();
+					}
+				}
+				else{
+					cur_str1.close();
+				}
+			}
+		}
+		_database.close();
 	}
 }

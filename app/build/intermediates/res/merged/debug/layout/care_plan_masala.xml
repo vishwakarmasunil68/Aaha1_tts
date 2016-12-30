@@ -36,7 +36,8 @@
                        android:layout_height="match_parent"
                        android:text="Salt"    
                        android:layout_gravity="center"
-                       android:gravity="center"                                         
+                       android:gravity="center"
+					   android:textColor="#757575"
                        />
                    
                 </LinearLayout>
@@ -99,6 +100,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -108,6 +110,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -117,6 +120,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        
         	    </LinearLayout>
@@ -173,7 +177,8 @@
                        android:layout_height="match_parent"
                        android:text="Sugar"    
                        android:layout_gravity="center"
-                       android:gravity="center"                                         
+                       android:gravity="center"
+					   android:textColor="#757575"
                        />
                    
                 </LinearLayout>
@@ -236,6 +241,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -245,6 +251,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -254,6 +261,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        
         	    </LinearLayout>
@@ -308,7 +316,8 @@
                        android:layout_height="match_parent"
                        android:text="Oil"    
                        android:layout_gravity="center"
-                       android:gravity="center"                                         
+                       android:gravity="center"
+					   android:textColor="#757575"
                        />
                    
                 </LinearLayout>
@@ -371,6 +380,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -380,6 +390,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        <TextView 
         	            android:layout_width="0dp"
@@ -389,6 +400,7 @@
         	            android:textSize="10sp"
         	            android:layout_gravity="center"
         	            android:gravity="center"
+						android:textColor="#757575"
         	            />
         	        
         	    </LinearLayout>

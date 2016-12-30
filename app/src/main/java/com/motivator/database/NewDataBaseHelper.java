@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.motivator.model.CustomHabitPOJO;
 import com.motivator.model.DataEntryPOJO;
 import com.motivator.model.HabitTimelinePOJO;
 import com.motivator.model.JourneyHabitPojo;
@@ -27,6 +28,159 @@ public class NewDataBaseHelper{
 		// TODO Auto-generated constructor stub
 		helper=new DataBaseHelper1(context);
 	}
+
+	public long insertcustomData(CustomHabitPOJO dep){
+		SQLiteDatabase db=helper.getWritableDatabase();
+		ContentValues contentValues=new ContentValues();
+
+		contentValues.put(DataBaseHelper1.custom_habit_id, dep.getCustom_habit_id()+"");
+		contentValues.put(DataBaseHelper1.custom_habit_user_id, dep.getCustom_habit_user_id()+"");
+		contentValues.put(DataBaseHelper1.custom_h_id, dep.getCustom_h_id()+"");
+		contentValues.put(DataBaseHelper1.custom_habit, dep.getCustom_habit()+"");
+		contentValues.put(DataBaseHelper1.custom_description, dep.getCustom_description()+"");
+		contentValues.put(DataBaseHelper1.custom_benefits, dep.getCustom_benefits()+"");
+		contentValues.put(DataBaseHelper1.custom_habit_time, dep.getCustom_habit_time()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des1, dep.getCustom_rem_des1()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des2, dep.getCustom_rem_des2()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des3, dep.getCustom_rem_des3()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des4, dep.getCustom_rem_des4()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des5, dep.getCustom_rem_des5()+"");
+		contentValues.put(DataBaseHelper1.custom_rem_des6, dep.getCustom_rem_des6()+"");
+
+
+		long id=db.insert(DataBaseHelper1.TABLE_CUSTOM_HABIT, null, contentValues);
+		return id;
+	}
+
+
+	public List<CustomHabitPOJO> getAllCustomHabits(){
+		SQLiteDatabase db=helper.getWritableDatabase();
+		List<CustomHabitPOJO> lst=new ArrayList<>();
+		String[] columns={DataBaseHelper1.ID,
+				DataBaseHelper1.custom_habit_id,
+				DataBaseHelper1.custom_habit_user_id,
+				DataBaseHelper1.custom_h_id,
+				DataBaseHelper1.custom_habit,
+				DataBaseHelper1.custom_description,
+				DataBaseHelper1.custom_benefits,
+				DataBaseHelper1.custom_habit_time,
+				DataBaseHelper1.custom_rem_des1,
+				DataBaseHelper1.custom_rem_des2,
+				DataBaseHelper1.custom_rem_des3,
+				DataBaseHelper1.custom_rem_des4,
+				DataBaseHelper1.custom_rem_des5,
+				DataBaseHelper1.custom_rem_des6
+		};
+		Cursor cursor=db.query(DataBaseHelper1.TABLE_CUSTOM_HABIT, columns, null, null, null, null, null);
+
+		while(cursor.moveToNext()){
+
+			String custom_habit_id=cursor.getString(1);
+			String custom_habit_user_id=cursor.getString(2);
+			String custom_h_id=cursor.getString(3);
+			String custom_habit=cursor.getString(4);
+			String custom_description=cursor.getString(5);
+			String custom_benefits=cursor.getString(6);
+			String custom_habit_time=cursor.getString(7);
+			String custom_rem_des1=cursor.getString(8);
+			String custom_rem_des2=cursor.getString(9);
+			String custom_rem_des3=cursor.getString(10);
+			String custom_rem_des4=cursor.getString(11);
+			String custom_rem_des5=cursor.getString(12);
+			String custom_rem_des6=cursor.getString(13);
+
+
+			CustomHabitPOJO pojo=new CustomHabitPOJO();
+			pojo.setCustom_habit_id(custom_habit_id);
+			pojo.setCustom_habit_user_id(custom_habit_user_id);
+			pojo.setCustom_h_id(custom_h_id);
+			pojo.setCustom_habit(custom_habit);
+			pojo.setCustom_description(custom_description);
+			pojo.setCustom_benefits(custom_benefits);
+			pojo.setCustom_habit_time(custom_habit_time);
+			pojo.setCustom_rem_des1(custom_rem_des1);
+			pojo.setCustom_rem_des2(custom_rem_des2);
+			pojo.setCustom_rem_des3(custom_rem_des3);
+			pojo.setCustom_rem_des4(custom_rem_des4);
+			pojo.setCustom_rem_des5(custom_rem_des5);
+			pojo.setCustom_rem_des6(custom_rem_des6);
+
+			lst.add(pojo);
+		}
+		return lst;
+	}
+
+	public CustomHabitPOJO getCustomHabitData(String habit_id1){
+		SQLiteDatabase db=helper.getWritableDatabase();
+
+		CustomHabitPOJO pojo= null;
+		String[] columns={DataBaseHelper1.ID,
+				DataBaseHelper1.custom_habit_id,
+				DataBaseHelper1.custom_habit_user_id,
+				DataBaseHelper1.custom_h_id,
+				DataBaseHelper1.custom_habit,
+				DataBaseHelper1.custom_description,
+				DataBaseHelper1.custom_benefits,
+				DataBaseHelper1.custom_habit_time,
+				DataBaseHelper1.custom_rem_des1,
+				DataBaseHelper1.custom_rem_des2,
+				DataBaseHelper1.custom_rem_des3,
+				DataBaseHelper1.custom_rem_des4,
+				DataBaseHelper1.custom_rem_des5,
+				DataBaseHelper1.custom_rem_des6
+		};
+		String WHERE =  DataBaseHelper1.custom_h_id+"='"+habit_id1+"'";
+		Cursor cursor=db.query(DataBaseHelper1.TABLE_CUSTOM_HABIT, columns, WHERE, null, null, null, null);
+
+		while(cursor.moveToNext()){
+			String custom_habit_id=cursor.getString(1);
+			String custom_habit_user_id=cursor.getString(2);
+			String custom_h_id=cursor.getString(3);
+			String custom_habit=cursor.getString(4);
+			String custom_description=cursor.getString(5);
+			String custom_benefits=cursor.getString(6);
+			String custom_habit_time=cursor.getString(7);
+			String custom_rem_des1=cursor.getString(8);
+			String custom_rem_des2=cursor.getString(9);
+			String custom_rem_des3=cursor.getString(10);
+			String custom_rem_des4=cursor.getString(11);
+			String custom_rem_des5=cursor.getString(12);
+			String custom_rem_des6=cursor.getString(13);
+
+
+			pojo=new CustomHabitPOJO();
+			pojo.setCustom_habit_id(custom_habit_id);
+			pojo.setCustom_habit_user_id(custom_habit_user_id);
+			pojo.setCustom_h_id(custom_h_id);
+			pojo.setCustom_habit(custom_habit);
+			pojo.setCustom_description(custom_description);
+			pojo.setCustom_benefits(custom_benefits);
+			pojo.setCustom_habit_time(custom_habit_time);
+			pojo.setCustom_rem_des1(custom_rem_des1);
+			pojo.setCustom_rem_des2(custom_rem_des2);
+			pojo.setCustom_rem_des3(custom_rem_des3);
+			pojo.setCustom_rem_des4(custom_rem_des4);
+			pojo.setCustom_rem_des5(custom_rem_des5);
+			pojo.setCustom_rem_des6(custom_rem_des6);
+
+
+		}
+		return pojo;
+	}
+
+
+	public int deleteCustomHabitDATA(String habit_id){
+		SQLiteDatabase db=helper.getWritableDatabase();
+		String[] whereArgs={habit_id};
+		int count=db.delete(DataBaseHelper1.TABLE_USER_HABIT, DataBaseHelper1.table_user_habits_habit_id+"=?", whereArgs);
+		return count;
+	}
+
+
+	/*---------------------------------------------------------------------------------------------
+	===============================================================================================
+	===============================================================================================
+	 */
 
 	public long insertUserHabitData(UserHabitTable dep){
 		SQLiteDatabase db=helper.getWritableDatabase();
@@ -1252,8 +1406,9 @@ public class NewDataBaseHelper{
 		private static final String TABLE_JOURNEY="journey_table";
 		private static final String TABLE_JOURNEY_HABIT="table_journey_habit";
 		private static final String TABLE_USER_HABIT="table_user_habits";
+		private static final String TABLE_CUSTOM_HABIT="table_custom_habit";
 
-		private static final int DATABASE_VERSION=13;
+		private static final int DATABASE_VERSION=14;
 		
 		private static final String ID="_id";
 		private static final String ACTIVITY_MINUTES="activity_minutes";
@@ -1346,6 +1501,21 @@ public class NewDataBaseHelper{
 		private static final String table_user_habits_habit_completed_on="table_user_habits_habit_completed_on";
 		private static final String table_user_habits_reminder_next_desc="table_user_habits_reminder_next_desc";
 		private static final String table_user_habits_habit_added_on="table_user_habits_habit_added_on";
+
+		//custom user habit
+		private static final String custom_habit_id="custom_habit_id";
+		private static final String custom_habit_user_id="custom_habit_user_id";
+		private static final String custom_h_id="custom_h_id";
+		private static final String custom_habit="custom_habit";
+		private static final String custom_description="custom_description";
+		private static final String custom_benefits="custom_benefits";
+		private static final String custom_habit_time="custom_habit_time";
+		private static final String custom_rem_des1="custom_rem_des1";
+		private static final String custom_rem_des2="custom_rem_des2";
+		private static final String custom_rem_des3="custom_rem_des3";
+		private static final String custom_rem_des4="custom_rem_des4";
+		private static final String custom_rem_des5="custom_rem_des5";
+		private static final String custom_rem_des6="custom_rem_des6";
 
 
 		private static final String CREATE_TABLE="CREATE TABLE "+TABLE_NAME+" ("+ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -1441,6 +1611,22 @@ public class NewDataBaseHelper{
 				+table_user_habits_habit_added_on+" VARCHAR(255));";
 
 
+		private static final String CREATE_CUSTOM_HABIT_TABLE="CREATE TABLE "+TABLE_CUSTOM_HABIT+" ("+ID+" INTEGER PRIMARY KEY AUTOINCREMENT, "
+				+custom_habit_id+" VARCHAR(255), "
+				+custom_habit_user_id+" VARCHAR(255), "
+				+custom_h_id+" VARCHAR(255), "
+				+custom_habit+" VARCHAR(255), "
+				+custom_description+" VARCHAR(255), "
+				+custom_benefits+" VARCHAR(255), "
+				+custom_habit_time+" VARCHAR(255), "
+				+custom_rem_des1+" VARCHAR(255), "
+				+custom_rem_des2+" VARCHAR(255), "
+				+custom_rem_des3+" VARCHAR(255), "
+				+custom_rem_des4+" VARCHAR(255), "
+				+custom_rem_des5+" VARCHAR(255), "
+				+custom_rem_des6+" VARCHAR(255));";
+
+
 		private static final String DROP_TABLE="DROP TABLE IF EXISTS "+TABLE_NAME;
 		private static final String DROP_MUSIC_TABLE="DROP TABLE IF EXISTS "+MUSIC_TABLE;
 		private static final String DROP_RITUAL_TIMELINE_TABLE="DROP TABLE IF EXISTS "+RITUAL_TIMELINE_TABLE;
@@ -1449,6 +1635,7 @@ public class NewDataBaseHelper{
 		private static final String DROP_JOURNEY_TABLE="DROP TABLE IF EXISTS "+TABLE_JOURNEY;
 		private static final String DROP_JOURNEY_HABIT_TABLE="DROP TABLE IF EXISTS "+TABLE_JOURNEY_HABIT;
 		private static final String DROP_USER_HABIT_TABLE="DROP TABLE IF EXISTS "+TABLE_USER_HABIT;
+		private static final String DROP_CUSTOM_HABIT_TABLE="DROP TABLE IF EXISTS "+TABLE_CUSTOM_HABIT;
 		private Context context;
 		
 		
@@ -1471,6 +1658,7 @@ public class NewDataBaseHelper{
 				db.execSQL(CREATE_JOURNEY_TABLE);
 				db.execSQL(CREATE_JOURNEY_HABIT_TABLE);
 				db.execSQL(CREATE_USE_HABIT_TABLE);
+				db.execSQL(CREATE_CUSTOM_HABIT_TABLE);
 //				Toast.makeText(context, "database called", Toast.LENGTH_SHORT).show();
 			}
 			catch(Exception e){
@@ -1491,6 +1679,7 @@ public class NewDataBaseHelper{
 				db.execSQL(DROP_JOURNEY_TABLE);
 				db.execSQL(DROP_JOURNEY_HABIT_TABLE);
 				db.execSQL(DROP_USER_HABIT_TABLE);
+				db.execSQL(DROP_CUSTOM_HABIT_TABLE);
 				Toast.makeText(context, "database droped", Toast.LENGTH_SHORT).show();
 				onCreate(db);
 			}

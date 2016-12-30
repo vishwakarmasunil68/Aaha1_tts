@@ -55,5 +55,14 @@ public class CarePlanPOJO {
     }
 
 
-
+    @Override
+    public String toString() {
+        return "CarePlanPOJO{" +
+                "doctor_visit='" + doctor_visit + '\'' +
+                ", masala='" + masala + '\'' +
+                ", symptoms='" + symptoms + '\'' +
+                ", exercise='" + exercise + '\'' +
+                ", diet='" + diet + '\'' +
+                '}';
+    }
 }

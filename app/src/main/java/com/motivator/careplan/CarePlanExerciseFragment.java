@@ -77,7 +77,7 @@ public class CarePlanExerciseFragment extends Fragment implements OnClickListene
 			String exer="";
 			if(iswalk){
 				if(walk_et.getText().toString().length()>0){
-					exer+="Walk "+walk_et.getText().toString()+"min daily,\n";
+					exer+="Walk "+walk_et.getText().toString()+" min daily:";
 				}
 				else{
 					Toast.makeText(getActivity(), "Please Enter Walk Duration", Toast.LENGTH_SHORT).show();
@@ -85,7 +85,7 @@ public class CarePlanExerciseFragment extends Fragment implements OnClickListene
 			}
 			if(iscardio){
 				if(cardio_et.getText().toString().length()>0){
-					exer+="Cardio "+cardio_et.getText().toString()+"min daily,\n";
+					exer+="Cardio "+cardio_et.getText().toString()+" min daily:";
 				}
 				else{
 					Toast.makeText(getActivity(), "Please Enter Cardio Duration", Toast.LENGTH_SHORT).show();
@@ -93,7 +93,7 @@ public class CarePlanExerciseFragment extends Fragment implements OnClickListene
 			}
 			if(isyoga){
 				if(yoga_et.getText().toString().length()>0){
-					exer+="Yoga "+yoga_et.getText().toString()+"min daily.";
+					exer+="Yoga "+yoga_et.getText().toString()+" min daily";
 				}
 				else{
 					Toast.makeText(getActivity(), "Please Enter Yoga Duration", Toast.LENGTH_SHORT).show();

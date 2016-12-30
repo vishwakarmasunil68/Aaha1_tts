@@ -342,10 +342,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected void onStart() {
         super.onStart();
         GetData gt=new GetData(this);
-        gt.GetTableJourney_Rows(TableAttributes.TABLE_JOURNEY_HABIT);
+
+        gt.GetTableJourney_Rows(TableAttributes.TABLE_HABIT);
 
         Log.d("database","Reminder Description");
-//        gt.GetTableJourney_Rows(TableAttributes.TABLE_HBIT_TIMELINE);
+        gt.GetTableJourney_Rows(TableAttributes.TABLE_USER_HABIT);
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_HBIT_TIMELINE);
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_JOURNEY);
 //        gt.GetTableJourney_Rows(TableAttributes.TABLE_USER_RITUALS);

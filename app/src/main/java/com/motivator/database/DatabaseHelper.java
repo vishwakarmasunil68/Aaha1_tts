@@ -138,7 +138,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		}
 	}
 
-	SQLiteDatabase openDataBase() throws SQLException {
+	public SQLiteDatabase openDataBase() throws SQLException {
 		// Open the database
 		if (_database == null) {
 			_database = SQLiteDatabase.openDatabase(DB_PATH + DB_NAME, null,

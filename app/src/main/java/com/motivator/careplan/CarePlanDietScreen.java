@@ -91,9 +91,12 @@ public class CarePlanDietScreen extends Fragment implements OnClickListener{
 					diet+=lst_txt.get(i).getText().toString();
 				}
 				else{
-					diet+=lst_txt.get(i).getText().toString()+"\n";
+					diet+=lst_txt.get(i).getText().toString()+":";
 				}
 			}
+//			for(TextView text:lst_txt){
+//					diet+=text.getText().toString();
+//			}
 			CarePlanFragmentToActivtiy mta=(CarePlanFragmentToActivtiy) activity;
 			mta.FragmentToActivity("diet",diet);
 			break;

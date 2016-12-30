@@ -144,6 +144,7 @@ public class PutData {
 
         // Inserting Row
         try {
+            _database = databaseHelper.openDataBase();
             res = _database.insert(TableAttributes.TABLE_USER_RITUALS, null, values);
         } catch (Exception e) {
             e.printStackTrace();
@@ -168,6 +169,7 @@ public class PutData {
         values.put(TableAttributes.REMINDER_DESC5, rem_desc5);
         values.put(TableAttributes.REMINDER_DESC6, rem_desc6);
         try {
+            _database = databaseHelper.openDataBase();
             res = _database.insert(TableAttributes.TABLE_HABIT, null, values);
         }
         catch (Exception e){

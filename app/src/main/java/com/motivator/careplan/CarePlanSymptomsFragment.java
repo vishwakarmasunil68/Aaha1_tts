@@ -66,22 +66,27 @@ public class CarePlanSymptomsFragment extends Fragment implements OnClickListene
 			String symp="";
 			if(isJoint){
 				if(isFatigue){
-					symp+="Joint Pain,";
+					symp+="Joint Pain:";
 				}
 				else{
-					symp+="Joint Pain";
+					if(isSleep){
+						symp+="Joint Pain:";
+					}
+					else{
+						symp+="Joint Pain";
+					}
 				}
 			}
 			if(isFatigue){
 				if(isSleep){
-					symp+="fatigue,";
+					symp+="fatigue:";
 				}
 				else{
-					symp+="and fatigue.";
+					symp+="fatigue";
 				}
 			}
 			if(isSleep){
-				symp+=" and sleep problem.";
+				symp+="sleep problem";
 			}
 			CarePlanFragmentToActivtiy cpha= (CarePlanFragmentToActivtiy) activity;
 			cpha.FragmentToActivity("symptoms",symp);

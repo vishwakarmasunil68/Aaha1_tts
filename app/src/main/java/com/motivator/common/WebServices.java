@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.motivator.database.NewDataBaseHelper;
 import com.motivator.database.PrefData;
+import com.motivator.model.CustomHabitPOJO;
 import com.motivator.model.HabitImgModel;
 import com.motivator.model.HabitTimelinePOJO;
 import com.motivator.model.JourneyHabitPojo;
@@ -68,7 +69,10 @@ public class WebServices {
 
     public static final String ADD_HABIT_TIMELINE_URL = "http://www.funhabits.co/aaha/addtimeline.php";
     public static final String UPDATE_HABIT_TIMELINE_URL = "http://www.funhabits.co/aaha/updatetimeline.php";
+
     public static final String ADD_CUSTOM_HABIT_URL = "http://www.funhabits.co/aaha/customhabits.php";
+    public static final String UPDATE_CUSTOM_HABIT_URL = "http://www.funhabits.co/aaha/update_custom_habit.php";
+
     public static final String INSERT_USER_RITUAL = "http://www.funhabits.co/aaha/user_ritual_crud.php";
     public static final String ADD_REMINDER_DESC_URL = "http://www.funhabits.co/aaha/add_reminder_desc.php";
     public static final String UPDATE_REMINDER_DESC_URL = "http://www.funhabits.co/aaha/updatedescreminder.php";
@@ -77,9 +81,9 @@ public class WebServices {
     public static final String DELETE_REMINDER_URL = "http://www.funhabits.co/aaha/deletereminder.php";
     public static final String ADD_JOURNEY_URL = "http://www.funhabits.co/aaha/add_journey.php";
     public static final String UPDATE_JOURNEY_URL = "http://www.funhabits.co/aaha/update_journey.php";
-    public static final String ADD_JOURNEY_HABIT_URL= "http://www.funhabits.co/aaha/add_journey_habits.php";
-    public static final String UPDATE_JOURNEY_HABIT_URL= "http://www.funhabits.co/aaha/update_journey_habits.php";
-    public static final String GET_ALL_INFO_URL= "http://www.funhabits.co/aaha/login.php";
+    public static final String ADD_JOURNEY_HABIT_URL = "http://www.funhabits.co/aaha/add_journey_habits.php";
+    public static final String UPDATE_JOURNEY_HABIT_URL = "http://www.funhabits.co/aaha/update_journey_habits.php";
+    public static final String GET_ALL_INFO_URL = "http://www.funhabits.co/aaha/login.php";
 
 
     static HttpClient httpClient;
@@ -418,22 +422,22 @@ public class WebServices {
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
 
-                    JSONObject result=jsonObject.optJSONObject("result");
+                    JSONObject result = jsonObject.optJSONObject("result");
 
-                    String table_user_habits_id=result.optString("table_user_habits_id");
-                    String table_user_habits_user_id=result.optString("table_user_habits_user_id");
-                    String table_user_habits_user_name=result.optString("table_user_habits_user_name");
-                    String table_user_habits_habit_id=result.optString("table_user_habits_habit_id");
-                    String table_user_habits_ritual_type=result.optString("table_user_habits_ritual_type");
-                    String table_user_habits_userhabit_time=result.optString("table_user_habits_userhabit_time");
-                    String table_user_habits_is_habit_completed=result.optString("table_user_habits_is_habit_completed");
-                    String table_user_habits_habit_priority=result.optString("table_user_habits_habit_priority");
-                    String table_user_habits_habit_completed_on=result.optString("table_user_habits_habit_completed_on");
-                    String table_user_habits_reminder_next_desc=result.optString("table_user_habits_reminder_next_desc");
-                    String table_user_habits_habit_added_on=result.optString("table_user_habits_habit_added_on");
+                    String table_user_habits_id = result.optString("table_user_habits_id");
+                    String table_user_habits_user_id = result.optString("table_user_habits_user_id");
+                    String table_user_habits_user_name = result.optString("table_user_habits_user_name");
+                    String table_user_habits_habit_id = result.optString("table_user_habits_habit_id");
+                    String table_user_habits_ritual_type = result.optString("table_user_habits_ritual_type");
+                    String table_user_habits_userhabit_time = result.optString("table_user_habits_userhabit_time");
+                    String table_user_habits_is_habit_completed = result.optString("table_user_habits_is_habit_completed");
+                    String table_user_habits_habit_priority = result.optString("table_user_habits_habit_priority");
+                    String table_user_habits_habit_completed_on = result.optString("table_user_habits_habit_completed_on");
+                    String table_user_habits_reminder_next_desc = result.optString("table_user_habits_reminder_next_desc");
+                    String table_user_habits_habit_added_on = result.optString("table_user_habits_habit_added_on");
 
 
-                    UserHabitTable userHabitTable=new UserHabitTable();
+                    UserHabitTable userHabitTable = new UserHabitTable();
                     userHabitTable.setTable_user_habits_id(table_user_habits_id);
                     userHabitTable.setTable_user_habits_user_id(table_user_habits_user_id);
                     userHabitTable.setTable_user_habits_user_name(table_user_habits_user_name);
@@ -446,7 +450,7 @@ public class WebServices {
                     userHabitTable.setTable_user_habits_reminder_next_desc(table_user_habits_reminder_next_desc);
                     userHabitTable.setTable_user_habits_habit_added_on(table_user_habits_habit_added_on);
 
-                    NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
+                    NewDataBaseHelper helper = new NewDataBaseHelper(mContext);
                     helper.insertUserHabitData(userHabitTable);
 
                 } else {
@@ -508,17 +512,17 @@ public class WebServices {
                 String table_user_habits_reminder_next_desc,
                 String table_user_habits_habit_added_on
         ) {
-            this.table_user_habits_id=table_user_habits_id;
-            this.table_user_habits_user_id=table_user_habits_user_id;
-            this.table_user_habits_user_name=table_user_habits_user_name;
-            this.table_user_habits_habit_id=table_user_habits_habit_id;
-            this.table_user_habits_ritual_type=table_user_habits_ritual_type;
-            this.table_user_habits_userhabit_time=table_user_habits_userhabit_time;
-            this.table_user_habits_is_habit_completed=table_user_habits_is_habit_completed;
-            this.table_user_habits_habit_priority=table_user_habits_habit_priority;
-            this.table_user_habits_habit_completed_on=table_user_habits_habit_completed_on;
-            this.table_user_habits_reminder_next_desc=table_user_habits_reminder_next_desc;
-            this.table_user_habits_habit_added_on=table_user_habits_habit_added_on;
+            this.table_user_habits_id = table_user_habits_id;
+            this.table_user_habits_user_id = table_user_habits_user_id;
+            this.table_user_habits_user_name = table_user_habits_user_name;
+            this.table_user_habits_habit_id = table_user_habits_habit_id;
+            this.table_user_habits_ritual_type = table_user_habits_ritual_type;
+            this.table_user_habits_userhabit_time = table_user_habits_userhabit_time;
+            this.table_user_habits_is_habit_completed = table_user_habits_is_habit_completed;
+            this.table_user_habits_habit_priority = table_user_habits_habit_priority;
+            this.table_user_habits_habit_completed_on = table_user_habits_habit_completed_on;
+            this.table_user_habits_reminder_next_desc = table_user_habits_reminder_next_desc;
+            this.table_user_habits_habit_added_on = table_user_habits_habit_added_on;
 
             Log.d(TAG, this.toString());
         }
@@ -564,7 +568,7 @@ public class WebServices {
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
 
-                    JSONObject result=jsonObject.optJSONObject("result");
+                    JSONObject result = jsonObject.optJSONObject("result");
 
 
                 } else {
@@ -608,7 +612,7 @@ public class WebServices {
         public DeleteHabitService(
                 String table_user_habits_id
         ) {
-            this.table_user_habits_id=table_user_habits_id;
+            this.table_user_habits_id = table_user_habits_id;
             Log.d(TAG, this.toString());
         }
 
@@ -643,7 +647,7 @@ public class WebServices {
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
 
-                    JSONObject result=jsonObject.optJSONObject("result");
+                    JSONObject result = jsonObject.optJSONObject("result");
 
 
                 } else {
@@ -655,7 +659,7 @@ public class WebServices {
         }
     }
 
-//add habit to time line
+    //add habit to time line
     public class AddHabitToTimeLine extends AsyncTask<String, Void, String> {
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         String jResult;
@@ -868,7 +872,7 @@ public class WebServices {
                                      String reminder_desc4,
                                      String reminder_desc5,
                                      String reminder_desc6) {
-            this.h_id=h_id;
+            this.h_id = h_id;
             this.habit = habit;
             this.description = description;
             this.benefits = benefits;
@@ -923,6 +927,39 @@ public class WebServices {
                 JSONObject jsonObject = new JSONObject(aVoid);
                 String success = jsonObject.optString("success");
                 if (success.equals("true")) {
+                    JSONObject object = jsonObject.optJSONObject("result");
+
+                    String custom_habit_id = object.optString("custom_habit_id");
+                    String custom_habit_user_id = object.optString("custom_habit_user_id");
+                    String custom_h_id = object.optString("custom_h_id");
+                    String custom_habit = object.optString("custom_habit");
+                    String custom_description = object.optString("custom_description");
+                    String custom_benefits = object.optString("custom_benefits");
+                    String custom_habit_time = object.optString("custom_habit_time");
+                    String custom_rem_des1 = object.optString("custom_rem_des1");
+                    String custom_rem_des2 = object.optString("custom_rem_des2");
+                    String custom_rem_des3 = object.optString("custom_rem_des3");
+                    String custom_rem_des4 = object.optString("custom_rem_des4");
+                    String custom_rem_des5 = object.optString("custom_rem_des5");
+                    String custom_rem_des6 = object.optString("custom_rem_des6");
+
+                    CustomHabitPOJO pojo = new CustomHabitPOJO();
+                    pojo.setCustom_habit_id(custom_habit_id);
+                    pojo.setCustom_habit_user_id(custom_habit_user_id);
+                    pojo.setCustom_h_id(custom_h_id);
+                    pojo.setCustom_habit(custom_habit);
+                    pojo.setCustom_description(custom_description);
+                    pojo.setCustom_benefits(custom_benefits);
+                    pojo.setCustom_habit_time(custom_habit_time);
+                    pojo.setCustom_rem_des1(custom_rem_des1);
+                    pojo.setCustom_rem_des2(custom_rem_des2);
+                    pojo.setCustom_rem_des3(custom_rem_des3);
+                    pojo.setCustom_rem_des4(custom_rem_des4);
+                    pojo.setCustom_rem_des5(custom_rem_des5);
+                    pojo.setCustom_rem_des6(custom_rem_des6);
+
+                    NewDataBaseHelper helper = new NewDataBaseHelper(mContext);
+                    helper.insertcustomData(pojo);
 
                 } else {
                     Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
@@ -952,6 +989,136 @@ public class WebServices {
                     '}';
         }
     }
+
+
+    //update CUstom Habit:-----
+
+
+    public class UpdateCustomHabitService extends AsyncTask<String, Void, String> {
+        ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+        String jResult;
+        //        ProgressDialog progressDialog;
+
+        String custom_habit_user_id;
+        String custom_h_id;
+        String custom_habit;
+        String custom_description;
+        String custom_benefits;
+        String custom_habit_time;
+        String custom_rem_des1;
+        String custom_rem_des2;
+        String custom_rem_des3;
+        String custom_rem_des4;
+        String custom_rem_des5;
+        String custom_rem_des6;
+        String custom_habit_id;
+
+        public UpdateCustomHabitService(String custom_habit_user_id,
+                                        String custom_h_id,
+                                        String custom_habit,
+                                        String custom_description,
+                                        String custom_benefits,
+                                        String custom_habit_time,
+                                        String custom_rem_des1,
+                                        String custom_rem_des2,
+                                        String custom_rem_des3,
+                                        String custom_rem_des4,
+                                        String custom_rem_des5,
+                                        String custom_rem_des6,
+                                        String custom_habit_id) {
+            this.custom_habit_user_id=custom_habit_user_id;
+            this.custom_h_id=custom_h_id;
+            this.custom_habit=custom_habit;
+            this.custom_description=custom_description;
+            this.custom_benefits=custom_benefits;
+            this.custom_habit_time=custom_habit_time;
+            this.custom_rem_des1=custom_rem_des1;
+            this.custom_rem_des2=custom_rem_des2;
+            this.custom_rem_des3=custom_rem_des3;
+            this.custom_rem_des4=custom_rem_des4;
+            this.custom_rem_des5=custom_rem_des5;
+            this.custom_rem_des6=custom_rem_des6;
+            this.custom_habit_id=custom_habit_id;
+
+            Log.d(TAG, "custom habit update:-" + this.toString());
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+//            progressDialog = ProgressDialog.show(mContext, "Please wait...", "Adding Habit");
+//            progressDialog.setCancelable(true);
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            nameValuePairs.add(new BasicNameValuePair("custom_habit_user_id", custom_habit_user_id));
+            nameValuePairs.add(new BasicNameValuePair("custom_h_id", custom_h_id));
+            nameValuePairs.add(new BasicNameValuePair("custom_habit", custom_habit));
+            nameValuePairs.add(new BasicNameValuePair("custom_description", custom_description));
+            nameValuePairs.add(new BasicNameValuePair("custom_benefits", custom_benefits));
+            nameValuePairs.add(new BasicNameValuePair("custom_habit_time", custom_habit_time));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des1", custom_rem_des1));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des2", custom_rem_des2));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des3", custom_rem_des3));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des4", custom_rem_des4));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des5", custom_rem_des5));
+            nameValuePairs.add(new BasicNameValuePair("custom_rem_des6", custom_rem_des6));
+            nameValuePairs.add(new BasicNameValuePair("custom_habit_id", custom_habit_id));
+
+            try {
+                jResult = WebServices.httpCall(WebServices.UPDATE_CUSTOM_HABIT_URL, nameValuePairs);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return jResult;
+        }
+
+        @Override
+        protected void onPostExecute(String aVoid) {
+            super.onPostExecute(aVoid);
+//            if (progressDialog != null)
+//                progressDialog.dismiss();
+            try {
+                Log.d(TAG, aVoid);
+                JSONObject jsonObject = new JSONObject(aVoid);
+                String success = jsonObject.optString("success");
+                if (success.equals("true")) {
+
+                } else {
+                    Toast.makeText(mContext, "Custom habit updation Failed", Toast.LENGTH_SHORT).show();
+                }
+            } catch (Exception e) {
+                Log.d(TAG, e.toString());
+            }
+        }
+
+        @Override
+        public String toString() {
+            return "UpdateCustomHabitService{" +
+                    "nameValuePairs=" + nameValuePairs +
+                    ", jResult='" + jResult + '\'' +
+                    ", custom_habit_user_id='" + custom_habit_user_id + '\'' +
+                    ", custom_h_id='" + custom_h_id + '\'' +
+                    ", custom_habit='" + custom_habit + '\'' +
+                    ", custom_description='" + custom_description + '\'' +
+                    ", custom_benefits='" + custom_benefits + '\'' +
+                    ", custom_habit_time='" + custom_habit_time + '\'' +
+                    ", custom_rem_des1='" + custom_rem_des1 + '\'' +
+                    ", custom_rem_des2='" + custom_rem_des2 + '\'' +
+                    ", custom_rem_des3='" + custom_rem_des3 + '\'' +
+                    ", custom_rem_des4='" + custom_rem_des4 + '\'' +
+                    ", custom_rem_des5='" + custom_rem_des5 + '\'' +
+                    ", custom_rem_des6='" + custom_rem_des6 + '\'' +
+                    ", custom_habit_id='" + custom_habit_id + '\'' +
+                    '}';
+        }
+    }
+
+
+    //end update custom habit---
+
 
     public class AddUserRitual extends AsyncTask<String, Void, String> {
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -1327,9 +1494,6 @@ public class WebServices {
             }
         }
     }
-
-
-
 
 
     public class AddReminderDescService extends AsyncTask<String, Void, String> {
@@ -1853,20 +2017,20 @@ public class WebServices {
                 if (success.equals("true")) {
 
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
-                    String j_h_id=jsonObject1.optString("j_h_id");
-                    String j_h_user_id=jsonObject1.optString("j_h_user_id");
-                    String j_h_user_name=jsonObject1.optString("j_h_user_name");
-                    String j_h_journey_name=jsonObject1.optString("j_h_journey_name");
-                    String j_h_hid=jsonObject1.optString("j_h_hid");
-                    String j_h_letter_reap=jsonObject1.optString("j_h_letter_reap");
-                    String j_h_challenge_acc=jsonObject1.optString("j_h_challenge_acc");
-                    String j_h_goal_completed=jsonObject1.optString("j_h_goal_completed");
-                    String j_h_action_done=jsonObject1.optString("j_h_action_done");
-                    String j_h_motivation=jsonObject1.optString("j_h_motivation");
-                    String j_h_golden_chllenge=jsonObject1.optString("j_h_golden_chllenge");
-                    String j_golden_status=jsonObject1.optString("j_golden_status");
+                    String j_h_id = jsonObject1.optString("j_h_id");
+                    String j_h_user_id = jsonObject1.optString("j_h_user_id");
+                    String j_h_user_name = jsonObject1.optString("j_h_user_name");
+                    String j_h_journey_name = jsonObject1.optString("j_h_journey_name");
+                    String j_h_hid = jsonObject1.optString("j_h_hid");
+                    String j_h_letter_reap = jsonObject1.optString("j_h_letter_reap");
+                    String j_h_challenge_acc = jsonObject1.optString("j_h_challenge_acc");
+                    String j_h_goal_completed = jsonObject1.optString("j_h_goal_completed");
+                    String j_h_action_done = jsonObject1.optString("j_h_action_done");
+                    String j_h_motivation = jsonObject1.optString("j_h_motivation");
+                    String j_h_golden_chllenge = jsonObject1.optString("j_h_golden_chllenge");
+                    String j_golden_status = jsonObject1.optString("j_golden_status");
 
-                    JourneyHabitPojo pojo=new JourneyHabitPojo();
+                    JourneyHabitPojo pojo = new JourneyHabitPojo();
                     pojo.setJ_h_id(j_h_id);
                     pojo.setJ_h_user_id(j_h_user_id);
                     pojo.setJ_h_user_name(j_h_user_name);
@@ -1880,7 +2044,7 @@ public class WebServices {
                     pojo.setJ_h_golden_chllenge(j_h_golden_chllenge);
                     pojo.setJ_golden_status(j_golden_status);
 
-                    NewDataBaseHelper helper=new NewDataBaseHelper(mContext);
+                    NewDataBaseHelper helper = new NewDataBaseHelper(mContext);
                     helper.insertJourneyHabitData(pojo);
 
 
@@ -1913,7 +2077,6 @@ public class WebServices {
     }
 
 
-
     public class UpdateJourneyHabitService extends AsyncTask<String, Void, String> {
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         String jResult;
@@ -1932,18 +2095,18 @@ public class WebServices {
         String j_golden_status;
 
         public UpdateJourneyHabitService(String j_h_id,
-                                      String j_h_user_id,
-                                      String j_h_user_name,
-                                      String j_h_journey_name,
-                                      String j_h_hid,
-                                      String j_h_letter_reap,
-                                      String j_h_challenge_acc,
-                                      String j_h_goal_completed,
-                                      String j_h_action_done,
-                                      String j_h_motivation,
-                                      String j_h_golden_chllenge,
-                                      String j_golden_status) {
-            this.j_h_id=j_h_id;
+                                         String j_h_user_id,
+                                         String j_h_user_name,
+                                         String j_h_journey_name,
+                                         String j_h_hid,
+                                         String j_h_letter_reap,
+                                         String j_h_challenge_acc,
+                                         String j_h_goal_completed,
+                                         String j_h_action_done,
+                                         String j_h_motivation,
+                                         String j_h_golden_chllenge,
+                                         String j_golden_status) {
+            this.j_h_id = j_h_id;
             this.j_h_user_id = j_h_user_id;
             this.j_h_user_name = j_h_user_name;
             this.j_h_journey_name = j_h_journey_name;
