@@ -37,7 +37,9 @@ import com.mixpanel.android.mpmetrics.OnMixpanelUpdatesReceivedListener;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
 import com.motivator.database.GetData;
+import com.motivator.database.PrefData;
 import com.motivator.database.TableAttributes;
+import com.motivator.services.ContactService;
 import com.motivator.wecareyou.fragment.HomeFragment;
 import com.motivator.wecareyou.fragment.JourneyIntresting;
 import com.motivator.wecareyou.fragment.TimeLineFragment;
@@ -174,7 +176,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         catch (Exception e){
 
         }
-
+        if(!PrefData.getBooleanPref(getApplicationContext(), PrefData.CONTACT_SAVED,false)) {
+            startService(new Intent(MainActivity.this, ContactService.class));
+        }
 
 
     }

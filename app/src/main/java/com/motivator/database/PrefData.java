@@ -14,6 +14,8 @@ public class PrefData {
     public static final String GENDER_KEY="gender";
     public static final String EMAIL_KEY="email";
     public static final String USER_ID="userid";
+    public static final String CONTACT_SAVED="contact_saved";
+
     public static final String WALKTHROUGH_FIRST_HABITLIST="firstwalkthroughhabitlist";
 
 

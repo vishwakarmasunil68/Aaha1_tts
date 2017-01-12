@@ -97,6 +97,8 @@ public class GetAllReminderDesc {
 
                 } else {
                     Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
+                    activity.startActivity(new Intent(activity, Splash.class));
+                    activity.finish();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

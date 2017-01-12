@@ -3,7 +3,6 @@ package com.motivator.services.AlldataService;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.motivator.common.WebServices;
 import com.motivator.database.NewDataBaseHelper;
@@ -105,7 +104,9 @@ public class GetAllCustomHabit {
                     new GetAllHabits(activity,user_id).new GettingUserHabitDetails().execute();
 
                 }else {
-                    Toast.makeText(mContext, "Failed to get the custom habits", Toast.LENGTH_SHORT).show();
+                    new GetAllHabits(activity,user_id).new GettingUserHabitDetails().execute();
+
+//                    Toast.makeText(mContext, "Failed to get the custom habits", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

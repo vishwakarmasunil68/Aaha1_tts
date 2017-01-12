@@ -34,6 +34,9 @@ import com.dev.sacot41.scviewpager.SCViewPagerAdapter;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
 import com.motivator.database.DatabaseHelper;
+import com.motivator.database.PrefData;
+import com.motivator.services.ContactService;
+import com.motivator.services.MusicDownloadService;
 import com.motivator.support.FileUtils;
 
 import java.util.ArrayList;
@@ -196,7 +199,8 @@ public class Splash extends FragmentActivity implements OnClickListener{
     }
 
     public void makeSplash(){
-//        startService(new Intent(Splash.this, MusicDownloadService.class));
+        startService(new Intent(Splash.this, MusicDownloadService.class));
+
         login_btn= (Button) findViewById(R.id.login_button);
         login_btn.setOnClickListener(new OnClickListener() {
             @Override

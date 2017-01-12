@@ -85,7 +85,7 @@ public class LoginActivity extends FragmentActivity implements View.OnClickListe
         putData = new PutData(LoginActivity.this);
         updateData = new UpdateData(LoginActivity.this);
         getData = new GetData(LoginActivity.this);
-        SpannableString s = new SpannableString("add habit");
+        SpannableString s = new SpannableString("Login");
         s.setSpan(new com.motivator.support.TypefaceSpan(this, "fonts/Montez-Regular.ttf"), 0, s.length(),
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
@@ -225,10 +225,14 @@ public class LoginActivity extends FragmentActivity implements View.OnClickListe
                 Log.d("sunil", "name:-" + acct.getDisplayName());
                 Log.d("sunil", "email:-" + acct.getEmail());
 //                Log.d("sunil", "image:-" + acct.getPhotoUrl().toString());
-                Log.d("sunil", "id:-" + acct.getId());
-                if(acct.getEmail().toString().length()>0) {
+
+                if(acct.getEmail().length()>0){
                     new RegistrationCall(acct.getEmail().toString()).execute("http://www.funhabits.co/aaha/login.php");
                 }
+                Log.d("sunil", "id:-" + acct.getId());
+//                if(acct.getEmail().toString().length()>0) {
+//                    new RegistrationCall(acct.getEmail().toString()).execute("http://www.funhabits.co/aaha/login.php");
+//                }
 
             }
             catch (Exception e){
@@ -517,23 +521,24 @@ public class LoginActivity extends FragmentActivity implements View.OnClickListe
                     String userEmail = "";
                     if (profile.toString().contains("email")) {
                          userEmail= profile.getString("email");
-
+                        Log.d("sunil","useremail:-"+userEmail);
+                        new RegistrationCall(userEmail).execute("http://www.funhabits.co/aaha/login.php");
                     } else {
 
                     }
                     final String email=userEmail;
 
-
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                        if(email.length()>0){
-                            new RegistrationCall(email).execute("http://www.funhabits.co/aaha/login.php");
-                        }
-//                    callService();
-                        }
-
-                    });
+//
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                        if(email.length()>0){
+//                            new RegistrationCall(email).execute("http://www.funhabits.co/aaha/login.php");
+//                        }
+////                    callService();
+//                        }
+//
+//                    });
 
                 } catch (JSONException e) {
                     e.printStackTrace();

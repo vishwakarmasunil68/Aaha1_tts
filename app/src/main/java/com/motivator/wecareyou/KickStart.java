@@ -146,8 +146,8 @@ public class KickStart extends FragmentActivity implements View.OnClickListener,
         initCheckBox();
         Checkvalidation(check);
 
-//        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.registration_1);
-//        mediaPlayer.start();
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.registration_1);
+        mediaPlayer.start();
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();

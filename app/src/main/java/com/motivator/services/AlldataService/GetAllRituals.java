@@ -3,7 +3,6 @@ package com.motivator.services.AlldataService;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
@@ -100,7 +99,9 @@ public class GetAllRituals {
 
                     new GetAllCustomHabit(activity,user_id).new GettingCustomHABITS().execute();
                 } else {
-                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
+                    new GetAllCustomHabit(activity,user_id).new GettingCustomHABITS().execute();
+
+//                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

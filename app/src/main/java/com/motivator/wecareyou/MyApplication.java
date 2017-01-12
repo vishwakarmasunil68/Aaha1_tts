@@ -61,6 +61,7 @@ public class MyApplication extends Application implements TextToSpeech.OnInitLis
 //            tts.setPitch(0.9f);
 //            tts.setSpeechRate(0.8f);
             tts_initialized=true;
+//            tts.setVoice(Voice.QUALITY_NORMAL);
             if (result == TextToSpeech.LANG_MISSING_DATA
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");

@@ -3,7 +3,6 @@ package com.motivator.services.AlldataService;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.motivator.common.WebServices;
 import com.motivator.database.NewDataBaseHelper;
@@ -91,7 +90,9 @@ public class GetAllTimeLine {
 
                     new GetAllJourney(activity,user_id).new GettingUserJourney().execute();
                 } else {
-                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
+                    new GetAllJourney(activity,user_id).new GettingUserJourney().execute();
+
+//                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

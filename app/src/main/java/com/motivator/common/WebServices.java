@@ -3,7 +3,6 @@ package com.motivator.common;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.motivator.database.NewDataBaseHelper;
 import com.motivator.database.PrefData;
@@ -454,7 +453,7 @@ public class WebServices {
                     helper.insertUserHabitData(userHabitTable);
 
                 } else {
-                    Toast.makeText(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -572,7 +571,7 @@ public class WebServices {
 
 
                 } else {
-                    Toast.makeText(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -651,7 +650,7 @@ public class WebServices {
 
 
                 } else {
-                    Toast.makeText(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -737,7 +736,7 @@ public class WebServices {
                     helper.inserttimelineData(obj);
 
                 } else {
-                    Toast.makeText(mContext, "something went wrong", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "something went wrong", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -822,7 +821,7 @@ public class WebServices {
                 if (success.equals("true")) {
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -962,7 +961,7 @@ public class WebServices {
                     helper.insertcustomData(pojo);
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1087,7 +1086,7 @@ public class WebServices {
                 if (success.equals("true")) {
 
                 } else {
-                    Toast.makeText(mContext, "Custom habit updation Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Custom habit updation Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1201,7 +1200,7 @@ public class WebServices {
                 if (success.equals("true")) {
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1319,7 +1318,7 @@ public class WebServices {
 
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1415,7 +1414,7 @@ public class WebServices {
                 } else {
                     Log.d(TAG, "update reminder service:-failed");
 
-                    Toast.makeText(mContext, "Reminder updation failed.", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Reminder updation failed.", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1487,7 +1486,7 @@ public class WebServices {
                 } else {
                     Log.d(TAG, "update reminder service:-failed");
 
-                    Toast.makeText(mContext, "Reminder Deletion failed.", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Reminder Deletion failed.", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1586,7 +1585,7 @@ public class WebServices {
                     helper.insertreminderDescData(pojo);
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1665,7 +1664,7 @@ public class WebServices {
                 if (success.equals("true")) {
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
                 } else {
-                    Toast.makeText(mContext, "Reminder Desc Updation Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Reminder Desc Updation Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1797,7 +1796,7 @@ public class WebServices {
                     helper.insertJourneyData(obj);
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -1907,7 +1906,7 @@ public class WebServices {
                     JSONObject jsonObject1 = jsonObject.optJSONObject("result");
 
                 } else {
-                    Toast.makeText(mContext, "Journey updation failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Journey updation failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -2049,7 +2048,7 @@ public class WebServices {
 
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());
@@ -2164,7 +2163,7 @@ public class WebServices {
                 if (success.equals("true")) {
 
                 } else {
-                    Toast.makeText(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
+                    //toast.maketext(mContext, "Registration Failed", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 Log.d(TAG, e.toString());

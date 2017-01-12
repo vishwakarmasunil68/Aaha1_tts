@@ -459,7 +459,6 @@ public class HomeFragment extends Fragment {
                         actionFrag.setArguments(args);
                         fragmentManager.beginTransaction().add(R.id.frame_notification, actionFrag, frag_tag).commit();
                     }
-
                 }
                 if (actionStatus > TableAttributes.STATUS_VALUE_0 && motivatorStatus <= 5) {
                     frag_tag = "motivator" + position;

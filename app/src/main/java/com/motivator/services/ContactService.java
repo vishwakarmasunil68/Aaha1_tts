@@ -11,8 +11,8 @@ import com.github.tamir7.contacts.Contact;
 import com.github.tamir7.contacts.Contacts;
 import com.github.tamir7.contacts.Query;
 import com.google.gson.Gson;
-import com.motivator.common.GeneralUtility;
 import com.motivator.common.WebServices;
+import com.motivator.database.PrefData;
 import com.motivator.model.ContactDetails;
 
 import org.apache.http.NameValuePair;
@@ -51,7 +51,8 @@ public class ContactService extends Service {
     private void SynchronizeContacts() {
         Query q = Contacts.getQuery();
         q.include(Contact.Field.DisplayName, Contact.Field.PhoneNumber, Contact.Field.PhoneNormalizedNumber, Contact.Field.Email);
-        String user_id= GeneralUtility.getPreferences(getApplicationContext(), "user_id");
+        String user_id= PrefData.getStringPref(getApplicationContext(),PrefData.USER_ID);
+        Log.d(TAG,"user_id:-"+user_id);
         List<Contact> contacts = q.find();
         List<ContactDetails> list=new ArrayList<>();
         for(Contact contact:contacts) {
@@ -82,10 +83,63 @@ public class ContactService extends Service {
                 Log.d(TAG,e.toString());
             }
         }
-        for(ContactDetails cd:list){
-            new RegistrationCall(user_id,cd.getDisplayname(),cd.getPhonenumber(),cd.getPhonenumber()).execute();
-        }
         Log.d(TAG,list.toString());
+        String name="";
+        String phone_no="";
+        String email="";
+        String user_ids="";
+        for(int i=0;i<list.size();i++){
+            ContactDetails cd=list.get(i);
+            if((i+1)==list.size()){
+                user_ids+=user_id;
+                if(!cd.getDisplayname().equals("")||cd.getDisplayname().length()>0){
+                    name+=cd.getDisplayname();
+                }
+                else{
+                    name+="null";
+                }
+                if(cd.getPhonenumber().length()>0||!cd.getPhonenumber().equals("")){
+                    phone_no+=cd.getPhonenumber();
+                }
+                else{
+                    phone_no+="null";
+                }
+                if(cd.getEmail().length()>0||!cd.getEmail().equals("")){
+                    email+=cd.getPhonenumber();
+                }
+                else{
+                    email+="null";
+                }
+            }
+            else{
+                user_ids+=user_id+",";
+                if(!cd.getDisplayname().equals("")||cd.getDisplayname().length()>0){
+                    name+=cd.getDisplayname()+",";
+                }
+                else{
+                    name+="null,";
+                }
+                if(cd.getPhonenumber().length()>0||!cd.getPhonenumber().equals("")){
+                    phone_no+=cd.getPhonenumber()+",";
+                }
+                else{
+                    phone_no+="null,";
+                }
+                if(cd.getEmail().length()>0||!cd.getEmail().equals("")){
+                    email+=cd.getEmail()+",";
+                }
+                else{
+                    email+="null,";
+                }
+            }
+        }
+
+        Log.d(TAG,"displaynames:-"+name);
+        Log.d(TAG,"phoneno:-"+phone_no);
+        Log.d(TAG,"email:-"+email);
+        if(list.size()>0){
+            new RegistrationCall(user_ids,name,phone_no,email).execute();
+        }
     }
     class RegistrationCall extends AsyncTask<String, Void, String> {
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -111,15 +165,15 @@ public class ContactService extends Service {
         protected String doInBackground(String... params) {
 
             nameValuePairs.add(new BasicNameValuePair("con_user_id", user_id));
-            nameValuePairs.add(new BasicNameValuePair("con_user_name", name));
             nameValuePairs.add(new BasicNameValuePair("con_user_phone", number));
             nameValuePairs.add(new BasicNameValuePair("con_user_email", email));
-            nameValuePairs.add(new BasicNameValuePair("con_user_notes", ""));
-            nameValuePairs.add(new BasicNameValuePair("con_user_postal_address",""));
-            nameValuePairs.add(new BasicNameValuePair("con_user_instant_mess",""));
-            nameValuePairs.add(new BasicNameValuePair("con_organization", ""));
+            nameValuePairs.add(new BasicNameValuePair("con_user_name", name));
+//            nameValuePairs.add(new BasicNameValuePair("con_user_notes", ""));
+//            nameValuePairs.add(new BasicNameValuePair("con_user_postal_address",""));
+//            nameValuePairs.add(new BasicNameValuePair("con_user_instant_mess",""));
+//            nameValuePairs.add(new BasicNameValuePair("con_organization", ""));
             try {
-                jResult = WebServices.httpCall("http://www.funhabits.co/aaha/contect_user.php", nameValuePairs);
+                jResult = WebServices.httpCall("http://www.funhabits.co/aaha/contact.php", nameValuePairs);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -129,6 +183,16 @@ public class ContactService extends Service {
         @Override
         protected void onPostExecute(String jsonResponse) {
             super.onPostExecute(jsonResponse);
+            try{
+                JSONObject object=new JSONObject(jsonResponse);
+                String success=object.optString("success");
+                if(success.equals("true")){
+                    PrefData.setBooleanPref(getApplicationContext(), PrefData.CONTACT_SAVED,true);
+                }
+            }
+            catch (Exception e){
+
+            }
 
 
         }

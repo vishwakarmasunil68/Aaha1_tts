@@ -20,7 +20,6 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
 import com.motivator.common.AppsConstant;
@@ -141,6 +140,9 @@ public class Letter extends Activity implements OnClickListener{
 					intent.putExtra("mood","cancel");
 					startActivity(intent);
 					finishAffinity();
+				}
+				else{
+					finish();
 				}
 			}
 		});
@@ -327,7 +329,7 @@ public class Letter extends Activity implements OnClickListener{
         public void failure() 
         {
             failure("");
-            Toast.makeText(Letter.this, "Failed", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(Letter.this, "Failed", Toast.LENGTH_SHORT).show();
         }
 
         @JavascriptInterface
@@ -335,7 +337,7 @@ public class Letter extends Activity implements OnClickListener{
         {
         	String paymentId=params;
             String status="Faluire";
-        	Toast.makeText(Letter.this, "Failed ", Toast.LENGTH_SHORT).show();
+//        	Toast.makeText(Letter.this, "Failed ", Toast.LENGTH_SHORT).show();
         }
    
     }

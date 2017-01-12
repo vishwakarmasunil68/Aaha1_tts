@@ -3,7 +3,6 @@ package com.motivator.services.AlldataService;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.motivator.common.WebServices;
 import com.motivator.database.NewDataBaseHelper;
@@ -91,7 +90,9 @@ public class GetAllReminder {
                         new GetAllReminderDesc(activity,user_id).new GettingReminderDescriptionDetails().execute();
                     }
                  else {
-                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
+                    new GetAllReminderDesc(activity,user_id).new GettingReminderDescriptionDetails().execute();
+
+//                    Toast.makeText(mContext, "Failed to get the user Habits", Toast.LENGTH_SHORT).show();
                 }
 
             } catch (Exception e) {
