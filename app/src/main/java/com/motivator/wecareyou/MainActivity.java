@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
@@ -36,10 +37,14 @@ import com.mixpanel.android.mpmetrics.MixpanelAPI;
 import com.mixpanel.android.mpmetrics.OnMixpanelUpdatesReceivedListener;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
+import com.motivator.common.Pref;
 import com.motivator.database.GetData;
 import com.motivator.database.PrefData;
 import com.motivator.database.TableAttributes;
 import com.motivator.services.ContactService;
+import com.motivator.services.MusicDownloadService;
+import com.motivator.support.FileUtils;
+import com.motivator.support.StringUtils;
 import com.motivator.wecareyou.fragment.HomeFragment;
 import com.motivator.wecareyou.fragment.JourneyIntresting;
 import com.motivator.wecareyou.fragment.TimeLineFragment;
@@ -48,11 +53,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+
+import static com.motivator.wecareyou.fragment.HomeFragment.mpPlayer;
 
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
@@ -180,6 +188,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
             startService(new Intent(MainActivity.this, ContactService.class));
         }
 
+        startService(new Intent(MainActivity.this, MusicDownloadService.class));
+
+
 
     }
 
@@ -243,15 +254,28 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
-                // When swiping between pages, select the corresponding tab.
                 getActionBar().setSelectedNavigationItem(position);
-//        		currentPage = position;
                 if (position == 0) {
-                    //ftLeftMenu.setVisibility(View.VISIBLE);
-                    //ftRightMenu.setVisibility(View.VISIBLE);
+                    if (mpPlayer != null && mpPlayer.isPlaying()) {
+                        mpPlayer.stop();
+                    }
                 } else {
                     ftLeftMenu.setVisibility(View.GONE);
                     ftRightMenu.setVisibility(View.GONE);
+                }
+
+                if(position==1) {
+                    if (mpPlayer != null && mpPlayer.isPlaying()) {
+                        mpPlayer.stop();
+                    }
+                    if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
+                        ListCalendarFiles(new File(FileUtils.CALENDAR_FILE_PATH));
+                    }
+                }
+                if(position==2){
+                    if (mpPlayer != null && mpPlayer.isPlaying()) {
+                        mpPlayer.stop();
+                    }
                 }
 
             }
@@ -324,6 +348,40 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
             return NUM_PAGES;
         }
     }
+    private final String TAG=getClass().getName();
+    public void ListCalendarFiles(File f){
+        File[] files=f.listFiles();
+        Log.d(TAG,"length:-"+files.length);
+        int val= Pref.getInteger(getApplicationContext(), StringUtils.CALENDAR,-1);
+        Log.d(TAG,"pref val:-"+val);
+        if(files.length>0){
+
+            if((val+1)>=files.length){
+                val=0;
+            }
+            else{
+                val=val+1;
+            }
+        }
+        try{
+            Log.d(TAG,"final val:-"+val);
+            File soundFile=files[val];
+            mpPlayer = new MediaPlayer();
+            mpPlayer.setDataSource(soundFile.toString());
+            mpPlayer.prepare();
+            if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
+                mpPlayer.start();
+            }
+            int MAX_VOLUME = 100;
+            final float volume = (float) (1 - (Math.log(MAX_VOLUME - 70) / Math.log(MAX_VOLUME)));
+            mpPlayer.setVolume(volume, volume);
+            Pref.setInteger(getApplicationContext(),StringUtils.CALENDAR,val);
+            Log.d(TAG,"pref mood:-"+Pref.getInteger(getApplicationContext(),StringUtils.CALENDAR,-1));
+        }
+        catch (Exception e){
+            Log.d("sunil",e.toString());
+        }
+    }
 
 
     @Override
@@ -368,7 +426,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                     switchButton.setIcon(R.drawable.voice_mute);
                     GeneralUtility.setPreferencesBoolean(MainActivity.this, AppsConstant.AVS_SOUND, false);
                     try{
-                        HomeFragment.mpPlayer.pause();
+                        mpPlayer.pause();
                     }
                     catch (Exception e){
 
@@ -380,7 +438,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
                     switchButton.setIcon(R.drawable.voice);
                     GeneralUtility.setPreferencesBoolean(MainActivity.this, AppsConstant.AVS_SOUND, true);
                     try{
-                        HomeFragment.mpPlayer.start();
+                        mpPlayer.start();
                     }
                     catch (Exception e){
 
@@ -539,8 +597,18 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         // events rather than send them immediately. This means it
         // is important to call flush() to send any unsent events
         // before your application is taken out of memory.
-
+        if(mpPlayer!=null&&mpPlayer.isPlaying()){
+            mpPlayer.stop();
+        }
         mMixpanel.flush();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(mpPlayer!=null&&mpPlayer.isPlaying()){
+            mpPlayer.stop();
+        }
     }
 
     @Override

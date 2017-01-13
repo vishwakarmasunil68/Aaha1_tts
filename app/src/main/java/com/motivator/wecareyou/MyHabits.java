@@ -103,6 +103,7 @@ public class MyHabits extends Activity implements OnClickListener, TimePickerDia
     private final String TAG="myhabits";
     MenuItem switchbtn;
     boolean isSoundOn;
+    boolean first_time=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -149,6 +150,10 @@ public class MyHabits extends Activity implements OnClickListener, TimePickerDia
         SharedPreferences sp = getSharedPreferences("aaha.txt", Context.MODE_PRIVATE);
         myhabitfirstspeak = sp.getString("myhabitfirstspeak", "");
 
+        Bundle bundle=getIntent().getExtras();
+        if(bundle!=null){
+            first_time=bundle.getBoolean("first_time");
+        }
 
 //        switch (selectedRitual){
 //            case "Morning Routine":
@@ -796,6 +801,8 @@ public class MyHabits extends Activity implements OnClickListener, TimePickerDia
                 intent = new Intent(MyHabits.this, HabitList.class);
                 intent.putExtra(AppsConstant.SELECTED_RITUAL, selectedRitual);
                 intent.putExtra(AppsConstant.RITUAL_TIME, ritualTime);
+                intent.putExtra("first_time",true);
+                Log.d(TAG,"first time:-"+first_time);
                 startActivity(intent);
                 finish();
                 break;
@@ -844,9 +851,6 @@ public class MyHabits extends Activity implements OnClickListener, TimePickerDia
         }
         if(mPlayer1!=null){
             mPlayer1.stop();
-        }
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
         }
     }
 

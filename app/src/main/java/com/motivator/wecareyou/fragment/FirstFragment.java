@@ -107,6 +107,7 @@ public class FirstFragment extends Fragment implements OnClickListener{
 			intent = new Intent(getActivity(), MyHabits.class);
 			intent.putExtra(AppsConstant.SELECTED_RITUAL, selectedRitual);
 			intent.putExtra("is_reminder_call", false);
+			intent.putExtra("first_time",true);
 			getActivity().startActivity(intent);
 			getActivity().finish();
 			break;

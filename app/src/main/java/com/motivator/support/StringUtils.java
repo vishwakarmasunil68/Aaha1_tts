@@ -34,6 +34,7 @@ public class StringUtils {
     public static final String RELAXATION_ZONE_VIDEO="relaxation_zone_video";
     public static final String LOGIN="login";
     public static final String CLICKS_TAP_SELECT="clicks-taps-sele";
+    public static final String GOLDEN_CHALLENGE="golden_challenge";
 
 
 

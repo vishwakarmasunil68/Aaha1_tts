@@ -897,10 +897,6 @@ public class KictstartTesting1 extends FragmentActivity implements View.OnClickL
     @Override
     protected void onPause() {
         super.onPause();
-
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
-        }
     }
 
 

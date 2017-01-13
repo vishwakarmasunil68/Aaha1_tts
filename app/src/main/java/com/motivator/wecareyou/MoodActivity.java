@@ -19,7 +19,6 @@ import android.widget.Button;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.GeneralUtility;
 import com.motivator.common.Pref;
-import com.motivator.database.PrefData;
 import com.motivator.relaxationzone.RelaxationZone;
 import com.motivator.support.FileUtils;
 import com.motivator.support.StringUtils;
@@ -42,13 +41,14 @@ public class MoodActivity extends Activity {
 
     List<String> list_mood_tsi = new ArrayList<>();
     List<String> list_mood_tsi_else = new ArrayList<>();
-
+    String user_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood);
+        user_name=GeneralUtility.getPreferences(this, AppsConstant.user_name);
         keep_me_company = (Button) findViewById(R.id.keep_me_company);
         leave_me_alone = (Button) findViewById(R.id.leave_me_alone);
         skip = (Button) findViewById(R.id.skip);
@@ -70,15 +70,15 @@ public class MoodActivity extends Activity {
         actionBar.setDisplayShowHomeEnabled(false);
 
 
-        list_mood_tsi.add("I'm sorry to hear that. I'll right here for you "+ PrefData.getStringPref(getApplicationContext(),PrefData.NAME_KEY)+". I'll do what I can. Why don't you relax. Maybe grab some hot tea or something, and I'll turn on some music.</item>" +
+        list_mood_tsi.add("I'm sorry to hear that. I'll right here for you "+ user_name+". I'll do what I can. Why don't you relax. Maybe grab some hot tea or something, and I'll turn on some music.</item>" +
                 "I get that. Take a break. Enjoy some ambiance.");
-        list_mood_tsi.add("I understand the day is overwhelming right now. We will update our records later.");
+        list_mood_tsi.add(user_name+" I understand the day is overwhelming right now. We will update our records later.");
         list_mood_tsi.add("Why don't we use this as an opportunity to decompress, hmm? You will feel much better about your routine if you get a minute of you-time");
 
 
         list_mood_tsi_else.add("Got it! Why don’t you rest in the garden a while? The band is doing something nice out there. No rush or anything. Let me know when you are ready to continue.");
-        list_mood_tsi_else.add("I know how you feel. Those days can be frustrating.But you’ll succeed soon. Take a moment for yourself. We’ll get rolling afterward.");
-        list_mood_tsi_else.add("Alright "+ PrefData.getStringPref(getApplicationContext(),PrefData.NAME_KEY)+". Let’s take a deep breath, and think over the situation. Here is a new way to help bring life back into balance.");
+        list_mood_tsi_else.add("I know how you feel "+user_name+" Those days can be frustrating.But you’ll succeed soon. Take a moment for yourself. We’ll get rolling afterward.");
+        list_mood_tsi_else.add("Alright "+ user_name+". Let’s take a deep breath, and think over the situation. Here is a new way to help bring life back into balance.");
 
 
         GetMusicFilePath();
@@ -97,6 +97,8 @@ public class MoodActivity extends Activity {
                 if (mplayer != null) {
                     mplayer.stop();
                 }
+                Intent intent =new Intent(MoodActivity.this,RelaxationZone.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -170,6 +172,7 @@ public class MoodActivity extends Activity {
     public void playMoodBasedVoice() {
         if (mood.toLowerCase().contains("tense") || mood.toLowerCase().contains("irritated") || mood.toLowerCase().contains("sad")) {
             PlayMoodVoiceFilesforTIS(list_mood_tsi);
+            //tsi stands for tense, stressed and irritated.
         } else {
             playMoodVoiceForOthers(list_mood_tsi_else);
 
@@ -250,10 +253,10 @@ public class MoodActivity extends Activity {
             if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
                 mplayer.start();
             }
-            int MAX_VOLUME = 100;
-            final float volume = (float) (1 - (Math.log(MAX_VOLUME - 70) / Math.log(MAX_VOLUME)));
-            mplayer.setVolume(volume, volume);
-            Pref.setInteger(getApplicationContext(), mood, val);
+//            int MAX_VOLUME = 100;
+//            final float volume = (float) (1 - (Math.log(MAX_VOLUME - 70) / Math.log(MAX_VOLUME)));
+//            mplayer.setVolume(volume, volume);
+//            Pref.setInteger(getApplicationContext(), mood, val);
             Log.d(TAG, "pref mood:-" + Pref.getInteger(getApplicationContext(), mood, -1));
         } catch (Exception e) {
             Log.d("sunil", e.toString());
@@ -263,6 +266,9 @@ public class MoodActivity extends Activity {
 
     private void setBackgroundMusic() {
         try {
+            if(mplayer!=null&&mplayer.isPlaying()){
+                mplayer.stop();
+            }
             String musicFile = "music/morning.mp3";
 //			if(selectedRitual.equalsIgnoreCase(AppsConstant.MORNING_RITUAL))
 //				musicFile = "music/morning.mp3";
@@ -301,9 +307,6 @@ public class MoodActivity extends Activity {
         }
         if (mpPlayer != null) {
             mpPlayer.stop();
-        }
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
         }
     }
 

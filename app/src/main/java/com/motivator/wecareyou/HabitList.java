@@ -89,7 +89,7 @@ public class HabitList extends Activity {
     String habitlisttts = "";
     MediaPlayer mPlayer, mPlayer1;
     private final String TAG = "habitlist";
-
+    boolean first_time=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,48 +119,50 @@ public class HabitList extends Activity {
 
         //intializing UI Views
         initializeUIViews();
+
+        Bundle bundle=getIntent().getExtras();
+        if(bundle!=null){
+            first_time=bundle.getBoolean("first_time");
+        }
+
+
         userName = GeneralUtility.getPreferences(HabitList.this, AppsConstant.user_name);
         selectedRitual = getIntent().getExtras().getString(AppsConstant.SELECTED_RITUAL);
         ritualTime = getIntent().getExtras().getString(AppsConstant.RITUAL_TIME);
 
-        SharedPreferences sp = getSharedPreferences("aaha.txt", Context.MODE_PRIVATE);
-        habitlisttts = sp.getString("habitlisttts", "");
 
 
-        if (habitlisttts.equals("")) {
-            SharedPreferences.Editor editor = sp.edit();
-            editor.putString("habitlisttts", "done");
-            editor.commit();
-//        	tts = new TextToSpeech(getApplicationContext(), new OnInitListener() {
-//
-//    			@Override
-//    			public void onInit(int status) {
-//    				// TODO Auto-generated method stub
-//    				convertTextToSpeech(status, "In this room, you will add and subtract the tasks you wish to do each day. Eventually, I'll be popping in to keep you on these things through the whole day.");
-//    			}
-//
-//    		});
-            if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
-                if (MyApplication.tts_initialized) {
-                    MyApplication.tts.speak("next we will go over your habits. In this room you will add and subtract the task you wish to do each day. we have vaious things to do through out the day some will be set for the morning, some for the afternoon and some for the evening here how it works", TextToSpeech.QUEUE_FLUSH, null);
-                }
-            }
-        } else {
-            SharedPreferences sp1 = getSharedPreferences("aaha.txt", Context.MODE_PRIVATE);
-            boolean first_msg1 = sp1.getBoolean("add_habit_first", true);
-            if (first_msg1) {
-                SharedPreferences.Editor edit = sp1.edit();
-                edit.putBoolean("add_habit_first", false);
-                edit.commit();
-                String add_habit_list = "You can tap each habit to see why it helps with a better health and happiness. Tap the add button to add it to your routine. If you want to add your own habit just type it in the search line below. You can even choose an image for it. Tap add new habit.";
+        if(!first_time) {
+            SharedPreferences sp = getSharedPreferences("aaha.txt", Context.MODE_PRIVATE);
+            habitlisttts = sp.getString("habitlisttts", "");
+            if (habitlisttts.equals("")) {
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("habitlisttts", "done");
+                editor.commit();
+                // put logic for reminder call
+
                 if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
                     if (MyApplication.tts_initialized) {
-                        MyApplication.tts.speak(add_habit_list, TextToSpeech.QUEUE_FLUSH, null);
+                        MyApplication.tts.speak("next we will go over your habits. In this room you will add and subtract the task you wish to do each day. we have vaious things to do through out the day some will be set for the morning, some for the afternoon and some for the evening here how it works", TextToSpeech.QUEUE_FLUSH, null);
                     }
                 }
-            } else {
-            }
 
+            } else {
+                SharedPreferences sp1 = getSharedPreferences("aaha.txt", Context.MODE_PRIVATE);
+                boolean first_msg1 = sp1.getBoolean("add_habit_first", true);
+                if (first_msg1) {
+                    SharedPreferences.Editor edit = sp1.edit();
+                    edit.putBoolean("add_habit_first", false);
+                    edit.commit();
+                    String add_habit_list = "You can tap each habit to see why it helps with a better health and happiness. Tap the add button to add it to your routine. If you want to add your own habit just type it in the search line below. You can even choose an image for it. Tap add new habit.";
+                    if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
+                        if (MyApplication.tts_initialized) {
+                            MyApplication.tts.speak(add_habit_list, TextToSpeech.QUEUE_FLUSH, null);
+                        }
+                    }
+                } else {
+                }
+            }
         }
         //Check is user coming first time in the app (by cheking isRitualAdded in database)
         //isRitualAdded = getData.isValueAdded(userName, TableAttributes.IS_RITUAL_ADDED);
@@ -285,9 +287,7 @@ public class HabitList extends Activity {
         if (mPlayer1 != null) {
             mPlayer1.stop();
         }
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
-        }
+
     }
 
     @Override
@@ -575,11 +575,11 @@ public class HabitList extends Activity {
      * show an alert dialog
      */
     public void showPopUp(Context _context, String title, String msg) {
-        try {
-            KickStart.mediaPlayer.stop();
-        } catch (Exception e) {
-
-        }
+//        try {
+//            KickStart.mediaPlayer.stop();
+//        } catch (Exception e) {
+//
+//        }
         AlertDialog.Builder alrt = new AlertDialog.Builder(_context);
         alrt.setMessage(msg);
         alrt.setCancelable(false);
@@ -651,6 +651,9 @@ public class HabitList extends Activity {
                         String title = "You are all set!";
                         if (ritualTime != null)
                             msg = "Want to know what will happen tommorrow at " + ritualTime + "?";
+                        if(KickStart.mediaPlayer!=null&&KickStart.mediaPlayer.isPlaying()){
+                            KickStart.mediaPlayer.stop();
+                        }
                         showPopUp(HabitList.this, title, msg);
                     }
                 }

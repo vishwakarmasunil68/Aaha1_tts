@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -26,13 +27,17 @@ import com.facebook.android.Facebook;
 import com.motivator.common.AppsConstant;
 import com.motivator.common.DateUtility;
 import com.motivator.common.GeneralUtility;
+import com.motivator.common.Pref;
 import com.motivator.database.GetData;
 import com.motivator.database.TableAttributes;
 import com.motivator.database.UpdateData;
 import com.motivator.model.JourneyData;
 import com.motivator.model.JourneyHabitModel;
+import com.motivator.support.FileUtils;
+import com.motivator.support.StringUtils;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.Date;
 
 public class Goal extends Activity implements OnClickListener{
@@ -54,7 +59,7 @@ public class Goal extends Activity implements OnClickListener{
 	private static String APP_ID = "234992030177331";
 	private Facebook facebook = new Facebook(APP_ID);
 	private AsyncFacebookRunner mAsyncRunner;
-	
+	MediaPlayer mplayer;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +97,55 @@ public class Goal extends Activity implements OnClickListener{
 		updateGoalStatus();
 
 		mAsyncRunner = new AsyncFacebookRunner(facebook);
-		
+		ListFiles(new File(FileUtils.JOURNEY_CHALLENGE), StringUtils.GOLDEN_CHALLENGE);
+	}
+	private final String TAG=getClass().getName();
+	public void ListFiles(File f, String mood) {
+		File[] files = f.listFiles();
+		Log.d(TAG, "length:-" + files.length);
+		int val = Pref.getInteger(getApplicationContext(), mood, -1);
+		Log.d(TAG, "pref val:-" + val);
+		if (files.length > 0) {
+
+			if ((val + 1) >= files.length) {
+				val = 0;
+			} else {
+				val = val + 1;
+			}
+		}
+		try {
+			Log.d(TAG, "final val:-" + val);
+			File soundFile = files[val];
+			mplayer = new MediaPlayer();
+			mplayer.setDataSource(soundFile.toString());
+			mplayer.prepare();
+			if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
+				mplayer.start();
+			}
+//            int MAX_VOLUME = 100;
+//            final float volume = (float) (1 - (Math.log(MAX_VOLUME - 70) / Math.log(MAX_VOLUME)));
+//            mplayer.setVolume(volume, volume);
+//            Pref.setInteger(getApplicationContext(), mood, val);
+			Log.d(TAG, "pref mood:-" + Pref.getInteger(getApplicationContext(), mood, -1));
+		} catch (Exception e) {
+			Log.d("sunil", e.toString());
+		}
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(mplayer!=null&&mplayer.isPlaying()){
+			mplayer.stop();
+		}
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		if(mplayer!=null&&mplayer.isPlaying()){
+			mplayer.stop();
+		}
 	}
 
 	private void updateGoalStatus() 

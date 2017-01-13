@@ -80,7 +80,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="#000000"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/imv_click"
@@ -89,7 +89,7 @@
         android:layout_below="@id/edt_search_habit"
         android:layout_marginTop="20dp"
         android:layout_centerInParent="true"
-        android:visibility="gone"
+        android:visibility="visible"
         android:src="@drawable/circle_click" />
      <TextView
         android:id="@+id/tv_info"

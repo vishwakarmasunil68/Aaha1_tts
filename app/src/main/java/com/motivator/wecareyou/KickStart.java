@@ -888,10 +888,6 @@ public class KickStart extends FragmentActivity implements View.OnClickListener,
     @Override
     protected void onPause() {
         super.onPause();
-
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
-        }
     }
 
 

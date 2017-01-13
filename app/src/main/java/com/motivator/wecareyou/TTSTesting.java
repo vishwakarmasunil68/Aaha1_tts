@@ -2,9 +2,9 @@ package com.motivator.wecareyou;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -14,6 +14,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.motivator.common.AppsConstant;
+import com.motivator.common.GeneralUtility;
 
 import org.json.JSONObject;
 
@@ -31,39 +33,51 @@ public class TTSTesting extends Activity{
 		setContentView(R.layout.tts_testinh);
 		btn=(Button) findViewById(R.id.btn);
 //		tts = new TextToSpeech(this, this);
-		
-		btn.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-//				if(MyApplication.tts_initialized) {
-//					MyApplication.tts.speak("hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma", TextToSpeech.QUEUE_FLUSH, null);
-//				}
-//				else{
-//					Log.d("sunil","ttsinitialized failed");
-//				}
-				runAPI();
-//				tts = new TextToSpeech(getApplicationContext(), new OnInitListener() {
-//
-//					@Override
-//					public void onInit(int status) {
-//						// TODO Auto-generated method stub
-//						convertTextToSpeech(status, "hello this is sunil kumar vishwakarma");
-//					}
-//
-//				});
-//				speakOut();
+		String s="this is sunil vishwakarma";
+		if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND)) {
+			if(MyApplication.tts_initialized){
+				MyApplication.tts.speak(s, TextToSpeech.QUEUE_FLUSH, null);
 			}
-		});
+			new CountDownTimer(3000, 100) {
+
+				public void onTick(long millisUntilFinished) {
+				}
+
+				public void onFinish() {
+				}
+			}.start();
+
+		}
+//		btn.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+////				if(MyApplication.tts_initialized) {
+////					MyApplication.tts.speak("hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma hey this is sunil kumar vishwakarma", TextToSpeech.QUEUE_FLUSH, null);
+////				}
+////				else{
+////					Log.d("sunil","ttsinitialized failed");
+////				}
+//				runAPI();
+////				tts = new TextToSpeech(getApplicationContext(), new OnInitListener() {
+////
+////					@Override
+////					public void onInit(int status) {
+////						// TODO Auto-generated method stub
+////						convertTextToSpeech(status, "hello this is sunil kumar vishwakarma");
+////					}
+////
+////				});
+////				speakOut();
+//			}
+//		});
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		if (MyApplication.tts != null) {
-			MyApplication.tts.stop();
-		}
+
 	}
 
 	@Override

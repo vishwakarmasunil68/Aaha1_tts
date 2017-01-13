@@ -110,9 +110,9 @@ public class HabitCompletionActivity extends Activity {
         		Log.d("sun","Habits completed");
 				playMusic();
 //        	textToSpeech = new TextToSpeech(getApplicationContext(), new OnInitListener() {
-//    			
+//
 //    			@Override
-//    			public void onInit(int status) 
+//    			public void onInit(int status)
 //    			{
 //    				final boolean isSoundOn = GeneralUtility.getPreferencesBoolean(HabitCompletionActivity.this, AppsConstant.AVS_SOUND);
 //    				if(isSoundOn)
@@ -145,7 +145,7 @@ public class HabitCompletionActivity extends Activity {
 	}
 	public void playMusic(){
 		if(AppsConstant.user_mood.equals("excited")||AppsConstant.user_mood.equals("cheerful")){
-			
+
 			Random random=new Random();
 			int num=random.nextInt(2 - 1+ 1) + 1;
 			switch (num) {
@@ -184,7 +184,7 @@ public class HabitCompletionActivity extends Activity {
 			return;
 		}
 		else{
-		
+
 		Random random=new Random();
 		int num=random.nextInt(5 - 1+ 1) + 1;
 		switch (num) {
@@ -225,7 +225,7 @@ public class HabitCompletionActivity extends Activity {
 			return;
 		default:
 			return;
-		}  
+		}
 
 		}
 	}
@@ -276,20 +276,17 @@ public class HabitCompletionActivity extends Activity {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		if(mPlayer!=null){
+		if(mPlayer!=null) {
 			mPlayer.stop();
-		}
-		if (MyApplication.tts != null) {
-			MyApplication.tts.stop();
 		}
 	}
 	/**
 	  * Speaks the string using the specified queuing strategy and speech
 	  * parameters.
 	  */
-	 private void convertTextToSpeech(int status, String text) 
+	 private void convertTextToSpeech(int status, String text)
 	 {
-		 if (status == TextToSpeech.SUCCESS) 
+		 if (status == TextToSpeech.SUCCESS)
 		 {
 			 int lang = textToSpeech.setLanguage(Locale.US);
 			 if (lang == TextToSpeech.LANG_MISSING_DATA
@@ -306,8 +303,8 @@ public class HabitCompletionActivity extends Activity {
 			 Log.e("error", "Initilization Failed!");
 		 }
 	 }
-	
-	 
+
+
 	 @Override
 	public void onBackPressed() {
 		super.onBackPressed();

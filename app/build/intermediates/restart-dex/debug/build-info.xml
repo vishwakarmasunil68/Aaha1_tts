@@ -5,29 +5,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="654388382270698"
+    timestamp="109968931542410"
     token="-6483420415354124193"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3316" />
+        duration="5221" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="4211" />
+        duration="4999" />
     <task
         name="verifier"
-        duration="1695" />
+        duration="2163" />
 
     <artifact
         location="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="654388382270698"
+        timestamp="109968931542410"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\projects\bharath\Bharath Projects\aaha tts studio\Aaha1\app\build\outputs\apk\app-debug.apk"

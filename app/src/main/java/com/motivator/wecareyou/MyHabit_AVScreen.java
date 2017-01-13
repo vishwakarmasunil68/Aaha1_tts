@@ -627,6 +627,7 @@ public class MyHabit_AVScreen extends Activity implements OnClickListener/*, Tex
                 } else {
                     --selectedHabit;
                     imvComplete.setEnabled(false);
+                    Log.d(TAG,"on music completed");
                     if (mpPlayer != null && mpPlayer.isPlaying()) {
                         mpPlayer.setOnCompletionListener(new OnCompletionListener() {
 
@@ -645,21 +646,32 @@ public class MyHabit_AVScreen extends Activity implements OnClickListener/*, Tex
                             }
                         });
                     } else {
-                        Intent i = new Intent(MyHabit_AVScreen.this, HabitCompletionActivity.class);
-                        i.putExtra(AppsConstant.SELECTED_RITUAL, selectedRitual);
-                        if (isFirstWalkthough)
-                            i.putExtra("isFirstWalkthrough", true);
-                        else
-                            i.putExtra("isFirstWalkthrough", false);
+                        new CountDownTimer(3000,1000){
 
-                        startActivity(i);
-                        finish();
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                Intent i = new Intent(MyHabit_AVScreen.this, HabitCompletionActivity.class);
+                                i.putExtra(AppsConstant.SELECTED_RITUAL, selectedRitual);
+                                if (isFirstWalkthough)
+                                    i.putExtra("isFirstWalkthrough", true);
+                                else
+                                    i.putExtra("isFirstWalkthrough", false);
+
+                                startActivity(i);
+                                finish();
+                            }
+                        }.start();
+
                     }
                 }
                 break;
         }
     }
-
     private void musicPlayingMethod() {
 //        String[] list_strings= getResources().getStringArray(R.array.myhabitavscreenttstext);
         playmyhabitvoices(list_tts_text);
@@ -837,9 +849,9 @@ public class MyHabit_AVScreen extends Activity implements OnClickListener/*, Tex
     public void onDestroy() {
         super.onDestroy();
         stopBackgroundMusic();
-        if (MyApplication.tts != null) {
-            MyApplication.tts.stop();
-        }
+//        if (MyApplication.tts != null) {
+//            MyApplication.tts.stop();
+//        }
     }
 
     @Override

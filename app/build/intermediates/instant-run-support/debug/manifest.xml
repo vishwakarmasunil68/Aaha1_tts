@@ -65,7 +65,7 @@
             android:name="com.motivator.wecareyou.Splash"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1" >
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -310,6 +310,7 @@
         <!-- <activity android:name="com.motivator.careplan.ContactsActivity"></activity> -->
         <!-- <activity android:name=".GoogleSignin"></activity> -->
         <activity android:name="com.motivator.wecareyou.TTSTestingFile" />
+        <activity android:name="com.motivator.wecareyou.TTSTesting" />
         <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"
             android:exported="true"

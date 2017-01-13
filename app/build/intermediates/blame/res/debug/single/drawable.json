@@ -440,6 +440,10 @@
         "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\drawable\\bored_male.png"
     },
     {
+        "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_login_back.png",
+        "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\drawable\\ic_login_back.png"
+    },
+    {
         "merged": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\calendar_expand_item.png",
         "source": "C:\\projects\\bharath\\Bharath Projects\\aaha tts studio\\Aaha1\\app\\src\\main\\res\\drawable\\calendar_expand_item.png"
     },

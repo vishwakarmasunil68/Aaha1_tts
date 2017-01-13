@@ -21,7 +21,6 @@ import com.motivator.common.GeneralUtility;
 import com.motivator.common.Pref;
 import com.motivator.database.GetData;
 import com.motivator.model.UserRitualModel;
-import com.motivator.support.FileUtils;
 import com.motivator.support.StringUtils;
 
 import java.io.File;
@@ -72,14 +71,14 @@ public class FirstWalkThrough extends Activity{
 //		Log.d("sunil","firstwalkthrough:-"+firstwalkthrough);
 		if(firstwalkthrough.equals("")){
 			try{
-				mPlayer = MediaPlayer.create(FirstWalkThrough.this, R.raw.second_first_walk_through);
-				mPlayer.start();
+//				mPlayer = MediaPlayer.create(FirstWalkThrough.this, R.raw.second_first_walk_through);
+//				mPlayer.start();
 //				mPlayer1= MediaPlayer.create(FirstWalkThrough.this, R.raw.walkthrough_2);
 //				mPlayer1.start();
 //				int MAX_VOLUME = 100;
 //				final float volume = (float) (1 - (Math.log(MAX_VOLUME - 70) / Math.log(MAX_VOLUME)));
 //				mPlayer1.setVolume(volume, volume);
-				ListFiles(new File(FileUtils.WALKTHROUGH_FILE_PATH));
+//				ListFiles(new File(FileUtils.WALKTHROUGH_FILE_PATH));
 			}
 			catch(Exception e){
 				Log.d("sun",e.toString());

@@ -508,7 +508,9 @@ public class HomeFragment extends Fragment {
         super.onPause();
         Log.d("activity", "onpuase");
         Log.d("sun", "Home:-onPause");
-
+        if (mpPlayer != null) {
+            mpPlayer.stop();
+        }
     }
 
     @Override
@@ -534,8 +536,20 @@ public class HomeFragment extends Fragment {
     public void playMusic() {
         Log.d("sun", "music playing");
 
-        String[] list_strings= getResources().getStringArray(R.array.homescreenttstext);
-        playRitualVoices(list_strings);
+
+        String[] tts_array={userName+" As you get older, three things happen. First your memory starts to go…. and I can’t remember the other two.",
+                userName+" Don’t worry about what people think. Most of them don’t do it very often.",
+                "I love our time together. But don’t forget your other friends and family as well. The worst thing we can do is isolate ourselves when we feel troubled.",
+                "I read in a magazine last week that light exercise like walking and stretching releases ‘feel good’ chemicals into our bloodstream. How about we try it later?",
+                userName +" I really enjoy our time together.",
+                userName+" I really need a day in between Saturday and Sunday.",
+                "I’ve found that writing down my thoughts helps me to organize the thoughts whirling in my mind. Of course I also destroy the evidence afterward. Why don’t you try it too? It might help get those pent up frustrations and emotions off your chest.",
+                "So how have you been today? Did you try anything new?",
+                "What a day "+userName+". I met a friend that I hadn’t seen in ages the other day. We talked for hours about everything under the sun.",
+                userName+ ", You are never too old to chase a new goal, or dream a new dream.",
+                userName+", I really enjoy our meetups. You’re pretty cool."};
+//        String[] list_strings= getResources().getStringArray(R.array.homescreenttstext);
+        playRitualVoices(tts_array);
     }
     public void playRitualVoices(String[] list_files){
         int val= Pref.getInteger(getActivity().getApplicationContext(),StringUtils.VOICE_RITUAL_LIST_HOME,-1);

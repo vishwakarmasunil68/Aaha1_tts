@@ -24,7 +24,6 @@ import com.motivator.common.Pref;
 import com.motivator.database.NewDataBaseHelper;
 import com.motivator.model.CalendarPOJO;
 import com.motivator.model.DataEntryPOJO;
-import com.motivator.support.FileUtils;
 import com.motivator.support.StringUtils;
 
 import java.io.File;
@@ -211,7 +210,7 @@ public class ClickOnCalendar extends Activity{
 //		mpPlayer = MediaPlayer.create(getApplicationContext(), R.raw.calendar_1);
 //		if (GeneralUtility.getPreferencesBoolean(getApplicationContext(), AppsConstant.AVS_SOUND))
 //			mpPlayer.start();
-		ListFiles(new File(FileUtils.CALENDAR_FILE_PATH));
+		//ListFiles(new File(FileUtils.CALENDAR_FILE_PATH));
 		
 	}
 	public void ListFiles(File f){
